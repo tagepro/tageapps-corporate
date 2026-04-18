@@ -389,14 +389,14 @@ export async function generateMetadata({
   const pageUrl = `${SITE_URL}${pagePath}`;
 
   return {
-    title: copy.meta.title,
-    description: copy.meta.description,
-    keywords: copy.meta.keywords,
-    alternates: {
-      canonical: pagePath,
-      languages: {
-        tr: "/tr/cerez-politikasi",
-        en: "/en/cerez-politikasi",
+  title: copy.meta.title,
+  description: copy.meta.description,
+  keywords: [...copy.meta.keywords],
+  alternates: {
+    canonical: pagePath,
+    languages: {
+      tr: `/tr/cerez-politikasi`,
+      en: `/en/cerez-politikasi`,
       },
     },
     openGraph: {

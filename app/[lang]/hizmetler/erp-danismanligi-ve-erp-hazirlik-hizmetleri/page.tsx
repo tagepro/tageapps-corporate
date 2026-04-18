@@ -501,7 +501,7 @@ export async function generateMetadata({
   return {
     title: copy.meta.title,
     description: copy.meta.description,
-    keywords: copy.meta.keywords,
+    keywords: [...copy.meta.keywords],
     alternates: {
       canonical: pagePath,
       languages: {

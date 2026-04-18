@@ -4,7 +4,7 @@
 
 import Turnstile from "react-turnstile";
 
-type Props = {
+type TurnstileWidgetProps = {
   onVerify: (token: string) => void;
   onExpire: () => void;
   onError: () => void;
@@ -14,7 +14,7 @@ export default function TurnstileWidget({
   onVerify,
   onExpire,
   onError,
-}: Props) {
+}: TurnstileWidgetProps) {
   const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
   if (!siteKey) {
@@ -31,10 +31,8 @@ export default function TurnstileWidget({
       onVerify={onVerify}
       onExpire={onExpire}
       onError={onError}
-      options={{
-        theme: "light",
-        size: "normal",
-      }}
+      theme="light"
+      size="normal"
     />
   );
 }
