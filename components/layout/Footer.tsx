@@ -107,6 +107,12 @@ export default function Footer({ lang, labels }: FooterProps) {
             >
               {labels.contact}
             </Link>
+			<Link
+              className="transition hover:text-white"
+              href={withLang(lang, "/blog")}
+            >
+              Blog
+            </Link>
           </div>
         </div>
 
@@ -115,10 +121,16 @@ export default function Footer({ lang, labels }: FooterProps) {
             {labels.productsTitle}
           </h3>
           <div className="mt-4 flex flex-col gap-3 text-sm text-slate-300">
-            <Link className="transition hover:text-white" href={withLang(lang, "/sadi")}>
+            <Link
+              className="transition hover:text-white"
+              href={withLang(lang, "/sadi")}
+            >
               {labels.productTitle}
             </Link>
-            <Link className="transition hover:text-white" href={withLang(lang, "/sadi")}>
+            <Link
+              className="transition hover:text-white"
+              href={withLang(lang, "/sadi")}
+            >
               {labels.goToProductPage}
             </Link>
           </div>
