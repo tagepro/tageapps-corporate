@@ -1,5 +1,6 @@
 // app/[lang]/sadi/page.tsx
 
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Container from "@/components/layout/Container";
@@ -30,13 +31,65 @@ type PageProps = {
   params: Promise<{ lang: string }>;
 };
 
+const SITE_URL = "https://www.tageapps.com";
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { lang } = await params;
+
+  if (lang !== "tr" && lang !== "en") {
+    return {};
+  }
+
+  const isTr = lang === "tr";
+  const canonical = `${SITE_URL}/${lang}/sadi`;
+
+  return {
+    title: isTr
+      ? "Sadi | Süreç Analizi, Süreç Olgunluk ve Dijital Olgunluk Platformu"
+      : "Sadi | Process Analysis, Process Maturity and Digital Maturity Platform",
+    description: isTr
+      ? "Sadi; süreç analizi, süreç olgunluk ve dijital olgunluk değerlendirmesi yaparak riskleri, darboğazları ve gelişim alanlarını görünür hale getiren bir süreç yönetimi platformudur."
+      : "Sadi is a process management platform that performs process analysis, process maturity and digital maturity assessments to make risks, bottlenecks and improvement areas visible.",
+    alternates: {
+      canonical,
+      languages: {
+        tr: `${SITE_URL}/tr/sadi`,
+        en: `${SITE_URL}/en/sadi`,
+      },
+    },
+    openGraph: {
+      title: isTr
+        ? "Sadi | Süreç Analizi, Süreç Olgunluk ve Dijital Olgunluk Platformu"
+        : "Sadi | Process Analysis, Process Maturity and Digital Maturity Platform",
+      description: isTr
+        ? "Süreçleri ölçülebilir hale getirin, riskleri görün, gelişim alanlarını önceliklendirin ve dijital dönüşüm hazırlığını daha güçlü zemine taşıyın."
+        : "Make processes measurable, identify risks, prioritize improvement areas and strengthen digital transformation readiness.",
+      url: canonical,
+      siteName: "Tage Apps",
+      locale: isTr ? "tr_TR" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: isTr
+        ? "Sadi | Süreç Analizi, Süreç Olgunluk ve Dijital Olgunluk Platformu"
+        : "Sadi | Process Analysis, Process Maturity and Digital Maturity Platform",
+      description: isTr
+        ? "Süreçleri ölçülebilir hale getirin, riskleri görün, gelişim alanlarını önceliklendirin ve dijital dönüşüm hazırlığını daha güçlü zemine taşıyın."
+        : "Make processes measurable, identify risks, prioritize improvement areas and strengthen digital transformation readiness.",
+    },
+  };
+}
+
 const tr = {
   hero: {
     badge: "Ürün • Süreç Olgunluk • Dijital Olgunluk",
     productName: "sadi",
-    title: "Süreç Olgunluk ve Dijital Olgunluk Platformu",
+    title: "Süreç Analizi, Süreç Olgunluk ve Dijital Olgunluk Platformu",
     description:
-      "Sadi, işletmelerin departman bazlı süreçlerini ölçerek, riskleri ve darboğazları görünür kılar, iş süreçlerinin yönetimini ve iyileştirilmesini sağlar.",
+      "Sadi, işletmelerin departman bazlı süreçlerini standart bir yapıda değerlendirir; riskleri, darboğazları ve gelişim alanlarını görünür hale getirerek süreç yönetimi, dijital dönüşüm ve ERP hazırlık çalışmalarını destekler.",
     demoButton: "Demo İste",
     checks: [
       "Süreçler kişilere bağlı ilerliyor",
@@ -59,9 +112,24 @@ const tr = {
         risk: "Risk",
       },
       rows: [
-        { name: "Satınalma onay akışı", score: "2.5", risk: "Kritik", tone: "critical" },
-        { name: "Tedarikçi değerlendirme", score: "3.0", risk: "Yüksek", tone: "high" },
-        { name: "Stok min/max yönetimi", score: "4.0", risk: "Orta", tone: "medium" },
+        {
+          name: "Satınalma onay akışı",
+          score: "2.5",
+          risk: "Kritik",
+          tone: "critical",
+        },
+        {
+          name: "Tedarikçi değerlendirme",
+          score: "3.0",
+          risk: "Yüksek",
+          tone: "high",
+        },
+        {
+          name: "Stok min/max yönetimi",
+          score: "4.0",
+          risk: "Orta",
+          tone: "medium",
+        },
       ],
       note: "v+1 ile yeniden ölçüm: aynı süreç seti → yeni versiyon → gelişim kanıtı",
     },
@@ -106,9 +174,24 @@ const tr = {
       title: "Dijitalleşme durumu",
       processCount: "42 süreç",
       bars: [
-        { label: "Evrak ağırlıklı", value: "43%", width: "43%", color: "bg-[#EF4444]" },
-        { label: "Karma (evrak + sistem)", value: "38%", width: "38%", color: "bg-[#F59E0B]" },
-        { label: "Sistem ağırlıklı", value: "19%", width: "19%", color: "bg-[#22C55E]" },
+        {
+          label: "Evrak ağırlıklı",
+          value: "43%",
+          width: "43%",
+          color: "bg-[#EF4444]",
+        },
+        {
+          label: "Karma (evrak + sistem)",
+          value: "38%",
+          width: "38%",
+          color: "bg-[#F59E0B]",
+        },
+        {
+          label: "Sistem ağırlıklı",
+          value: "19%",
+          width: "19%",
+          color: "bg-[#22C55E]",
+        },
       ],
       summary:
         "Süreç olgunluğunu görünür hale getirerek dijital dönüşüm ve ERP hazırlığını daha güçlü zemine taşır.",
@@ -144,7 +227,8 @@ const tr = {
   howItWorks: {
     badge: "Ürün Nasıl Çalışır?",
     title: "Bir kılavuz gibi basit çalışır. Tanımdan gelişime adım adım ilerler.",
-    intro: "6 adımda tüm sürecinizi ölçüyor, dijital olgunluğunuzu hızlandırıyor.",
+    intro:
+      "6 adımda tüm sürecinizi ölçüyor, dijital olgunluğunuzu hızlandırıyor.",
     steps: [
       {
         no: "1",
@@ -316,9 +400,9 @@ const en = {
   hero: {
     badge: "Product • Process Maturity • Digital Maturity",
     productName: "sadi",
-    title: "Process Maturity and Digital Maturity Platform",
+    title: "Process Analysis, Process Maturity and Digital Maturity Platform",
     description:
-      "Sadi measures department-based processes in businesses, makes risks and bottlenecks visible, and supports the management and improvement of business processes.",
+      "Sadi evaluates department-based processes in a standard structure, makes risks, bottlenecks and improvement areas visible, and supports process management, digital transformation and ERP readiness initiatives.",
     demoButton: "Request Demo",
     checks: [
       "Processes depend on individuals",
@@ -341,9 +425,24 @@ const en = {
         risk: "Risk",
       },
       rows: [
-        { name: "Procurement approval flow", score: "2.5", risk: "Critical", tone: "critical" },
-        { name: "Supplier evaluation", score: "3.0", risk: "High", tone: "high" },
-        { name: "Stock min/max management", score: "4.0", risk: "Medium", tone: "medium" },
+        {
+          name: "Procurement approval flow",
+          score: "2.5",
+          risk: "Critical",
+          tone: "critical",
+        },
+        {
+          name: "Supplier evaluation",
+          score: "3.0",
+          risk: "High",
+          tone: "high",
+        },
+        {
+          name: "Stock min/max management",
+          score: "4.0",
+          risk: "Medium",
+          tone: "medium",
+        },
       ],
       note: "Re-measurement with v+1: same process set → new version → proof of improvement",
     },
@@ -388,9 +487,24 @@ const en = {
       title: "Digitalization status",
       processCount: "42 processes",
       bars: [
-        { label: "Paper-heavy", value: "43%", width: "43%", color: "bg-[#EF4444]" },
-        { label: "Hybrid (paper + system)", value: "38%", width: "38%", color: "bg-[#F59E0B]" },
-        { label: "System-heavy", value: "19%", width: "19%", color: "bg-[#22C55E]" },
+        {
+          label: "Paper-heavy",
+          value: "43%",
+          width: "43%",
+          color: "bg-[#EF4444]",
+        },
+        {
+          label: "Hybrid (paper + system)",
+          value: "38%",
+          width: "38%",
+          color: "bg-[#F59E0B]",
+        },
+        {
+          label: "System-heavy",
+          value: "19%",
+          width: "19%",
+          color: "bg-[#22C55E]",
+        },
       ],
       summary:
         "By making process maturity visible, it creates a stronger foundation for digital transformation and ERP readiness.",
@@ -677,13 +791,13 @@ export default async function SadiPage({ params }: PageProps) {
                 {copy.hero.badge}
               </div>
 
-              <h1 className="mt-6 text-5xl font-light tracking-tight text-[#133E87] sm:text-6xl lg:text-7xl">
+              <p className="mt-6 text-5xl font-light tracking-tight text-[#133E87] sm:text-6xl lg:text-7xl">
                 {copy.hero.productName}
-              </h1>
+              </p>
 
-              <h2 className="mt-4 max-w-2xl text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-[2.75rem]">
+              <h1 className="mt-4 max-w-2xl text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-[2.75rem]">
                 {copy.hero.title}
-              </h2>
+              </h1>
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
                 {copy.hero.description}
@@ -861,7 +975,9 @@ export default async function SadiPage({ params }: PageProps) {
                         <p className="text-base leading-8 text-slate-700 sm:text-lg">
                           {card.stat}
                         </p>
-                        <p className="mt-1 text-sm text-slate-500">{card.source}</p>
+                        <p className="mt-1 text-sm text-slate-500">
+                          {card.source}
+                        </p>
                       </div>
                     </div>
                   );
@@ -965,7 +1081,9 @@ export default async function SadiPage({ params }: PageProps) {
                         <p className="text-base leading-8 text-slate-700 sm:text-lg">
                           {card.stat}
                         </p>
-                        <p className="mt-1 text-sm text-slate-500">{card.source}</p>
+                        <p className="mt-1 text-sm text-slate-500">
+                          {card.source}
+                        </p>
                       </div>
                     </div>
                   );
@@ -1190,10 +1308,14 @@ export default async function SadiPage({ params }: PageProps) {
                       key={header.name}
                       className="border-l border-slate-200 px-4 py-5 text-center"
                     >
-                      <div className={`text-xl font-bold ${index === 0 ? "text-slate-900 text-2xl" : "text-slate-900"}`}>
+                      <div
+                        className={`text-xl font-bold ${index === 0 ? "text-2xl text-slate-900" : "text-slate-900"}`}
+                      >
                         {header.name}
                       </div>
-                      <div className={`mt-1 font-semibold ${index === 0 ? "text-2xl text-[#16A34A]" : "text-xl text-slate-500"}`}>
+                      <div
+                        className={`mt-1 font-semibold ${index === 0 ? "text-2xl text-[#16A34A]" : "text-xl text-slate-500"}`}
+                      >
                         {header.price}
                       </div>
                     </div>

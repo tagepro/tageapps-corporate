@@ -1,5 +1,6 @@
 // app/[lang]/page.tsx
 
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Container from "@/components/layout/Container";
@@ -26,6 +27,58 @@ import {
 type PageProps = {
   params: Promise<{ lang: string }>;
 };
+
+const SITE_URL = "https://www.tageapps.com";
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { lang } = await params;
+
+  if (!hasLocale(lang)) {
+    return {};
+  }
+
+  const isTr = lang === "tr";
+  const canonical = `${SITE_URL}/${lang}`;
+
+  return {
+    title: isTr
+      ? "Tage Yazılım | Süreç Analizi, Dijital Dönüşüm ve ERP Danışmanlığı"
+      : "Tage Software | Process Analysis, Digital Transformation and ERP Consulting",
+    description: isTr
+      ? "Tage Yazılım; süreç analizi, süreç yönetimi danışmanlığı, dijital olgunluk analizi ve ERP hazırlık hizmetleri sunar. Sadi ile süreçlerinizi görünür, ölçülebilir ve geliştirilebilir hale getirin."
+      : "Tage Software provides process analysis, process management consulting, digital maturity assessment and ERP readiness services. Make your processes visible, measurable and improvable with Sadi.",
+    alternates: {
+      canonical,
+      languages: {
+        tr: `${SITE_URL}/tr`,
+        en: `${SITE_URL}/en`,
+      },
+    },
+    openGraph: {
+      title: isTr
+        ? "Tage Yazılım | Süreç Analizi, Dijital Dönüşüm ve ERP Danışmanlığı"
+        : "Tage Software | Process Analysis, Digital Transformation and ERP Consulting",
+      description: isTr
+        ? "Süreç analizi, dijital dönüşüm ve ERP hazırlık hizmetleriyle kurumların dönüşüm yolculuğunu daha sağlam temellerle ilerletin."
+        : "Strengthen your transformation journey with process analysis, digital transformation and ERP readiness services.",
+      url: canonical,
+      siteName: "Tage Apps",
+      locale: isTr ? "tr_TR" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: isTr
+        ? "Tage Yazılım | Süreç Analizi, Dijital Dönüşüm ve ERP Danışmanlığı"
+        : "Tage Software | Process Analysis, Digital Transformation and ERP Consulting",
+      description: isTr
+        ? "Süreç analizi, dijital dönüşüm ve ERP hazırlık hizmetleriyle kurumların dönüşüm yolculuğunu daha sağlam temellerle ilerletin."
+        : "Strengthen your transformation journey with process analysis, digital transformation and ERP readiness services.",
+    },
+  };
+}
 
 export default async function HomePage({ params }: PageProps) {
   const { lang } = await params;
