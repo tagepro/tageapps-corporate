@@ -494,6 +494,11 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { lang } = await params;
+
+  if (lang !== "tr" && lang !== "en") {
+    return {};
+  }
+
   const copy = lang === "en" ? en : tr;
   const pagePath = `/${lang}/hizmetler/erp-danismanligi-ve-erp-hazirlik-hizmetleri`;
   const pageUrl = `${SITE_URL}${pagePath}`;
@@ -503,10 +508,10 @@ export async function generateMetadata({
     description: copy.meta.description,
     keywords: [...copy.meta.keywords],
     alternates: {
-      canonical: pagePath,
+      canonical: pageUrl,
       languages: {
-        tr: "/tr/hizmetler/erp-danismanligi-ve-erp-hazirlik-hizmetleri",
-        en: "/en/hizmetler/erp-danismanligi-ve-erp-hazirlik-hizmetleri",
+        tr: `${SITE_URL}/tr/hizmetler/erp-danismanligi-ve-erp-hazirlik-hizmetleri`,
+        en: `${SITE_URL}/en/hizmetler/erp-danismanligi-ve-erp-hazirlik-hizmetleri`,
       },
     },
     openGraph: {

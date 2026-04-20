@@ -585,6 +585,11 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { lang } = await params;
+
+  if (lang !== "tr" && lang !== "en") {
+    return {};
+  }
+
   const copy = lang === "en" ? en : tr;
   const pagePath = `/${lang}/hizmetler/surec-iyilestirme-ve-is-akisi-yonetimi`;
   const pageUrl = `${SITE_URL}${pagePath}`;
@@ -594,10 +599,10 @@ export async function generateMetadata({
     description: copy.meta.description,
     keywords: [...copy.meta.keywords],
     alternates: {
-      canonical: pagePath,
+      canonical: pageUrl,
       languages: {
-        tr: "/tr/hizmetler/surec-iyilestirme-ve-is-akisi-yonetimi",
-        en: "/en/hizmetler/surec-iyilestirme-ve-is-akisi-yonetimi",
+        tr: `${SITE_URL}/tr/hizmetler/surec-iyilestirme-ve-is-akisi-yonetimi`,
+        en: `${SITE_URL}/en/hizmetler/surec-iyilestirme-ve-is-akisi-yonetimi`,
       },
     },
     openGraph: {

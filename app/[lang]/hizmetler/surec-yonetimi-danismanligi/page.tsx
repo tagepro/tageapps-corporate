@@ -507,7 +507,8 @@ const en = {
 
   schema: {
     serviceName: "Process Management Consulting",
-    serviceType: "Enterprise Process Management and Business Process Management Consulting",
+    serviceType:
+      "Enterprise Process Management and Business Process Management Consulting",
     serviceDescription:
       "A service offered to establish a process management approach in businesses, create a process inventory, clarify process ownership and responsibility structures, and develop a measurable process approach through process management consulting.",
   },
@@ -526,6 +527,11 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { lang } = await params;
+
+  if (lang !== "tr" && lang !== "en") {
+    return {};
+  }
+
   const copy = lang === "en" ? en : tr;
   const pagePath = `/${lang}/hizmetler/surec-yonetimi-danismanligi`;
   const pageUrl = `${SITE_URL}${pagePath}`;
@@ -535,10 +541,10 @@ export async function generateMetadata({
     description: copy.meta.description,
     keywords: [...copy.meta.keywords],
     alternates: {
-      canonical: pagePath,
+      canonical: pageUrl,
       languages: {
-        tr: "/tr/hizmetler/surec-yonetimi-danismanligi",
-        en: "/en/hizmetler/surec-yonetimi-danismanligi",
+        tr: `${SITE_URL}/tr/hizmetler/surec-yonetimi-danismanligi`,
+        en: `${SITE_URL}/en/hizmetler/surec-yonetimi-danismanligi`,
       },
     },
     openGraph: {

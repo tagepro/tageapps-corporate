@@ -588,6 +588,11 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { lang } = await params;
+
+  if (lang !== "tr" && lang !== "en") {
+    return {};
+  }
+
   const copy = lang === "en" ? en : tr;
   const pagePath = `/${lang}/hizmetler/surec-yonetimi-yazilimi-ve-kurumsal-yazilim-cozumleri`;
   const pageUrl = `${SITE_URL}${pagePath}`;
@@ -597,10 +602,10 @@ export async function generateMetadata({
     description: copy.meta.description,
     keywords: [...copy.meta.keywords],
     alternates: {
-      canonical: pagePath,
+      canonical: pageUrl,
       languages: {
-        tr: "/tr/hizmetler/surec-yonetimi-yazilimi-ve-kurumsal-yazilim-cozumleri",
-        en: "/en/hizmetler/surec-yonetimi-yazilimi-ve-kurumsal-yazilim-cozumleri",
+        tr: `${SITE_URL}/tr/hizmetler/surec-yonetimi-yazilimi-ve-kurumsal-yazilim-cozumleri`,
+        en: `${SITE_URL}/en/hizmetler/surec-yonetimi-yazilimi-ve-kurumsal-yazilim-cozumleri`,
       },
     },
     openGraph: {
