@@ -64,12 +64,12 @@ export default function Footer({ lang, labels }: FooterProps) {
       <Container className="grid gap-10 py-12 md:grid-cols-2 lg:grid-cols-[1.05fr_0.8fr_0.8fr_1.2fr]">
         <div>
           <Image
-            src="/logo/tage-logo-beyaz.svg"
-            alt="Tage Logo"
-            width={144}
-            height={40}
-            className="h-10 w-auto"
-          />
+			src="/logo/tage-logo-beyaz.svg"
+			alt="Tage Logo"
+			width={220}
+			height={60}
+			className="h-14 w-auto"
+			/>
           <p className="mt-4 max-w-xs text-sm leading-6 text-slate-300">
             {labels.companyDescription}
           </p>

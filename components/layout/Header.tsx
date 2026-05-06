@@ -1,7 +1,5 @@
 // components/layout/Header.tsx
 
-// components/layout/Header.tsx
-
 import Link from "next/link";
 import Image from "next/image";
 import Container from "./Container";
@@ -117,17 +115,17 @@ export default function Header({ lang, labels }: HeaderProps) {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur">
-      <Container className="relative flex h-20 items-center justify-between">
-        <Link href={withLang(lang)} className="flex items-center">
-          <Image
-            src="/logo/tage-logo-lacivert.svg"
-            alt="Tage Logo"
-            width={144}
-            height={40}
-            className="h-10 w-auto"
-            priority
-          />
-        </Link>
+      <Container className="relative flex h-24 items-center justify-between">
+		<Link href={withLang(lang)} className="flex items-center">
+		<Image
+			src="/logo/tage-logo-lacivert.svg"
+			alt="Tage Logo"
+			width={220}
+			height={60}
+			className="h-14 w-auto"
+			priority
+		/>
+		</Link>
 
         <nav className="hidden items-center gap-8 lg:absolute lg:left-1/2 lg:flex lg:-translate-x-1/2">
           <Link

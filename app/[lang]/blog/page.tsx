@@ -3,11 +3,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import {
-  ArrowRight,
-  BookOpen,
-  Clock3,
-} from "lucide-react";
+import { ArrowRight, BookOpen, Clock3 } from "lucide-react";
 import Container from "@/components/layout/Container";
 
 type PageProps = {
@@ -18,12 +14,16 @@ const SITE_URL = "https://www.tageapps.com";
 const FIRST_POST_SLUG = "is-surec-analizi-nedir";
 const SECOND_POST_SLUG = "dijital-olgunluk-analizi-nedir";
 const THIRD_POST_SLUG = "erpye-gecmeden-once-sirketinizi-nasil-hazirlarsiniz";
+const FOURTH_POST_SLUG = "surec-iyilestirme-nedir";
+const FIFTH_POST_SLUG = "surec-yonetimi-yazilimi-nedir";
+const SIXTH_POST_SLUG = "surec-olgunlugu-nedir";
 
 const tr = {
   meta: {
-    title: "Blog | Süreç Analizi, Dijital Dönüşüm ve ERP İçerikleri | Tage Yazılım",
+    title:
+      "Blog | Süreç Analizi, Dijital Dönüşüm ve ERP İçerikleri | Tage Yazılım",
     description:
-      "Tage Yazılım blogunda süreç analizi, dijital olgunluk, ERP hazırlık, süreç iyileştirme ve Sadi odaklı kurumsal içerikleri inceleyin.",
+      "Tage Yazılım blogunda süreç analizi, dijital olgunluk, ERP hazırlık, süreç iyileştirme, süreç yönetimi yazılımı, süreç olgunluğu ve Sadi odaklı kurumsal içerikleri inceleyin.",
   },
 
   breadcrumb: {
@@ -33,9 +33,9 @@ const tr = {
 
   hero: {
     badge: "Blog",
-    title: "Süreç yönetimi, Dijital Dönüşüm ve ERP Üzerine İçerikler",
+    title: "Süreç, Dijital Dönüşüm ve ERP Üzerine İçerikler",
     description:
-      "Tage Yazılım blogunda süreç analizi, dijital olgunluk, ERP hazırlık, süreç iyileştirme ve Sadi ile ilgili kurumsal içerikleri bulabilirsiniz.",
+      "Tage Yazılım blogunda süreç analizi, dijital olgunluk, ERP hazırlık, süreç iyileştirme, süreç yönetimi yazılımı, süreç olgunluğu ve Sadi ile ilgili kurumsal içerikleri bulabilirsiniz.",
   },
 
   postsTitle: "Öne çıkan yazılar",
@@ -71,6 +71,36 @@ const tr = {
       href: `/blog/${THIRD_POST_SLUG}`,
       button: "Yazıyı Oku",
     },
+    {
+      label: "Yeni yazı",
+      category: "Süreç İyileştirme",
+      readTime: "9 dk okuma",
+      title: "Süreç İyileştirme Nedir? Şirketlerde Nereden Başlanır?",
+      excerpt:
+        "Süreç iyileştirme nedir, neden yapılır ve şirketlerde hangi alanlardan başlanmalıdır? Darboğaz azaltma, iş akışı geliştirme ve verimlilik artışı yaklaşımını öğrenin.",
+      href: `/blog/${FOURTH_POST_SLUG}`,
+      button: "Yazıyı Oku",
+    },
+    {
+      label: "Yeni yazı",
+      category: "Süreç Yönetimi Yazılımı",
+      readTime: "9 dk okuma",
+      title: "Süreç Yönetimi Yazılımı Nedir? Şirketlere Ne Kazandırır?",
+      excerpt:
+        "Süreç yönetimi yazılımı nedir, ne işe yarar ve şirketlere ne kazandırır? Süreç takibi, puanlama, aksiyon yönetimi ve raporlama yaklaşımını öğrenin.",
+      href: `/blog/${FIFTH_POST_SLUG}`,
+      button: "Yazıyı Oku",
+    },
+    {
+      label: "Yeni yazı",
+      category: "Süreç Olgunluğu",
+      readTime: "9 dk okuma",
+      title: "Süreç Olgunluğu Nedir? Şirketler Süreç Seviyesini Nasıl Ölçer?",
+      excerpt:
+        "Süreç olgunluğu nedir, neden önemlidir ve şirketler süreç seviyesini nasıl ölçer? Puanlama, izlenebilirlik ve gelişim yaklaşımını öğrenin.",
+      href: `/blog/${SIXTH_POST_SLUG}`,
+      button: "Yazıyı Oku",
+    },
   ],
 
   cta: {
@@ -84,9 +114,10 @@ const tr = {
 
 const en = {
   meta: {
-    title: "Blog | Process Analysis, Digital Transformation and ERP Insights | Tage Yazılım",
+    title:
+      "Blog | Process Analysis, Digital Transformation and ERP Insights | Tage Yazılım",
     description:
-      "Explore Tage Yazılım blog content on process analysis, digital maturity, ERP readiness, process improvement, and Sadi.",
+      "Explore Tage Yazılım blog content on process analysis, digital maturity, ERP readiness, process improvement, process management software, process maturity, and Sadi.",
   },
 
   breadcrumb: {
@@ -98,7 +129,7 @@ const en = {
     badge: "Blog",
     title: "Insights on Process, Digital Transformation, and ERP",
     description:
-      "On the Tage Yazılım blog, you can find corporate content about process analysis, digital maturity, ERP readiness, process improvement, and Sadi.",
+      "On the Tage Yazılım blog, you can find corporate content about process analysis, digital maturity, ERP readiness, process improvement, process management software, process maturity, and Sadi.",
   },
 
   postsTitle: "Featured articles",
@@ -132,6 +163,36 @@ const en = {
       excerpt:
         "Why should processes, roles, data structure, and organizational readiness be clarified before ERP? Learn the core preparation steps.",
       href: `/blog/${THIRD_POST_SLUG}`,
+      button: "Read Article",
+    },
+    {
+      label: "New article",
+      category: "Process Improvement",
+      readTime: "9 min read",
+      title: "What Is Process Improvement? Where Should Companies Start?",
+      excerpt:
+        "What is process improvement, why is it done, and where should companies start? Learn the approach to workflow improvement, bottleneck reduction, and efficiency gain.",
+      href: `/blog/${FOURTH_POST_SLUG}`,
+      button: "Read Article",
+    },
+    {
+      label: "New article",
+      category: "Process Management Software",
+      readTime: "9 min read",
+      title: "What Is Process Management Software? What Does It Add to Companies?",
+      excerpt:
+        "What is process management software, what does it do, and what value does it add to companies? Learn the approach to process visibility, scoring, action tracking, and reporting.",
+      href: `/blog/${FIFTH_POST_SLUG}`,
+      button: "Read Article",
+    },
+    {
+      label: "New article",
+      category: "Process Maturity",
+      readTime: "9 min read",
+      title: "What Is Process Maturity? How Do Companies Measure Process Level?",
+      excerpt:
+        "What is process maturity, why does it matter, and how do companies measure process level? Learn the approach to scoring, traceability, and improvement.",
+      href: `/blog/${SIXTH_POST_SLUG}`,
       button: "Read Article",
     },
   ],
