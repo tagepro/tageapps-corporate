@@ -24,7 +24,9 @@ import {
   Wrench,
   BriefcaseBusiness,
   Handshake,
-  Workflow,
+  Sparkles,
+  UploadCloud,
+  ShieldCheck,
 } from "lucide-react";
 
 type PageProps = {
@@ -47,11 +49,11 @@ export async function generateMetadata({
 
   return {
     title: isTr
-      ? "Sadi | Süreç Analizi, Süreç Olgunluk ve Dijital Olgunluk Platformu"
-      : "Sadi | Process Analysis, Process Maturity and Digital Maturity Platform",
+      ? "Sadi | AI Destekli Süreç Olgunluk ve Dijital Dönüşüm Hazırlık Platformu"
+      : "Sadi | AI-Powered Process Maturity and Digital Transformation Readiness Platform",
     description: isTr
-      ? "Sadi; süreç analizi, süreç olgunluk ve dijital olgunluk değerlendirmesi yaparak riskleri, darboğazları ve gelişim alanlarını görünür hale getiren bir süreç yönetimi platformudur."
-      : "Sadi is a process management platform that performs process analysis, process maturity and digital maturity assessments to make risks, bottlenecks and improvement areas visible.",
+      ? "Sadi, işletmelerin departman bazlı süreçlerini ölçerek riskleri ve darboğazları görünür kılar, iş süreçlerinin yönetimini ve iyileştirilmesini sağlar."
+      : "Sadi measures department-based business processes, makes risks and bottlenecks visible, and enables organizations to manage and improve their business processes.",
     alternates: {
       canonical,
       languages: {
@@ -61,11 +63,11 @@ export async function generateMetadata({
     },
     openGraph: {
       title: isTr
-        ? "Sadi | Süreç Analizi, Süreç Olgunluk ve Dijital Olgunluk Platformu"
-        : "Sadi | Process Analysis, Process Maturity and Digital Maturity Platform",
+        ? "Sadi | AI Destekli Süreç Olgunluk ve Dijital Dönüşüm Hazırlık Platformu"
+        : "Sadi | AI-Powered Process Maturity and Digital Transformation Readiness Platform",
       description: isTr
-        ? "Süreçleri ölçülebilir hale getirin, riskleri görün, gelişim alanlarını önceliklendirin ve dijital dönüşüm hazırlığını daha güçlü zemine taşıyın."
-        : "Make processes measurable, identify risks, prioritize improvement areas and strengthen digital transformation readiness.",
+        ? "Süreçlerin mevcut durumunu ölçün, riskleri ve darboğazları görünür hale getirin, iş süreçlerinin yönetimini ve iyileştirilmesini destekleyin."
+        : "Measure the current state of processes, make risks and bottlenecks visible, and support the management and improvement of business processes.",
       url: canonical,
       siteName: "Tage Apps",
       locale: isTr ? "tr_TR" : "en_US",
@@ -74,28 +76,28 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: isTr
-        ? "Sadi | Süreç Analizi, Süreç Olgunluk ve Dijital Olgunluk Platformu"
-        : "Sadi | Process Analysis, Process Maturity and Digital Maturity Platform",
+        ? "Sadi | AI Destekli Süreç Olgunluk ve Dijital Dönüşüm Hazırlık Platformu"
+        : "Sadi | AI-Powered Process Maturity and Digital Transformation Readiness Platform",
       description: isTr
-        ? "Süreçleri ölçülebilir hale getirin, riskleri görün, gelişim alanlarını önceliklendirin ve dijital dönüşüm hazırlığını daha güçlü zemine taşıyın."
-        : "Make processes measurable, identify risks, prioritize improvement areas and strengthen digital transformation readiness.",
+        ? "Süreçlerin mevcut durumunu ölçün, riskleri ve darboğazları görünür hale getirin, iş süreçlerinin yönetimini ve iyileştirilmesini destekleyin."
+        : "Measure the current state of processes, make risks and bottlenecks visible, and support the management and improvement of business processes.",
     },
   };
 }
 
 const tr = {
   hero: {
-    badge: "Ürün • Süreç Olgunluk • Dijital Olgunluk",
+    badge: "Ürün • AI Destekli • Süreç Olgunluk • Dijital Dönüşüm",
     productName: "sadi",
-    title: "Süreç Analizi, Süreç Olgunluk ve Dijital Olgunluk Platformu",
+    title: "AI Destekli Süreç Olgunluk ve Dijital Dönüşüm Hazırlık Platformu",
     description:
-      "Sadi, işletmelerin departman bazlı süreçlerini standart bir yapıda değerlendirir; riskleri, darboğazları ve gelişim alanlarını görünür hale getirerek süreç yönetimi, dijital dönüşüm ve ERP hazırlık çalışmalarını destekler.",
+      "Sadi, işletmelerin departman bazlı süreçlerini ölçerek riskleri ve darboğazları görünür kılar, iş süreçlerinin yönetimini ve iyileştirilmesini sağlar.",
     demoButton: "Demo İste",
     checks: [
-      "Süreçler kişilere bağlı ilerliyor",
-      "Riskler ve darboğazlar net görünmüyor",
-      "İyileştirme alanları sistematik biçimde izlenemiyor",
-      "Süreç değerlendirmeleri tekrar ölçülemiyor",
+      "ERP ve dijital dönüşüm yatırımları yapılıyor, ancak süreçlerdeki mevcut durum yeterince görünmediği için öncelikler netleşmiyor.",
+      "Süreç Bilgisi Parçalı ve Kişilere Bağımlı",
+      "Süreçlerde Ölçüm Yok, Öncelik Net Değil",
+      "İyileştirme Çalışmaları Dağınık, Riskler Geç Görülüyor",
     ],
     panel: {
       title: "Analiz / Özet (örnek)",
@@ -131,7 +133,8 @@ const tr = {
           tone: "medium",
         },
       ],
-      note: "v+1 ile yeniden ölçüm: aynı süreç seti → yeni versiyon → gelişim kanıtı",
+      note:
+        "v+1 ile yeniden ölçüm: aynı süreç seti → yeni versiyon → gelişim kanıtı",
     },
   },
 
@@ -226,7 +229,8 @@ const tr = {
 
   howItWorks: {
     badge: "Ürün Nasıl Çalışır?",
-    title: "Bir kılavuz gibi basit çalışır. Tanımdan gelişime adım adım ilerler.",
+    title:
+      "Bir kılavuz gibi basit çalışır. Tanımdan gelişime adım adım ilerler.",
     intro:
       "6 adımda tüm sürecinizi ölçüyor, dijital olgunluğunuzu hızlandırıyor.",
     steps: [
@@ -269,30 +273,318 @@ const tr = {
     ],
   },
 
+  aiImprovement: {
+    title: "AI ile Süreçleri İyileştir.",
+    subtitle:
+      "Sadi’de yapay zeka desteği, süreç bilgisinden ve ölçüm sonuçlarından uygulanabilir dönüşüm önerileri üretir.",
+    badge: "SÜREÇLERDE AI DESTEĞİ",
+    heading:
+      "Sadi, süreç bilgisini yapılandırır ve sürece özgü iyileştirme önerileri üretir.",
+    bullets: [
+      "Yapay Zeka Süreç Envanteri, PDF, Word, Excel, PowerPoint veya metin dosyalarını inceleyerek departman, ana süreç, alt süreç ve kategori önerileri oluşturur.",
+      "Yapay Zeka Dönüşüm Önerileri, olgunluk, risk, sistem uyumu ve verimlilik sonuçlarını birlikte değerlendirerek sürece özel iyileştirme önerileri üretir.",
+      "Kullanıcılar neyin aktarılacağına karar verir. Yapay zeka otomatik olarak kayıt oluşturmaz.",
+    ],
+    result:
+      "Sonuç: daha hızlı keşif, izlenebilir öneriler, insan kontrollü",
+
+    inventory: {
+      badge: "AI ile Süreç Envanteri",
+      title: "Kurumsal dokümanı süreç envanterine dönüştür",
+      description:
+        "Prosedür, görev tanımı veya süreç dokümanınızı inceler. Seçtiğiniz şirket için departman, ana süreç, alt süreç ve kategori önerileri oluşturur.",
+      company: "Şirket",
+      companyValue: "01.01 – Grup Şirketi A",
+      department: "Departman filtresi",
+      departmentValue: "Tedarik Zinciri ve Satın Alma",
+      uploadTitle: "Doküman dosyası yükle",
+      uploadText: "PDF, Word, Excel, PowerPoint veya metin dosyası • En fazla 4 MB",
+      uploadButton: "Dosya seç",
+      documentTitle: "Doküman başlığı",
+      documentText: "Doküman metni",
+      placeholder:
+        "Prosedür, görev tanımı veya süreç dokümanı metnini buraya yapıştırın...",
+      notice:
+        "AI yalnızca öneri oluşturur. Siz seçip aktarımı onaylamadan hiçbir kayıt oluşturulmaz.",
+    },
+
+    recommendations: {
+      company: "Şirket",
+      companyValue: "01.02 — Grup Şirketi B",
+      department: "Departman",
+      departmentValue: "Tümü",
+      person: "Kişi",
+      personValue: "Seçiniz",
+      year: "Yıl",
+      yearValue: "Örn: 2025",
+      processSet: "Süreç Seti Adı",
+      processSetValue: "01.02-Satış ve Ticari Operasyonlar-20-08-2026-Q3",
+      category: "Kategori",
+      categoryValue: "Tümü",
+      risk: "Risk seviyesi",
+      risks: ["Kritik", "Yüksek", "Orta", "Düşük"],
+      title: "AI Dönüşüm Önerileri",
+      approval: "İnsan onayı gerekli",
+      description:
+        "Seçili değerlendirme setindeki olgunluk, risk, sistem uyumu ve verimlilik sonuçlarını birlikte inceleyerek sürece özel iyileştirme önerileri oluşturur.",
+      assessment: "Değerlendirme seti:",
+      preparing: "Öneriler hazırlanıyor...",
+      analysing: "Süreç sonuçları yapay zeka tarafından inceleniyor",
+      note: "Öneriler yalnızca karar desteğidir ve otomatik olarak kaydedilmez.",
+    },
+  },
+
+
+  managementSnapshot: {
+    title: "Bir Bakışta Süreç Sağlığınız",
+    subtitle:
+      "Yönetim için genel skor, risk, dijitalleşme durumu ve KPI seviyesi tek ekranda",
+    badge: "YÖNETİM DEĞERİ",
+    heading:
+      "Sadi, kurumun süreç fotoğrafını üst yönetime tek bakışta gösterir.",
+    bullets: [
+      "Genel skor ve tamamlanma oranı birlikte görünür.",
+      "Risk, onay, dijitalleşme ve KPI seviyesi aynı ekranda değerlendirilir.",
+      "Yönetimin “neredeyiz?” sorusuna hızlı ve net cevap verir.",
+    ],
+    result: "Karar: Bugün en çok nereye odaklanmalıyız?",
+    score: {
+      title: "SÜREÇ OLGUNLUK SKORU",
+      value: "3.48",
+      max: "/ 7",
+      position: "Sektör pozisyonu: Orta",
+      note:
+        "Skor, Mevcut Durum & Skor (0–7) ekranındaki değerlere göre hesaplanır.",
+    },
+    assessed: {
+      title: "Değerlendirilen süreçler",
+      value: "444 / 507 süreç",
+      completion: "Tamamlanma oranı",
+      percent: "88%",
+      note:
+        "Sürece Başla ekranında en az bir kez skor verilen süreçler değerlendirilmiş kabul edilir.",
+    },
+    improvement: {
+      title: "Açık iyileştirme sayısı",
+      value: "444",
+      note: "İyileştirme notu girilmiş süreçler",
+    },
+    approval: {
+      title: "Onay tanımı olan süreçler",
+      value: "444",
+      note: "RACI / onay detayı girilmiş süreçler",
+    },
+    risk: {
+      title: "Risk dağılımı",
+      subtitle: "Süreçlerin risk seviyesine göre dağılımı",
+      total: "Toplam 444 süreç",
+      rows: [
+        { label: "Kritik", value: "35 süreç · %8", width: "8%", tone: "red" },
+        { label: "Yüksek", value: "177 süreç · %40", width: "40%", tone: "orange" },
+        { label: "Orta", value: "230 süreç · %52", width: "52%", tone: "yellow" },
+        { label: "Düşük", value: "2 süreç · %0", width: "2%", tone: "gray" },
+      ],
+    },
+    digital: {
+      title: "Dijitalleşme durumu",
+      total: "444 süreç",
+      rows: [
+        { label: "Evrak ağırlıklı", value: "18%", width: "18%", tone: "red" },
+        {
+          label: "Karma (evrak + sistem)",
+          value: "64%",
+          width: "64%",
+          tone: "yellow",
+        },
+        {
+          label: "Sistem ağırlıklı",
+          value: "17%",
+          width: "17%",
+          tone: "green",
+        },
+      ],
+    },
+    approvalMethod: {
+      title: "Onay yöntemi",
+      total: "445 süreç",
+      rows: [
+        {
+          label: "Evrak / manuel onay",
+          value: "63%",
+          width: "63%",
+          tone: "red",
+        },
+        {
+          label: "Dijital onay",
+          value: "37%",
+          width: "37%",
+          tone: "blue",
+        },
+        {
+          label: "Mobil onay",
+          value: "0%",
+          width: "1%",
+          tone: "green",
+        },
+      ],
+    },
+    kpi: {
+      title: "KPI / raporlama seviyesi",
+      total: "444 süreç",
+      rows: [
+        { label: "KPI yok", value: "82", width: "20%", tone: "gray" },
+        { label: "Temel KPI", value: "361", width: "85%", tone: "yellow" },
+        { label: "Gelişmiş KPI", value: "1", width: "1%", tone: "green" },
+      ],
+      note:
+        "KPI seviyesi, Mevcut Durum & Skor ekranındaki KPI alanından hesaplanır.",
+    },
+  },
+
+
+  digitalRoadmap: {
+    title: "Dijitalleşme Yol Haritasını Veriye Dayandırır",
+    subtitle:
+      "ERP / Sistem uyumu ve dijitalleşme adayları birlikte değerlendirilir",
+    badge: "DİJİTAL DÖNÜŞÜM DEĞERİ",
+    heading:
+      "Sadi, dijitalleşme için en uygun süreç adaylarını görünür hale getirir.",
+    bullets: [
+      "ERP / sistem uyumu düşük alanlar kolayca fark edilir.",
+      "Sistem dışı veya kısmi kalan süreçler önceliklendirilir.",
+      "Dijitalleşme yatırımı için net bir yol haritası üretir.",
+    ],
+    result: "Karar: Hangi süreçleri dijitalleştirelim?",
+    systemOutside: {
+      title: "Sistem Dışı / Kısmi Süreçler",
+      subtitle:
+        "ERP veya mevcut sistemlerin dışında kalan, öncelikli incelenmesi gereken süreçler.",
+      badge: "İlk 6",
+      status: "Sistem Dışı",
+      fit: "Uyum: 1/100",
+      maturity: "Olgunluk: 1/7",
+      risk: "Risk: Kritik",
+      recommendation:
+        "Süreç dijital forma, sistem kaydına ve mümkünse ERP/iş uygulaması içindeki standart akışa alınmalıdır.",
+      items: [
+        {
+          title: "1. Görev ayrılığı ihlal raporu",
+          area: "ERP · Yetki, Kontrol ve Uyum",
+        },
+        {
+          title: "2. Yetkinlik eksikliği raporu",
+          area: "İnsan Kaynakları · Eğitim ve Yetkinlik Yönetimi",
+        },
+        {
+          title: "3. Yetki revizyon geçmişi raporu",
+          area: "Bilgi İşlem · Kullanıcı ve Yetki Yönetimi",
+        },
+        {
+          title: "4. Periyodik yetki gözden geçirme",
+          area: "Bilgi İşlem · Kullanıcı ve Yetki Yönetimi",
+        },
+        {
+          title: "5. Güvenlik uyum raporu",
+          area: "Bilgi İşlem · Bilgi Güvenliği",
+        },
+        {
+          title: "6. İyileştirme sonrası etki ölçümü",
+          area: "ERP · ERP Süreç İyileştirme",
+        },
+      ],
+    },
+    productivity: {
+      title: "Verimlilik Etkisi",
+      subtitle: "Zaman kaybı, hata riski, maliyet etkisi ve kişi bağımlılığı",
+      total: "444 süreç",
+      averageLabel: "ORTALAMA ETKİ SKORU",
+      averageValue: "57.28",
+      averageMax: "/100",
+      capaLabel: "DÖF ÖNERİLEN",
+      capaValue: "290",
+      capaUnit: "süreç",
+      capaNote:
+        "Yüksek/Kritik verimlilik etkisi olan süreçler aksiyona dönüştürülebilir.",
+      distributionTitle: "Verimlilik seviyesi dağılımı",
+      distributionTotal: "444 süreç",
+      rows: [
+        { label: "Kritik", value: "63 süreç · 14%", width: "14%", tone: "red" },
+        { label: "Yüksek", value: "227 süreç · 51%", width: "51%", tone: "orange" },
+        { label: "Orta", value: "151 süreç · 34%", width: "34%", tone: "yellow" },
+        { label: "Düşük", value: "3 süreç · 1%", width: "1%", tone: "green" },
+      ],
+      lossTitle: "EN YAYGIN KAYIP TİPİ",
+      lossValue: "Raporlama gecikmesi",
+      lossTags: [
+        "Raporlama gecikmesi: 68",
+        "Kontrol / izleme eksikliği: 58",
+        "Bekleme / gecikme: 47",
+        "Hata riski: 45",
+      ],
+    },
+  },
+
+
+  privacySecurity: {
+    title: "Gizlilik & Veri Güvenliği",
+    subtitle:
+      "Müşteri verisini sade, kontrollü ve güvenilir şekilde yönetmek için",
+    intro:
+      "Sadi’de amaç, veriyi sadece toplamak değil, yetkili kişiler tarafından kontrollü, güvenli ve düzenli biçimde yönetilebilir hale getirmektir.",
+    cards: [
+      {
+        title: "Yetkili erişim",
+        text:
+          "Her kullanıcı yalnızca kendi rolüne ve yetkisine uygun alanları görür.",
+        tone: "blue",
+      },
+      {
+        title: "Müşteri verisinin ayrılığı",
+        text:
+          "Her şirketin verisi kendi yapısı içinde yönetilir, farklı müşteri verileri birbirine karışmaz.",
+        tone: "green",
+      },
+      {
+        title: "Güvenli kullanım",
+        text:
+          "Düzenli yedekleme, kontrollü erişim ve kayıt altına alınan işlemlerle veri güvenliği desteklenir.",
+        tone: "amber",
+      },
+      {
+        title: "Kolay devreye alma",
+        text:
+          "Ek bir karmaşık kurulum ihtiyacı olmadan, web üzerinden hızlı şekilde kullanıma alınabilir.",
+        tone: "slate",
+      },
+    ],
+    result:
+      "Sadi, verinizi erişim kontrollü, düzenli ve güvenle yönetebileceğiniz sade bir SaaS ortamı sunar.",
+  },
+
   market: {
     title: "Pazar Analizi",
     subtitle: "Hedef müşteri, kullanım alanı ve konumlandırma çerçevesi",
     targetProfileTitle: "Hedef müşteri profili",
     targetItems: [
-      "ERP kullanan veya ERP’ye geçecek işletmeler",
-      "Süreçlerini standardize etmek isteyen firmalar",
-      "Dijital dönüşüm hazırlığı yapan şirketler",
-      "Operasyonel büyüme yaşayan KOBİ’ler",
-      "Çok departmanlı orta ve büyük ölçekli firmalar",
+      "ERP dönüşümü planlayan veya ERP yapısını güçlendirmek isteyen kurumlar",
+      "Süreçlerini standardize etmek, ölçülebilir hale getirmek ve görünür kılmak isteyen şirketler",
+      "Operasyonel verimlilik artışı hedefleyen orta ve büyük ölçekli organizasyonlar",
+      "Denetime giren firmalar",
+      "Yönetim için önceliklendirme, karar destek ve iyileştirme yol haritası ihtiyacı olan kurumlar",
     ],
     firstFocus:
-      "İlk odak: ERP hazırlığı ve süreç standardizasyonu ihtiyacı olan kurumlar",
+      "İlk odak: ERP dönüşümü, süreç standardizasyonu ve operasyonel verimlilik ihtiyacı olan kurumlar",
     useCasesTitle: "Kullanım alanı",
     useCases: [
       "Süreç olgunluk analizi",
       "Dijital dönüşüm hazırlığı",
-      "ERP öncesi hazırlık",
-      "İç iyileştirme programları",
-      "Yönetim raporlama ve önceliklendirme",
+      "ERP hazırlık ve geçiş öncesi değerlendirme",
+      "Operasyonel verimlilik",
+      "Yönetim raporlama, önceliklendirme ve iyileştirme yol haritası",
     ],
     positionTitle: "Pazar konumu",
     positionDescription:
-      "Sadi, süreç yönetimi, dijital dönüşüm hazırlığı ve ERP hazırlık alanlarının kesişiminde konumlanır.",
+      "Sadi, süreç olgunluğu, ERP dönüşüm hazırlığı ve operasyonel karar destek alanlarının kesişiminde konumlanır.",
     positionLabels: {
       left: "Süreç yönetimi",
       center: "Sadi",
@@ -302,51 +594,59 @@ const tr = {
   },
 
   competitors: {
-    title: "Rakip Analizi",
-    subtitle:
-      "Sadi’nin erişilebilir fiyat, süreç derinliği ve uygulama odağı açısından pazardaki konumunu özetleyen karşılaştırma",
+    title: "Rakip Analizi?",
+    subtitle: "",
     advantage: "Sadi avantajı: yıllık lisans + odaklı süreç derinliği",
-    note:
-      "Not: Bu tablo pazarlama ve konumlandırma amaçlı özet bir karşılaştırmadır. Rakip ürünlerin lisanslama ve modül kapsamları müşteri, kurgu ve sözleşme yapısına göre değişebilir.",
+    note: "",
+    legend: {
+      good: "Var",
+      mid: "Kısmen var",
+      bad: "Yok",
+    },
     headers: [
-      { name: "sadi", price: "$3.5K / yıl" },
-      { name: "SAP Signavio", price: "Custom" },
-      { name: "ARIS", price: "Custom" },
+      { name: "sadi", price: "" },
       { name: "IBM PM", price: "$51K / yıl" },
-      { name: "UiPath PM", price: "Custom / PU" },
+      { name: "SAP Signavio", price: "Custom" },
+      { name: "UiPath PM", price: "Custom" },
+      { name: "ARIS", price: "Custom" },
+      { name: "Bimser Ensemble", price: "Custom" },
     ],
     rows: [
       {
         label: "Fiyat erişilebilirliği",
-        values: ["good", "mid", "mid", "bad", "mid"],
+        values: ["good", "bad", "mid", "mid", "mid", "mid"],
       },
       {
         label: "Süreç olgunluk skorlama",
-        values: ["good", "mid", "mid", "bad", "bad"],
+        values: ["good", "bad", "mid", "bad", "mid", "good"],
       },
       {
         label: "Risk görünürlüğü",
-        values: ["good", "mid", "good", "good", "good"],
+        values: ["good", "good", "mid", "good", "good", "mid"],
       },
       {
         label: "Aksiyon / DÖF takibi",
-        values: ["good", "mid", "mid", "mid", "mid"],
+        values: ["good", "mid", "mid", "mid", "mid", "mid"],
       },
       {
         label: "Tekrar ölçüm / versiyonlama",
-        values: ["good", "mid", "mid", "mid", "mid"],
+        values: ["good", "mid", "mid", "mid", "mid", "good"],
+      },
+      {
+        label: "AI destekli süreç keşfi ve iyileştirme önerileri",
+        values: ["good", "good", "good", "good", "good", "mid"],
       },
       {
         label: "ERP / dijital dönüşüm hazırlığı",
-        values: ["good", "good", "good", "mid", "mid"],
+        values: ["good", "mid", "good", "mid", "good", "mid"],
       },
       {
         label: "Hızlı devreye alma",
-        values: ["good", "mid", "mid", "bad", "mid"],
+        values: ["good", "bad", "mid", "mid", "mid", "mid"],
       },
       {
         label: "Kurumsal odak",
-        values: ["good", "good", "good", "good", "good"],
+        values: ["good", "good", "good", "good", "good", "good"],
       },
     ],
   },
@@ -398,17 +698,18 @@ const tr = {
 
 const en = {
   hero: {
-    badge: "Product • Process Maturity • Digital Maturity",
+    badge: "Product • AI-Powered • Process Maturity • Digital Transformation",
     productName: "sadi",
-    title: "Process Analysis, Process Maturity and Digital Maturity Platform",
+    title:
+      "AI-Powered Process Maturity and Digital Transformation Readiness Platform",
     description:
-      "Sadi evaluates department-based processes in a standard structure, makes risks, bottlenecks and improvement areas visible, and supports process management, digital transformation and ERP readiness initiatives.",
+      "Sadi measures department-based business processes, makes risks and bottlenecks visible, and enables organizations to manage and improve their business processes.",
     demoButton: "Request Demo",
     checks: [
-      "Processes depend on individuals",
-      "Risks and bottlenecks are not clearly visible",
-      "Improvement areas cannot be tracked systematically",
-      "Process assessments cannot be re-measured",
+      "ERP and digital transformation investments are being made, but priorities remain unclear because the current state of processes is not sufficiently visible.",
+      "Process Knowledge Is Fragmented and Dependent on Individuals",
+      "Processes Are Not Measured and Priorities Are Unclear",
+      "Improvement Efforts Are Fragmented and Risks Are Identified Too Late",
     ],
     panel: {
       title: "Analysis / Summary (sample)",
@@ -444,7 +745,8 @@ const en = {
           tone: "medium",
         },
       ],
-      note: "Re-measurement with v+1: same process set → new version → proof of improvement",
+      note:
+        "Re-measurement with v+1: same process set → new version → proof of improvement",
     },
   },
 
@@ -511,7 +813,8 @@ const en = {
     },
     cards: [
       {
-        title: "Sadi moves process knowledge from individuals into the corporate system.",
+        title:
+          "Sadi moves process knowledge from individuals into the corporate system.",
         description:
           "This enables the organization to move from “who knows?” to “how does each process work?”",
         stat: "Leaders spend 25% of their time just looking for answers.",
@@ -539,8 +842,10 @@ const en = {
 
   howItWorks: {
     badge: "How Does the Product Work?",
-    title: "It works as simply as a guide. Step by step from definition to development.",
-    intro: "It measures your entire process in 6 steps and accelerates your digital maturity.",
+    title:
+      "It works as simply as a guide. Step by step from definition to development.",
+    intro:
+      "It measures your entire process in 6 steps and accelerates your digital maturity.",
     steps: [
       {
         no: "1",
@@ -581,30 +886,317 @@ const en = {
     ],
   },
 
+  aiImprovement: {
+    title: "Improve Processes with AI.",
+    subtitle:
+      "Sadi uses artificial intelligence to turn process knowledge and assessment results into actionable transformation recommendations.",
+    badge: "AI SUPPORT FOR PROCESSES",
+    heading:
+      "Sadi structures process knowledge and generates process-specific improvement recommendations.",
+    bullets: [
+      "AI Process Inventory reviews PDF, Word, Excel, PowerPoint or text files and suggests departments, main processes, sub-processes and categories.",
+      "AI Transformation Recommendations evaluate maturity, risk, system alignment and efficiency results together to generate process-specific recommendations.",
+      "Users decide what should be transferred. AI does not automatically create records.",
+    ],
+    result:
+      "Result: faster discovery, traceable recommendations, human-controlled",
+
+    inventory: {
+      badge: "AI Process Inventory",
+      title: "Turn corporate documents into a process inventory",
+      description:
+        "Reviews procedures, job descriptions or process documents and generates department, main process, sub-process and category suggestions.",
+      company: "Company",
+      companyValue: "01.01 – Group Company A",
+      department: "Department filter",
+      departmentValue: "Supply Chain and Procurement",
+      uploadTitle: "Upload document",
+      uploadText: "PDF, Word, Excel, PowerPoint or text file • Maximum 4 MB",
+      uploadButton: "Choose file",
+      documentTitle: "Document title",
+      documentText: "Document text",
+      placeholder: "Paste the procedure, job description or process document here...",
+      notice:
+        "AI only generates recommendations. No records are created until you review and approve the transfer.",
+    },
+
+    recommendations: {
+      company: "Company",
+      companyValue: "01.02 — Group Company B",
+      department: "Department",
+      departmentValue: "All",
+      person: "Person",
+      personValue: "Select",
+      year: "Year",
+      yearValue: "e.g. 2025",
+      processSet: "Process Set Name",
+      processSetValue: "01.02-Sales and Commercial Operations-20-08-2026-Q3",
+      category: "Category",
+      categoryValue: "All",
+      risk: "Risk level",
+      risks: ["Critical", "High", "Medium", "Low"],
+      title: "AI Transformation Recommendations",
+      approval: "Human approval required",
+      description:
+        "Reviews maturity, risk, system alignment and efficiency results in the selected assessment set to generate process-specific improvement recommendations.",
+      assessment: "Assessment set:",
+      preparing: "Preparing recommendations...",
+      analysing: "Process results are being analysed by AI",
+      note: "Recommendations are decision support only and are not saved automatically.",
+    },
+  },
+
+
+  managementSnapshot: {
+    title: "Your Process Health at a Glance",
+    subtitle:
+      "Overall score, risk, digitalization status and KPI level on a single management screen",
+    badge: "MANAGEMENT VALUE",
+    heading:
+      "Sadi gives senior management a clear snapshot of the organization’s process health at a glance.",
+    bullets: [
+      "Overall score and completion rate are visible together.",
+      "Risk, approval, digitalization and KPI levels are evaluated on the same screen.",
+      "It provides a fast and clear answer to management’s “where are we?” question.",
+    ],
+    result: "Decision: Where should we focus most today?",
+    score: {
+      title: "PROCESS MATURITY SCORE",
+      value: "3.48",
+      max: "/ 7",
+      position: "Sector position: Medium",
+      note:
+        "The score is calculated from the values in the Current State & Score (0–7) screen.",
+    },
+    assessed: {
+      title: "Assessed processes",
+      value: "444 / 507 processes",
+      completion: "Completion rate",
+      percent: "88%",
+      note:
+        "Processes that have been scored at least once are considered assessed.",
+    },
+    improvement: {
+      title: "Open improvement count",
+      value: "444",
+      note: "Processes with improvement notes",
+    },
+    approval: {
+      title: "Processes with approval definition",
+      value: "444",
+      note: "Processes with RACI / approval details",
+    },
+    risk: {
+      title: "Risk distribution",
+      subtitle: "Distribution of processes by risk level",
+      total: "Total 444 processes",
+      rows: [
+        { label: "Critical", value: "35 processes · 8%", width: "8%", tone: "red" },
+        { label: "High", value: "177 processes · 40%", width: "40%", tone: "orange" },
+        { label: "Medium", value: "230 processes · 52%", width: "52%", tone: "yellow" },
+        { label: "Low", value: "2 processes · 0%", width: "2%", tone: "gray" },
+      ],
+    },
+    digital: {
+      title: "Digitalization status",
+      total: "444 processes",
+      rows: [
+        { label: "Paper-heavy", value: "18%", width: "18%", tone: "red" },
+        {
+          label: "Hybrid (paper + system)",
+          value: "64%",
+          width: "64%",
+          tone: "yellow",
+        },
+        {
+          label: "System-heavy",
+          value: "17%",
+          width: "17%",
+          tone: "green",
+        },
+      ],
+    },
+    approvalMethod: {
+      title: "Approval method",
+      total: "445 processes",
+      rows: [
+        {
+          label: "Paper / manual approval",
+          value: "63%",
+          width: "63%",
+          tone: "red",
+        },
+        {
+          label: "Digital approval",
+          value: "37%",
+          width: "37%",
+          tone: "blue",
+        },
+        {
+          label: "Mobile approval",
+          value: "0%",
+          width: "1%",
+          tone: "green",
+        },
+      ],
+    },
+    kpi: {
+      title: "KPI / reporting level",
+      total: "444 processes",
+      rows: [
+        { label: "No KPI", value: "82", width: "20%", tone: "gray" },
+        { label: "Basic KPI", value: "361", width: "85%", tone: "yellow" },
+        { label: "Advanced KPI", value: "1", width: "1%", tone: "green" },
+      ],
+      note:
+        "KPI level is calculated from the KPI field in the Current State & Score screen.",
+    },
+  },
+
+
+  digitalRoadmap: {
+    title: "Build the Digitalization Roadmap on Data",
+    subtitle:
+      "ERP / system alignment and digitalization candidates are evaluated together",
+    badge: "DIGITAL TRANSFORMATION VALUE",
+    heading:
+      "Sadi makes the most suitable process candidates for digitalization visible.",
+    bullets: [
+      "Areas with low ERP / system alignment can be identified easily.",
+      "Processes that remain outside systems or are only partially digitized are prioritized.",
+      "It creates a clear roadmap for digitalization investments.",
+    ],
+    result: "Decision: Which processes should we digitize?",
+    systemOutside: {
+      title: "Outside-System / Partially Digitized Processes",
+      subtitle:
+        "Processes outside ERP or existing systems that should be reviewed with priority.",
+      badge: "Top 6",
+      status: "Outside System",
+      fit: "Fit: 1/100",
+      maturity: "Maturity: 1/7",
+      risk: "Risk: Critical",
+      recommendation:
+        "The process should be moved to a digital form, system record and, where possible, a standard flow within the ERP/business application.",
+      items: [
+        {
+          title: "1. Segregation of duties violation report",
+          area: "ERP · Authorization, Control and Compliance",
+        },
+        {
+          title: "2. Competency gap report",
+          area: "Human Resources · Training and Competency Management",
+        },
+        {
+          title: "3. Authorization revision history report",
+          area: "IT · User and Authorization Management",
+        },
+        {
+          title: "4. Periodic authorization review",
+          area: "IT · User and Authorization Management",
+        },
+        {
+          title: "5. Security compliance report",
+          area: "IT · Information Security",
+        },
+        {
+          title: "6. Post-improvement impact measurement",
+          area: "ERP · ERP Process Improvement",
+        },
+      ],
+    },
+    productivity: {
+      title: "Productivity Impact",
+      subtitle: "Time loss, error risk, cost impact and dependency on individuals",
+      total: "444 processes",
+      averageLabel: "AVERAGE IMPACT SCORE",
+      averageValue: "57.28",
+      averageMax: "/100",
+      capaLabel: "CAPA RECOMMENDED",
+      capaValue: "290",
+      capaUnit: "processes",
+      capaNote:
+        "Processes with high/critical productivity impact can be converted into actions.",
+      distributionTitle: "Productivity level distribution",
+      distributionTotal: "444 processes",
+      rows: [
+        { label: "Critical", value: "63 processes · 14%", width: "14%", tone: "red" },
+        { label: "High", value: "227 processes · 51%", width: "51%", tone: "orange" },
+        { label: "Medium", value: "151 processes · 34%", width: "34%", tone: "yellow" },
+        { label: "Low", value: "3 processes · 1%", width: "1%", tone: "green" },
+      ],
+      lossTitle: "MOST COMMON LOSS TYPE",
+      lossValue: "Reporting delay",
+      lossTags: [
+        "Reporting delay: 68",
+        "Control / monitoring gap: 58",
+        "Waiting / delay: 47",
+        "Error risk: 45",
+      ],
+    },
+  },
+
+
+  privacySecurity: {
+    title: "Privacy & Data Security",
+    subtitle:
+      "A simple, controlled and reliable way to manage customer data",
+    intro:
+      "Sadi is designed not only to collect data, but to make it manageable in a controlled, secure and organized way by authorized users.",
+    cards: [
+      {
+        title: "Authorized access",
+        text:
+          "Each user only sees the areas permitted by their role and authorization.",
+        tone: "blue",
+      },
+      {
+        title: "Customer data separation",
+        text:
+          "Each company’s data is managed within its own structure, and data from different customers does not mix.",
+        tone: "green",
+      },
+      {
+        title: "Secure usage",
+        text:
+          "Data security is supported through regular backups, controlled access and recorded operations.",
+        tone: "amber",
+      },
+      {
+        title: "Easy deployment",
+        text:
+          "It can be put into use quickly over the web without requiring a complex additional installation.",
+        tone: "slate",
+      },
+    ],
+    result:
+      "Sadi provides a simple SaaS environment where your data can be managed with controlled access, consistency and security.",
+  },
+
   market: {
     title: "Market Analysis",
     subtitle: "Target customer, use case, and positioning framework",
     targetProfileTitle: "Target customer profile",
     targetItems: [
-      "Businesses using ERP or preparing to adopt ERP",
-      "Companies aiming to standardize their processes",
-      "Companies preparing for digital transformation",
-      "SMEs experiencing operational growth",
-      "Mid-sized and large organizations with multiple departments",
+      "Organizations planning ERP transformation or strengthening their existing ERP structure",
+      "Companies aiming to standardize, measure and make their processes more visible",
+      "Mid-sized and large organizations targeting higher operational efficiency",
+      "Companies subject to audits",
+      "Organizations needing management prioritization, decision support and an improvement roadmap",
     ],
     firstFocus:
-      "Initial focus: organizations needing ERP readiness and process standardization",
+      "Initial focus: organizations needing ERP transformation, process standardization and operational efficiency",
     useCasesTitle: "Use cases",
     useCases: [
       "Process maturity analysis",
       "Digital transformation readiness",
-      "Pre-ERP preparation",
-      "Internal improvement programs",
-      "Management reporting and prioritization",
+      "ERP readiness and pre-transition assessment",
+      "Operational efficiency",
+      "Management reporting, prioritization and improvement roadmap",
     ],
     positionTitle: "Market position",
     positionDescription:
-      "Sadi is positioned at the intersection of process management, digital transformation readiness, and ERP readiness.",
+      "Sadi is positioned at the intersection of process maturity, ERP transformation readiness, and operational decision support.",
     positionLabels: {
       left: "Process management",
       center: "Sadi",
@@ -614,51 +1206,59 @@ const en = {
   },
 
   competitors: {
-    title: "Competitive Analysis",
-    subtitle:
-      "A comparison summarizing Sadi’s position in the market in terms of accessible pricing, process depth, and implementation focus",
+    title: "Competitive Analysis?",
+    subtitle: "",
     advantage: "Sadi advantage: annual license + focused process depth",
-    note:
-      "Note: This table is a summary comparison for marketing and positioning purposes. Competitor products’ licensing and module scope may vary by customer, setup, and contract structure.",
+    note: "",
+    legend: {
+      good: "Available",
+      mid: "Partially available",
+      bad: "Not available",
+    },
     headers: [
-      { name: "sadi", price: "$3.5K / year" },
-      { name: "SAP Signavio", price: "Custom" },
-      { name: "ARIS", price: "Custom" },
+      { name: "sadi", price: "" },
       { name: "IBM PM", price: "$51K / year" },
-      { name: "UiPath PM", price: "Custom / PU" },
+      { name: "SAP Signavio", price: "Custom" },
+      { name: "UiPath PM", price: "Custom" },
+      { name: "ARIS", price: "Custom" },
+      { name: "Bimser Ensemble", price: "Custom" },
     ],
     rows: [
       {
         label: "Price accessibility",
-        values: ["good", "mid", "mid", "bad", "mid"],
+        values: ["good", "bad", "mid", "mid", "mid", "mid"],
       },
       {
         label: "Process maturity scoring",
-        values: ["good", "mid", "mid", "bad", "bad"],
+        values: ["good", "bad", "mid", "bad", "mid", "good"],
       },
       {
         label: "Risk visibility",
-        values: ["good", "mid", "good", "good", "good"],
+        values: ["good", "good", "mid", "good", "good", "mid"],
       },
       {
         label: "Action / CAPA tracking",
-        values: ["good", "mid", "mid", "mid", "mid"],
+        values: ["good", "mid", "mid", "mid", "mid", "mid"],
       },
       {
         label: "Re-measurement / versioning",
-        values: ["good", "mid", "mid", "mid", "mid"],
+        values: ["good", "mid", "mid", "mid", "mid", "good"],
+      },
+      {
+        label: "AI-supported process discovery and improvement recommendations",
+        values: ["good", "good", "good", "good", "good", "mid"],
       },
       {
         label: "ERP / digital transformation readiness",
-        values: ["good", "good", "good", "mid", "mid"],
+        values: ["good", "mid", "good", "mid", "good", "mid"],
       },
       {
         label: "Fast deployment",
-        values: ["good", "mid", "mid", "bad", "mid"],
+        values: ["good", "bad", "mid", "mid", "mid", "mid"],
       },
       {
         label: "Enterprise focus",
-        values: ["good", "good", "good", "good", "good"],
+        values: ["good", "good", "good", "good", "good", "good"],
       },
     ],
   },
@@ -767,6 +1367,16 @@ function getRevenueIcon(name: string) {
   return Handshake;
 }
 
+
+function getSnapshotBarClass(tone: string) {
+  if (tone === "red") return "bg-[#FF4565]";
+  if (tone === "orange") return "bg-[#FF8A00]";
+  if (tone === "yellow") return "bg-[#FFB800]";
+  if (tone === "green") return "bg-[#18BF7A]";
+  if (tone === "blue") return "bg-[#17AFE5]";
+  return "bg-[#CBD5E1]";
+}
+
 export default async function SadiPage({ params }: PageProps) {
   const { lang } = await params;
 
@@ -812,19 +1422,27 @@ export default async function SadiPage({ params }: PageProps) {
                 </Link>
               </div>
 
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                {copy.hero.checks.map((item) => (
+              <div className="mt-8 grid auto-rows-fr gap-3 sm:grid-cols-2">
+                {copy.hero.checks.map((item, index) => (
                   <div
                     key={item}
-                    className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-[#F8FBFF] px-4 py-3 shadow-sm"
+                    className="flex h-full min-h-[88px] items-start gap-3 rounded-2xl border border-slate-200 bg-[#F8FBFF] px-4 py-3.5 shadow-sm"
                   >
                     <CheckCircle2
                       size={18}
                       strokeWidth={2}
                       color="#608BC1"
-                      className="mt-0.5"
+                      className="mt-0.5 shrink-0"
                     />
-                    <span className="text-sm leading-6 text-slate-700">
+
+                    <span
+                      className={[
+                        "text-slate-700",
+                        index === 0
+                          ? "text-[13px] leading-5 sm:text-[13px] sm:leading-[1.35rem]"
+                          : "text-sm font-medium leading-6",
+                      ].join(" ")}
+                    >
                       {item}
                     </span>
                   </div>
@@ -843,7 +1461,11 @@ export default async function SadiPage({ params }: PageProps) {
                   <div className="flex items-center justify-between gap-4">
                     <div>
                       <div className="flex items-center gap-2 text-sm font-semibold text-[#133E87]">
-                        <BarChart3 size={16} strokeWidth={2} color="#608BC1" />
+                        <BarChart3
+                          size={16}
+                          strokeWidth={2}
+                          color="#608BC1"
+                        />
                         <span>{copy.hero.panel.title}</span>
                       </div>
                       <p className="mt-1 text-xs text-slate-500">
@@ -861,9 +1483,11 @@ export default async function SadiPage({ params }: PageProps) {
                       {copy.hero.panel.averageScoreLabel}{" "}
                       <b>{copy.hero.panel.averageScoreValue}</b>
                     </span>
+
                     <span className="rounded-full border border-[#CBDCEB] bg-white px-3 py-1 text-xs text-slate-700">
                       {copy.hero.panel.comparable}
                     </span>
+
                     <span className="rounded-full bg-[#B91C1C] px-3 py-1 text-xs font-medium text-white">
                       {copy.hero.panel.risk}
                     </span>
@@ -907,9 +1531,11 @@ export default async function SadiPage({ params }: PageProps) {
                         <div className="col-span-8 text-slate-800">
                           {row.name}
                         </div>
+
                         <div className="col-span-2 text-right font-medium text-slate-800">
                           {row.score}
                         </div>
+
                         <div className="col-span-2 flex justify-end">
                           <span
                             className={[
@@ -1019,6 +1645,7 @@ export default async function SadiPage({ params }: PageProps) {
                     <Gauge size={16} strokeWidth={2} color="#608BC1" />
                     <span>{copy.solves.sideCard.title}</span>
                   </div>
+
                   <span className="rounded-full border border-[#CBDCEB] bg-white px-3 py-1 text-xs text-slate-600">
                     {copy.solves.sideCard.processCount}
                   </span>
@@ -1031,6 +1658,7 @@ export default async function SadiPage({ params }: PageProps) {
                         <span>{item.label}</span>
                         <span className="font-medium">{item.value}</span>
                       </div>
+
                       <div className="h-2.5 rounded-full bg-slate-100">
                         <div
                           className={`h-2.5 rounded-full ${item.color}`}
@@ -1046,6 +1674,7 @@ export default async function SadiPage({ params }: PageProps) {
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[#22C55E] text-white">
                   <BarChart3 size={18} strokeWidth={2.2} />
                 </div>
+
                 <p className="text-base leading-7 text-slate-700">
                   {copy.solves.sideCard.summary}
                 </p>
@@ -1071,6 +1700,7 @@ export default async function SadiPage({ params }: PageProps) {
                           <h3 className="text-xl font-semibold leading-8 text-slate-900 sm:text-2xl">
                             {card.title}
                           </h3>
+
                           <p className="mt-3 text-base leading-8 text-slate-600 sm:text-lg">
                             {card.description}
                           </p>
@@ -1081,6 +1711,7 @@ export default async function SadiPage({ params }: PageProps) {
                         <p className="text-base leading-8 text-slate-700 sm:text-lg">
                           {card.stat}
                         </p>
+
                         <p className="mt-1 text-sm text-slate-500">
                           {card.source}
                         </p>
@@ -1153,6 +1784,999 @@ export default async function SadiPage({ params }: PageProps) {
         </Container>
       </section>
 
+      {/* AI IMPROVEMENT */}
+      <section className="bg-white py-16 sm:py-20">
+        <Container>
+          <div
+            className="relative overflow-hidden rounded-[32px] border border-[#CBDCEB] bg-white p-6 shadow-[0_12px_40px_rgba(19,62,135,0.08)] sm:p-8 lg:p-10"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, rgba(96,139,193,0.16) 1px, transparent 1px)",
+              backgroundSize: "18px 18px",
+            }}
+          >
+            <div className="relative">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1E316D] sm:text-4xl lg:text-5xl">
+                {copy.aiImprovement.title}
+              </h2>
+
+              <p className="mt-2 max-w-4xl text-base leading-8 text-slate-600 sm:text-lg">
+                {copy.aiImprovement.subtitle}
+              </p>
+
+              <div className="mt-8 grid gap-8 xl:grid-cols-[1.55fr_0.85fr] xl:items-center">
+                {/* LEFT - PRODUCT UI */}
+                <div className="space-y-5">
+                  {/* AI PROCESS INVENTORY CARD */}
+                  <div className="overflow-hidden rounded-[24px] border border-[#B8CBE4] bg-white shadow-[0_14px_40px_rgba(19,62,135,0.10)]">
+                    <div className="p-5 sm:p-6">
+                      <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
+                        <div className="max-w-2xl">
+                          <div className="inline-flex items-center gap-2 rounded-full bg-[#EAF2FB] px-3 py-1.5 text-xs font-semibold text-[#133E87]">
+                            <Sparkles size={14} strokeWidth={2} />
+                            {copy.aiImprovement.inventory.badge}
+                          </div>
+
+                          <h3 className="mt-4 text-lg font-bold text-slate-900 sm:text-xl">
+                            {copy.aiImprovement.inventory.title}
+                          </h3>
+
+                          <p className="mt-2 text-sm leading-6 text-slate-600">
+                            {copy.aiImprovement.inventory.description}
+                          </p>
+                        </div>
+
+                        <div className="max-w-sm rounded-2xl border border-[#F5D378] bg-[#FFF9E9] px-4 py-3">
+                          <div className="flex items-start gap-3">
+                            <ShieldCheck
+                              size={18}
+                              strokeWidth={2}
+                              className="mt-0.5 shrink-0 text-[#A74B00]"
+                            />
+                            <p className="text-xs leading-5 text-[#9A4A00]">
+                              {copy.aiImprovement.inventory.notice}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="mt-6 grid gap-4 md:grid-cols-2">
+                        <div>
+                          <p className="mb-2 text-xs font-medium text-slate-700">
+                            {copy.aiImprovement.inventory.company}
+                            <span className="text-red-500"> *</span>
+                          </p>
+
+                          <div className="flex h-11 items-center justify-between rounded-xl border border-slate-200 bg-white px-4 text-sm text-slate-800">
+                            <span>
+                              {copy.aiImprovement.inventory.companyValue}
+                            </span>
+                            <span className="text-slate-500">⌄</span>
+                          </div>
+                        </div>
+
+                        <div>
+                          <p className="mb-2 text-xs font-medium text-slate-700">
+                            {copy.aiImprovement.inventory.department}
+                          </p>
+
+                          <div className="flex h-11 items-center justify-between rounded-xl border border-[#608BC1] bg-white px-4 text-sm text-slate-800">
+                            <span>
+                              {copy.aiImprovement.inventory.departmentValue}
+                            </span>
+                            <span className="text-slate-500">⌄</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="mt-5 rounded-[20px] border-2 border-dashed border-[#93B7E5] bg-[#F8FBFF] p-5">
+                        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                          <div>
+                            <p className="text-sm font-semibold text-slate-900">
+                              {copy.aiImprovement.inventory.uploadTitle}
+                            </p>
+
+                            <p className="mt-1 text-xs leading-5 text-slate-600">
+                              {copy.aiImprovement.inventory.uploadText}
+                            </p>
+                          </div>
+
+                          <button
+                            type="button"
+                            className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl border border-[#608BC1] bg-white px-4 py-2 text-sm font-semibold text-[#133E87] shadow-sm"
+                          >
+                            <UploadCloud size={17} strokeWidth={2} />
+                            {copy.aiImprovement.inventory.uploadButton}
+                          </button>
+                        </div>
+                      </div>
+
+                      <div className="mt-5">
+                        <p className="mb-2 text-xs font-medium text-slate-700">
+                          {copy.aiImprovement.inventory.documentTitle}
+                        </p>
+
+                        <div className="h-11 rounded-xl border border-slate-200 bg-white" />
+                      </div>
+
+                      <div className="mt-4">
+                        <p className="mb-2 text-xs font-medium text-slate-700">
+                          {copy.aiImprovement.inventory.documentText}
+                        </p>
+
+                        <div className="min-h-[86px] rounded-xl border border-slate-200 bg-white px-4 py-3">
+                          <p className="text-sm text-slate-400">
+                            {copy.aiImprovement.inventory.placeholder}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* AI TRANSFORMATION RECOMMENDATIONS CARD */}
+                  <div className="overflow-hidden rounded-[24px] border border-[#AAB8CC] bg-white shadow-[0_14px_40px_rgba(19,62,135,0.10)]">
+                    <div className="p-5 sm:p-6">
+                      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                        <div>
+                          <p className="mb-2 text-xs font-medium text-slate-600">
+                            {copy.aiImprovement.recommendations.company}
+                          </p>
+                          <div className="flex h-10 items-center justify-between rounded-lg border border-slate-200 px-3 text-xs text-slate-700">
+                            <span>
+                              {
+                                copy.aiImprovement.recommendations
+                                  .companyValue
+                              }
+                            </span>
+                            <span>⌄</span>
+                          </div>
+                        </div>
+
+                        <div>
+                          <p className="mb-2 text-xs font-medium text-slate-600">
+                            {copy.aiImprovement.recommendations.department}
+                          </p>
+                          <div className="flex h-10 items-center justify-between rounded-lg border border-slate-200 px-3 text-xs text-slate-700">
+                            <span>
+                              {
+                                copy.aiImprovement.recommendations
+                                  .departmentValue
+                              }
+                            </span>
+                            <span>⌄</span>
+                          </div>
+                        </div>
+
+                        <div>
+                          <p className="mb-2 text-xs font-medium text-slate-600">
+                            {copy.aiImprovement.recommendations.person}
+                          </p>
+                          <div className="flex h-10 items-center justify-between rounded-lg border border-slate-200 px-3 text-xs text-slate-700">
+                            <span>
+                              {copy.aiImprovement.recommendations.personValue}
+                            </span>
+                            <span>⌄</span>
+                          </div>
+                        </div>
+
+                        <div>
+                          <p className="mb-2 text-xs font-medium text-slate-600">
+                            {copy.aiImprovement.recommendations.year}
+                          </p>
+                          <div className="flex h-10 items-center rounded-lg border border-slate-200 px-3 text-xs text-slate-400">
+                            {copy.aiImprovement.recommendations.yearValue}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="mt-4 grid gap-4 lg:grid-cols-2">
+                        <div>
+                          <p className="mb-2 text-xs font-medium text-slate-600">
+                            {copy.aiImprovement.recommendations.processSet}
+                          </p>
+
+                          <div className="flex min-h-10 items-center rounded-lg border border-slate-200 px-3 py-2 text-xs text-slate-700">
+                            {
+                              copy.aiImprovement.recommendations
+                                .processSetValue
+                            }
+                          </div>
+                        </div>
+
+                        <div className="grid gap-4 sm:grid-cols-2">
+                          <div>
+                            <p className="mb-2 text-xs font-medium text-slate-600">
+                              {copy.aiImprovement.recommendations.category}
+                            </p>
+
+                            <div className="flex h-10 items-center justify-between rounded-lg border border-slate-200 px-3 text-xs text-slate-700">
+                              <span>
+                                {
+                                  copy.aiImprovement.recommendations
+                                    .categoryValue
+                                }
+                              </span>
+                              <span>⌄</span>
+                            </div>
+                          </div>
+
+                          <div>
+                            <p className="mb-2 text-xs font-medium text-slate-600">
+                              {copy.aiImprovement.recommendations.risk}
+                            </p>
+
+                            <div className="flex flex-wrap gap-1.5">
+                              {copy.aiImprovement.recommendations.risks.map(
+                                (risk) => (
+                                  <span
+                                    key={risk}
+                                    className="rounded-full border border-slate-200 bg-white px-2.5 py-1.5 text-[11px] text-slate-700"
+                                  >
+                                    {risk}
+                                  </span>
+                                )
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="my-5 h-px bg-slate-200" />
+
+                      <div className="rounded-[20px] border border-[#BBD0EA] bg-gradient-to-r from-[#F8FBFF] via-white to-[#FFFDF3] p-4 sm:p-5">
+                        <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                          <div className="flex items-start gap-3">
+                            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#133E87] text-white">
+                              <Sparkles size={19} strokeWidth={2} />
+                            </div>
+
+                            <div>
+                              <div className="flex flex-wrap items-center gap-2">
+                                <p className="text-sm font-semibold text-slate-900">
+                                  {
+                                    copy.aiImprovement.recommendations
+                                      .title
+                                  }
+                                </p>
+
+                                <span className="rounded-full border border-[#F4D37A] bg-[#FFF8DF] px-2 py-1 text-[10px] font-medium text-[#9A5A00]">
+                                  {
+                                    copy.aiImprovement.recommendations
+                                      .approval
+                                  }
+                                </span>
+                              </div>
+
+                              <p className="mt-2 max-w-3xl text-xs leading-5 text-slate-600">
+                                {
+                                  copy.aiImprovement.recommendations
+                                    .description
+                                }
+                              </p>
+
+                              <div className="mt-3 inline-flex rounded-lg border border-[#BBD0EA] bg-[#EEF5FC] px-3 py-2 text-[11px] font-medium text-[#133E87]">
+                                <span className="mr-1 font-semibold">
+                                  {
+                                    copy.aiImprovement.recommendations
+                                      .assessment
+                                  }
+                                </span>
+                                {
+                                  copy.aiImprovement.recommendations
+                                    .processSetValue
+                                }
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-[#CBD9E8] px-4 py-2.5 text-xs font-semibold text-white">
+                            <RefreshCcw size={15} strokeWidth={2} />
+                            {
+                              copy.aiImprovement.recommendations
+                                .preparing
+                            }
+                          </div>
+                        </div>
+
+                        <div className="mt-4 rounded-xl border border-slate-200 bg-white px-4 py-4">
+                          <div className="flex items-start gap-3">
+                            <RefreshCcw
+                              size={18}
+                              strokeWidth={2}
+                              className="mt-0.5 shrink-0 text-[#133E87]"
+                            />
+
+                            <div>
+                              <p className="text-xs font-medium text-slate-700">
+                                {
+                                  copy.aiImprovement.recommendations
+                                    .analysing
+                                }
+                              </p>
+
+                              <p className="mt-1 text-[11px] leading-5 text-slate-500">
+                                {copy.aiImprovement.recommendations.note}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* RIGHT - EXPLANATION */}
+                <div className="rounded-[40px] border border-[#CBDCEB] bg-white px-6 py-8 shadow-[0_14px_40px_rgba(19,62,135,0.06)] sm:px-8 sm:py-10">
+                  <div className="flex justify-center">
+                    <span className="inline-flex rounded-lg bg-[#608BC1] px-5 py-2.5 text-sm font-bold text-white sm:text-base">
+                      {copy.aiImprovement.badge}
+                    </span>
+                  </div>
+
+                  <h3 className="mt-6 text-xl font-bold leading-7 text-[#1E316D] sm:text-2xl sm:leading-8">
+                    {copy.aiImprovement.heading}
+                  </h3>
+
+                  <div className="mt-8 space-y-5">
+                    {copy.aiImprovement.bullets.map((item) => (
+                      <div key={item} className="flex items-start gap-3">
+                        <span className="mt-[10px] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-800" />
+
+                        <p className="text-base leading-7 text-slate-700">
+                          {item}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-8 rounded-xl bg-[#EAF2FB] px-5 py-4 text-center">
+                    <p className="text-base font-bold leading-6 text-[#133E87]">
+                      {copy.aiImprovement.result}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+
+      {/* MANAGEMENT PROCESS SNAPSHOT */}
+      <section className="bg-[#f8fbff] py-16 sm:py-20">
+        <Container>
+          <div
+            className="relative overflow-hidden rounded-[32px] border border-[#CBDCEB] bg-white p-6 shadow-[0_12px_40px_rgba(19,62,135,0.08)] sm:p-8 lg:p-10"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, rgba(96,139,193,0.16) 1px, transparent 1px)",
+              backgroundSize: "18px 18px",
+            }}
+          >
+            <div className="relative">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1E316D] sm:text-4xl lg:text-5xl">
+                {copy.managementSnapshot.title}
+              </h2>
+
+              <p className="mt-2 max-w-4xl text-base leading-8 text-slate-600 sm:text-lg">
+                {copy.managementSnapshot.subtitle}
+              </p>
+
+              <div className="mt-10 grid gap-8 xl:grid-cols-[1.6fr_0.85fr] xl:items-stretch">
+                <div className="rounded-[38px] border border-[#CBDCEB] bg-white p-4 shadow-[0_14px_40px_rgba(19,62,135,0.07)] sm:p-5">
+                  <div className="grid gap-4 lg:grid-cols-[1fr_1.35fr_1fr]">
+                    <div className="relative overflow-hidden rounded-[24px] border border-[#D8E2EE] bg-gradient-to-br from-[#EDF5FC] via-[#FFFDF5] to-white p-5">
+                      <div className="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#CBDCEB]/40" />
+
+                      <p className="relative text-xs font-semibold uppercase tracking-[0.08em] text-slate-500">
+                        {copy.managementSnapshot.score.title}
+                      </p>
+
+                      <div className="relative mt-4 flex items-end gap-2">
+                        <Gauge
+                          size={34}
+                          strokeWidth={2}
+                          className="mb-1 text-[#133E87]"
+                        />
+                        <span className="text-4xl font-bold tracking-tight text-slate-900">
+                          {copy.managementSnapshot.score.value}
+                        </span>
+                        <span className="mb-1 text-lg font-semibold text-slate-500">
+                          {copy.managementSnapshot.score.max}
+                        </span>
+                      </div>
+
+                      <div className="relative mt-4 inline-flex rounded-full border border-[#F2D68E] bg-[#FFF4D8] px-3 py-1.5 text-xs font-semibold text-[#A75A00]">
+                        {copy.managementSnapshot.score.position}
+                      </div>
+
+                      <p className="relative mt-4 text-[11px] leading-5 text-slate-500">
+                        {copy.managementSnapshot.score.note}
+                      </p>
+                    </div>
+
+                    <div className="rounded-[24px] border border-[#D8E2EE] bg-white p-5">
+                      <div className="flex items-start gap-3">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F1F7FD] text-[#178FE5]">
+                          <BarChart3 size={20} strokeWidth={2} />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-slate-600">
+                            {copy.managementSnapshot.assessed.title}
+                          </p>
+                          <p className="mt-1 text-xl font-bold text-slate-900">
+                            {copy.managementSnapshot.assessed.value}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="mt-8 flex items-center justify-between text-xs text-slate-500">
+                        <span>{copy.managementSnapshot.assessed.completion}</span>
+                        <span className="font-semibold">
+                          {copy.managementSnapshot.assessed.percent}
+                        </span>
+                      </div>
+
+                      <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-slate-100">
+                        <div className="h-full w-[88%] rounded-full bg-[#608BC1]" />
+                      </div>
+
+                      <p className="mt-4 text-[11px] leading-5 text-slate-500">
+                        {copy.managementSnapshot.assessed.note}
+                      </p>
+                    </div>
+
+                    <div className="grid gap-4">
+                      <div className="rounded-[22px] border border-[#F4D99F] bg-[#FFF9EC] p-4">
+                        <div className="flex items-center gap-3">
+                          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF0C7] text-[#D26400]">
+                            <Wrench size={19} strokeWidth={2} />
+                          </div>
+                          <div className="min-w-0">
+                            <p className="text-sm font-semibold text-[#B75A00]">
+                              {copy.managementSnapshot.improvement.title}
+                            </p>
+                            <p className="mt-1 text-xl font-bold text-[#9A3F00]">
+                              {copy.managementSnapshot.improvement.value}
+                            </p>
+                          </div>
+                        </div>
+                        <p className="mt-3 text-right text-[11px] text-[#B26820]">
+                          {copy.managementSnapshot.improvement.note}
+                        </p>
+                      </div>
+
+                      <div className="rounded-[22px] border border-[#BFE9D5] bg-[#F0FCF7] p-4">
+                        <div className="flex items-center gap-3">
+                          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#D7F8E9] text-[#159B68]">
+                            <CircleCheckBig size={19} strokeWidth={2} />
+                          </div>
+                          <div>
+                            <p className="text-sm font-semibold text-[#13895C]">
+                              {copy.managementSnapshot.approval.title}
+                            </p>
+                            <p className="mt-1 text-xl font-bold text-[#137A55]">
+                              {copy.managementSnapshot.approval.value}
+                            </p>
+                          </div>
+                        </div>
+                        <p className="mt-3 text-right text-[11px] text-[#25866A]">
+                          {copy.managementSnapshot.approval.note}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 grid gap-4 lg:grid-cols-4">
+                    <div className="rounded-[24px] border border-[#D8E2EE] bg-white p-4">
+                      <div className="flex items-start gap-2">
+                        <ShieldAlert
+                          size={20}
+                          strokeWidth={2}
+                          className="mt-0.5 text-[#EF4565]"
+                        />
+                        <div>
+                          <p className="text-sm font-semibold text-slate-700">
+                            {copy.managementSnapshot.risk.title}
+                          </p>
+                          <p className="text-[10px] leading-4 text-slate-400">
+                            {copy.managementSnapshot.risk.subtitle}
+                          </p>
+                        </div>
+                      </div>
+
+                      <p className="mt-2 text-right text-[10px] text-slate-500">
+                        {copy.managementSnapshot.risk.total}
+                      </p>
+
+                      <div className="mt-4 space-y-3">
+                        {copy.managementSnapshot.risk.rows.map((row) => (
+                          <div key={row.label}>
+                            <div className="flex items-center justify-between gap-2 text-[11px]">
+                              <span className="font-medium text-slate-700">
+                                {row.label}
+                              </span>
+                              <span className="text-slate-500">{row.value}</span>
+                            </div>
+                            <div className="mt-1.5 h-2 overflow-hidden rounded-full bg-slate-100">
+                              <div
+                                className={`h-full rounded-full ${getSnapshotBarClass(
+                                  row.tone
+                                )}`}
+                                style={{ width: row.width }}
+                              />
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="rounded-[24px] border border-[#D8E2EE] bg-gradient-to-br from-white to-[#FFF9E9] p-4">
+                      <div className="flex items-center justify-between gap-2">
+                        <div className="flex items-center gap-2">
+                          <GitBranch
+                            size={20}
+                            strokeWidth={2}
+                            className="text-[#133E87]"
+                          />
+                          <p className="text-sm font-semibold text-slate-700">
+                            {copy.managementSnapshot.digital.title}
+                          </p>
+                        </div>
+                        <span className="rounded-full border border-slate-200 bg-white px-2 py-1 text-[10px] text-slate-500">
+                          {copy.managementSnapshot.digital.total}
+                        </span>
+                      </div>
+
+                      <div className="mt-6 space-y-4">
+                        {copy.managementSnapshot.digital.rows.map((row) => (
+                          <div key={row.label}>
+                            <div className="flex items-center justify-between gap-2 text-[11px]">
+                              <span className="font-medium text-slate-700">
+                                {row.label}
+                              </span>
+                              <span className="font-semibold text-slate-700">
+                                {row.value}
+                              </span>
+                            </div>
+                            <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-slate-100">
+                              <div
+                                className={`h-full rounded-full ${getSnapshotBarClass(
+                                  row.tone
+                                )}`}
+                                style={{ width: row.width }}
+                              />
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="rounded-[24px] border border-[#D8E2EE] bg-gradient-to-br from-white to-[#EEF6FF] p-4">
+                      <div className="flex items-center justify-between gap-2">
+                        <div className="flex items-center gap-2">
+                          <CircleCheckBig
+                            size={20}
+                            strokeWidth={2}
+                            className="text-[#133E87]"
+                          />
+                          <p className="text-sm font-semibold text-slate-700">
+                            {copy.managementSnapshot.approvalMethod.title}
+                          </p>
+                        </div>
+                        <span className="rounded-full border border-slate-200 bg-white px-2 py-1 text-[10px] text-slate-500">
+                          {copy.managementSnapshot.approvalMethod.total}
+                        </span>
+                      </div>
+
+                      <div className="mt-6 space-y-4">
+                        {copy.managementSnapshot.approvalMethod.rows.map(
+                          (row) => (
+                            <div key={row.label}>
+                              <div className="flex items-center justify-between gap-2 text-[11px]">
+                                <span className="font-medium text-slate-700">
+                                  {row.label}
+                                </span>
+                                <span className="font-semibold text-slate-700">
+                                  {row.value}
+                                </span>
+                              </div>
+                              <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-slate-100">
+                                <div
+                                  className={`h-full rounded-full ${getSnapshotBarClass(
+                                    row.tone
+                                  )}`}
+                                  style={{ width: row.width }}
+                                />
+                              </div>
+                            </div>
+                          )
+                        )}
+                      </div>
+                    </div>
+
+                    <div className="rounded-[24px] border border-[#D8E2EE] bg-gradient-to-br from-white to-[#EEF6FF] p-4">
+                      <div className="flex items-center justify-between gap-2">
+                        <div className="flex items-center gap-2">
+                          <BarChart3
+                            size={20}
+                            strokeWidth={2}
+                            className="text-[#608BC1]"
+                          />
+                          <p className="text-sm font-semibold text-slate-700">
+                            {copy.managementSnapshot.kpi.title}
+                          </p>
+                        </div>
+                        <span className="rounded-full border border-slate-200 bg-white px-2 py-1 text-[10px] text-slate-500">
+                          {copy.managementSnapshot.kpi.total}
+                        </span>
+                      </div>
+
+                      <div className="mt-6 space-y-4">
+                        {copy.managementSnapshot.kpi.rows.map((row) => (
+                          <div key={row.label}>
+                            <div className="flex items-center justify-between gap-2 text-[11px]">
+                              <span className="font-medium text-slate-700">
+                                {row.label}
+                              </span>
+                              <span className="font-semibold text-slate-700">
+                                {row.value}
+                              </span>
+                            </div>
+                            <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-slate-100">
+                              <div
+                                className={`h-full rounded-full ${getSnapshotBarClass(
+                                  row.tone
+                                )}`}
+                                style={{ width: row.width }}
+                              />
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+
+                      <p className="mt-5 text-[10px] leading-4 text-slate-400">
+                        {copy.managementSnapshot.kpi.note}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="rounded-[42px] border border-[#CBDCEB] bg-white px-6 py-8 shadow-[0_14px_40px_rgba(19,62,135,0.06)] sm:px-8 sm:py-10">
+                  <div className="flex justify-center">
+                    <span className="inline-flex min-w-[230px] justify-center rounded-lg bg-[#608BC1] px-5 py-3 text-sm font-bold text-white sm:text-base">
+                      {copy.managementSnapshot.badge}
+                    </span>
+                  </div>
+
+                  <h3 className="mt-7 text-xl font-bold leading-7 text-[#1E316D] sm:text-2xl sm:leading-8">
+                    {copy.managementSnapshot.heading}
+                  </h3>
+
+                  <div className="mt-8 space-y-5">
+                    {copy.managementSnapshot.bullets.map((item) => (
+                      <div key={item} className="flex items-start gap-3">
+                        <span className="mt-[10px] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-800" />
+                        <p className="text-base leading-7 text-slate-700">
+                          {item}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-10 rounded-xl bg-[#EAF2FB] px-5 py-4 text-center">
+                    <p className="text-base font-bold leading-6 text-[#133E87]">
+                      {copy.managementSnapshot.result}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+
+      {/* DIGITAL ROADMAP */}
+      <section className="bg-white py-16 sm:py-20">
+        <Container>
+          <div
+            className="relative overflow-hidden rounded-[32px] border border-[#CBDCEB] bg-white p-6 shadow-[0_12px_40px_rgba(19,62,135,0.08)] sm:p-8 lg:p-10"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, rgba(96,139,193,0.16) 1px, transparent 1px)",
+              backgroundSize: "18px 18px",
+            }}
+          >
+            <div className="relative">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1E316D] sm:text-4xl lg:text-5xl">
+                {copy.digitalRoadmap.title}
+              </h2>
+
+              <p className="mt-2 max-w-4xl text-base leading-8 text-slate-600 sm:text-lg">
+                {copy.digitalRoadmap.subtitle}
+              </p>
+
+              <div className="mt-10 grid gap-8 xl:grid-cols-[1.6fr_0.85fr] xl:items-stretch">
+                {/* LEFT - DIGITALIZATION EVIDENCE */}
+                <div className="relative rounded-[38px] border border-[#CBDCEB] bg-white p-4 shadow-[0_14px_40px_rgba(19,62,135,0.07)] sm:p-5">
+                  {/* SYSTEM OUTSIDE / PARTIAL PROCESSES */}
+                  <div className="rounded-[26px] border border-[#D7E1EC] bg-white p-4 sm:p-5">
+                    <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                      <div className="flex items-start gap-3">
+                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#608BC1] text-white shadow-sm">
+                          <ShieldAlert size={21} strokeWidth={2} />
+                        </div>
+
+                        <div>
+                          <h3 className="text-base font-semibold text-slate-900 sm:text-lg">
+                            {copy.digitalRoadmap.systemOutside.title}
+                          </h3>
+                          <p className="mt-1 text-xs leading-5 text-slate-500 sm:text-sm">
+                            {copy.digitalRoadmap.systemOutside.subtitle}
+                          </p>
+                        </div>
+                      </div>
+
+                      <span className="inline-flex shrink-0 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-500">
+                        {copy.digitalRoadmap.systemOutside.badge}
+                      </span>
+                    </div>
+
+                    <div className="mt-4 grid gap-3 md:grid-cols-2">
+                      {copy.digitalRoadmap.systemOutside.items.map((item) => (
+                        <div
+                          key={item.title}
+                          className="rounded-[20px] border border-slate-200 bg-white p-4 shadow-sm"
+                        >
+                          <div className="flex items-start justify-between gap-3">
+                            <div>
+                              <p className="text-sm font-semibold leading-6 text-slate-900">
+                                {item.title}
+                              </p>
+                              <p className="mt-1 text-xs leading-5 text-[#608BC1]">
+                                {item.area}
+                              </p>
+                            </div>
+
+                            <span className="shrink-0 rounded-full border border-[#F7B7B7] bg-[#FFF5F5] px-2.5 py-1 text-[10px] font-semibold text-[#D72828]">
+                              {copy.digitalRoadmap.systemOutside.status}
+                            </span>
+                          </div>
+
+                          <div className="mt-3 flex flex-wrap gap-2">
+                            <span className="rounded-full border border-[#CBDCEB] bg-white px-2.5 py-1 text-[10px] text-[#133E87]">
+                              {copy.digitalRoadmap.systemOutside.fit}
+                            </span>
+                            <span className="rounded-full border border-[#CBDCEB] bg-white px-2.5 py-1 text-[10px] text-[#133E87]">
+                              {copy.digitalRoadmap.systemOutside.maturity}
+                            </span>
+                            <span className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[10px] text-slate-700">
+                              {copy.digitalRoadmap.systemOutside.risk}
+                            </span>
+                          </div>
+
+                          <p className="mt-3 text-[11px] leading-5 text-slate-500">
+                            {copy.digitalRoadmap.systemOutside.recommendation}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* PRODUCTIVITY IMPACT */}
+                  <div className="relative mt-5 rounded-[26px] border border-[#D7E1EC] bg-gradient-to-br from-white via-white to-[#F3F8FD] p-4 shadow-[0_12px_35px_rgba(19,62,135,0.08)] sm:p-5 xl:-mt-64 xl:ml-20 xl:mr-4">
+                    <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                      <div className="flex items-start gap-3">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#133E87] text-white">
+                          <BarChart3 size={19} strokeWidth={2} />
+                        </div>
+                        <div>
+                          <h3 className="text-sm font-semibold text-slate-900 sm:text-base">
+                            {copy.digitalRoadmap.productivity.title}
+                          </h3>
+                          <p className="mt-1 text-[11px] leading-5 text-slate-500">
+                            {copy.digitalRoadmap.productivity.subtitle}
+                          </p>
+                        </div>
+                      </div>
+
+                      <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-[10px] text-slate-500">
+                        {copy.digitalRoadmap.productivity.total}
+                      </span>
+                    </div>
+
+                    <div className="mt-4 grid gap-3 md:grid-cols-2">
+                      <div className="rounded-[18px] border border-slate-200 bg-white p-4">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.08em] text-slate-400">
+                          {copy.digitalRoadmap.productivity.averageLabel}
+                        </p>
+                        <div className="mt-3 flex items-end gap-2">
+                          <span className="text-3xl font-bold text-[#133E87]">
+                            {copy.digitalRoadmap.productivity.averageValue}
+                          </span>
+                          <span className="mb-1 text-sm font-medium text-slate-500">
+                            {copy.digitalRoadmap.productivity.averageMax}
+                          </span>
+                        </div>
+                        <div className="mt-4 h-2.5 overflow-hidden rounded-full bg-slate-100">
+                          <div className="h-full w-[57.28%] rounded-full bg-[#133E87]" />
+                        </div>
+                      </div>
+
+                      <div className="rounded-[18px] border border-slate-200 bg-white p-4">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.08em] text-slate-400">
+                          {copy.digitalRoadmap.productivity.capaLabel}
+                        </p>
+                        <div className="mt-3 flex items-end gap-2">
+                          <span className="text-3xl font-bold text-[#F25A00]">
+                            {copy.digitalRoadmap.productivity.capaValue}
+                          </span>
+                          <span className="mb-1 text-sm text-slate-500">
+                            {copy.digitalRoadmap.productivity.capaUnit}
+                          </span>
+                        </div>
+                        <p className="mt-3 text-[10px] leading-4 text-slate-500">
+                          {copy.digitalRoadmap.productivity.capaNote}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="mt-3 rounded-[18px] border border-slate-200 bg-white p-3.5">
+                      <div className="flex items-center justify-between gap-3">
+                        <p className="text-xs font-semibold text-slate-700">
+                          {copy.digitalRoadmap.productivity.distributionTitle}
+                        </p>
+                        <span className="text-[10px] text-slate-500">
+                          {copy.digitalRoadmap.productivity.distributionTotal}
+                        </span>
+                      </div>
+
+                      <div className="mt-4 space-y-3">
+                        {copy.digitalRoadmap.productivity.rows.map((row) => (
+                          <div key={row.label}>
+                            <div className="flex items-center justify-between gap-3 text-[10px]">
+                              <span className="font-medium text-slate-600">
+                                {row.label}
+                              </span>
+                              <span className="text-slate-500">{row.value}</span>
+                            </div>
+                            <div className="mt-1.5 h-2 overflow-hidden rounded-full bg-slate-100">
+                              <div
+                                className={`h-full rounded-full ${getSnapshotBarClass(
+                                  row.tone
+                                )}`}
+                                style={{ width: row.width }}
+                              />
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="mt-3 rounded-[18px] border border-slate-200 bg-white p-3.5">
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.08em] text-slate-400">
+                        {copy.digitalRoadmap.productivity.lossTitle}
+                      </p>
+                      <p className="mt-2 text-sm font-semibold text-slate-900">
+                        {copy.digitalRoadmap.productivity.lossValue}
+                      </p>
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {copy.digitalRoadmap.productivity.lossTags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-full border border-[#CBDCEB] bg-white px-2.5 py-1 text-[10px] text-slate-600"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* RIGHT - DIGITAL TRANSFORMATION VALUE */}
+                <div className="rounded-[42px] border border-[#CBDCEB] bg-white px-6 py-8 shadow-[0_14px_40px_rgba(19,62,135,0.06)] sm:px-8 sm:py-10">
+                  <div className="flex justify-center">
+                    <span className="inline-flex min-w-[250px] justify-center rounded-lg bg-[#608BC1] px-5 py-3 text-sm font-bold text-white sm:text-base">
+                      {copy.digitalRoadmap.badge}
+                    </span>
+                  </div>
+
+                  <h3 className="mt-7 text-xl font-bold leading-7 text-[#1E316D] sm:text-2xl sm:leading-8">
+                    {copy.digitalRoadmap.heading}
+                  </h3>
+
+                  <div className="mt-8 space-y-5">
+                    {copy.digitalRoadmap.bullets.map((item) => (
+                      <div key={item} className="flex items-start gap-3">
+                        <span className="mt-[10px] h-1.5 w-1.5 shrink-0 rounded-full bg-slate-800" />
+                        <p className="text-base leading-7 text-slate-700">
+                          {item}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-10 rounded-xl bg-[#EAF2FB] px-5 py-4 text-center">
+                    <p className="text-base font-bold leading-6 text-[#133E87]">
+                      {copy.digitalRoadmap.result}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+
+      {/* PRIVACY & DATA SECURITY */}
+      <section className="bg-[#f8fbff] py-16 sm:py-20">
+        <Container>
+          <div
+            className="relative overflow-hidden rounded-[32px] border border-[#CBDCEB] bg-white p-6 shadow-[0_12px_40px_rgba(19,62,135,0.08)] sm:p-8 lg:p-10"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, rgba(96,139,193,0.16) 1px, transparent 1px)",
+              backgroundSize: "18px 18px",
+            }}
+          >
+            <div className="relative">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1E316D] sm:text-4xl lg:text-5xl">
+                {copy.privacySecurity.title}
+              </h2>
+
+              <p className="mt-2 max-w-4xl text-base leading-8 text-slate-600 sm:text-lg">
+                {copy.privacySecurity.subtitle}
+              </p>
+
+              <div className="mt-10 rounded-[24px] border border-[#CBDCEB] bg-white px-6 py-6 shadow-sm sm:px-8">
+                <p className="text-base font-semibold leading-8 text-[#1E316D] sm:text-lg">
+                  {copy.privacySecurity.intro}
+                </p>
+              </div>
+
+              <div className="mt-8 grid gap-6 md:grid-cols-2">
+                {copy.privacySecurity.cards.map((card) => {
+                  const toneClass =
+                    card.tone === "blue"
+                      ? "bg-[#EAF2FB] text-[#133E87]"
+                      : card.tone === "green"
+                      ? "bg-[#EAF8F2] text-[#176B55]"
+                      : card.tone === "amber"
+                      ? "bg-[#FFF6EA] text-[#8A5A19]"
+                      : "bg-[#F3F5F8] text-[#334155]";
+
+                  return (
+                    <div
+                      key={card.title}
+                      className="rounded-[28px] border border-[#CBDCEB] bg-white p-6 shadow-sm sm:p-7"
+                    >
+                      <div
+                        className={`inline-flex rounded-lg px-4 py-2 text-base font-bold ${toneClass}`}
+                      >
+                        {card.title}
+                      </div>
+
+                      <p className="mt-5 text-base leading-7 text-slate-700 sm:text-lg">
+                        {card.text}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="mt-6 rounded-xl bg-[#EAF8F2] px-6 py-4 text-center">
+                <p className="text-base font-bold leading-7 text-[#133E87] sm:text-lg">
+                  {copy.privacySecurity.result}
+                </p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* MARKET ANALYSIS */}
       <section className="bg-white py-16 sm:py-20">
         <Container>
@@ -1160,6 +2784,7 @@ export default async function SadiPage({ params }: PageProps) {
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
               {copy.market.title}
             </h2>
+
             <p className="mt-3 text-base leading-8 text-slate-600 sm:text-lg">
               {copy.market.subtitle}
             </p>
@@ -1171,6 +2796,7 @@ export default async function SadiPage({ params }: PageProps) {
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[#CBDCEB] bg-white">
                   <Users size={22} strokeWidth={2} color="#608BC1" />
                 </div>
+
                 <h3 className="text-2xl font-semibold text-slate-900">
                   {copy.market.targetProfileTitle}
                 </h3>
@@ -1182,7 +2808,9 @@ export default async function SadiPage({ params }: PageProps) {
                 {copy.market.targetItems.map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <span className="mt-2 h-4 w-4 shrink-0 rounded-full bg-[#5B3FA8]" />
-                    <p className="text-lg leading-8 text-slate-700">{item}</p>
+                    <p className="text-lg leading-8 text-slate-700">
+                      {item}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -1198,8 +2826,13 @@ export default async function SadiPage({ params }: PageProps) {
               <div className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm">
                 <div className="flex items-center gap-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[#CBDCEB] bg-[#F7FAFD]">
-                    <LayoutGrid size={22} strokeWidth={2} color="#608BC1" />
+                    <LayoutGrid
+                      size={22}
+                      strokeWidth={2}
+                      color="#608BC1"
+                    />
                   </div>
+
                   <h3 className="text-2xl font-semibold text-slate-900">
                     {copy.market.useCasesTitle}
                   </h3>
@@ -1234,6 +2867,7 @@ export default async function SadiPage({ params }: PageProps) {
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[#CBDCEB] bg-[#F7FAFD]">
                     <Target size={22} strokeWidth={2} color="#608BC1" />
                   </div>
+
                   <h3 className="text-2xl font-semibold text-slate-900">
                     {copy.market.positionTitle}
                   </h3>
@@ -1278,46 +2912,50 @@ export default async function SadiPage({ params }: PageProps) {
       <section className="bg-[#f8fbff] py-16 sm:py-20">
         <Container>
           <div className="max-w-4xl">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tight text-[#24195F] sm:text-4xl lg:text-5xl">
               {copy.competitors.title}
             </h2>
-            <p className="mt-3 text-base leading-8 text-slate-600 sm:text-lg">
-              {copy.competitors.subtitle}
-            </p>
-          </div>
 
-          <div className="mt-8 rounded-[20px] border border-[#BFE7D0] bg-[#ECF9F0] px-5 py-4 shadow-sm">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white text-[#16A34A] shadow-sm">
-                <BadgeCheck size={18} strokeWidth={2.2} />
-              </div>
-              <p className="text-base font-semibold leading-7 text-[#166534] sm:text-lg">
-                {copy.competitors.advantage}
+            {copy.competitors.subtitle ? (
+              <p className="mt-3 text-base leading-8 text-slate-600 sm:text-lg">
+                {copy.competitors.subtitle}
               </p>
-            </div>
+            ) : null}
           </div>
 
-          <div className="mt-8 overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm">
+          <div className="mt-8 overflow-hidden rounded-[28px] border border-[#CBDCEB] bg-white shadow-sm">
             <div className="overflow-x-auto">
-              <div className="min-w-[980px]">
-                <div className="grid grid-cols-[2.2fr_repeat(5,1.1fr)] border-b border-slate-200 bg-[#F4F7FB]">
-                  <div className="px-6 py-5" />
+              <div className="min-w-[1180px]">
+                <div className="grid grid-cols-[2.35fr_repeat(6,1.02fr)] border-b border-slate-200 bg-[#F4F7FB]">
+                  <div className="flex items-center justify-center bg-white px-4 py-3">
+                    <div className="w-full rounded-xl border border-[#BFE7D0] bg-[#ECF9F0] px-4 py-2 text-center">
+                      <p className="text-sm font-semibold leading-5 text-[#18764E]">
+                        {copy.competitors.advantage}
+                      </p>
+                    </div>
+                  </div>
 
                   {copy.competitors.headers.map((header, index) => (
                     <div
                       key={header.name}
-                      className="border-l border-slate-200 px-4 py-5 text-center"
+                      className="flex min-h-[82px] flex-col items-center justify-center border-l border-slate-200 px-3 py-3 text-center"
                     >
                       <div
-                        className={`text-xl font-bold ${index === 0 ? "text-2xl text-slate-900" : "text-slate-900"}`}
+                        className={[
+                          "font-bold leading-5",
+                          index === 0
+                            ? "text-xl text-slate-800 underline decoration-[#CBDCEB] underline-offset-4"
+                            : "text-base text-[#29244F]",
+                        ].join(" ")}
                       >
                         {header.name}
                       </div>
-                      <div
-                        className={`mt-1 font-semibold ${index === 0 ? "text-2xl text-[#16A34A]" : "text-xl text-slate-500"}`}
-                      >
-                        {header.price}
-                      </div>
+
+                      {header.price ? (
+                        <div className="mt-1 text-base font-semibold leading-5 text-[#6B6B84]">
+                          {header.price}
+                        </div>
+                      ) : null}
                     </div>
                   ))}
                 </div>
@@ -1326,18 +2964,18 @@ export default async function SadiPage({ params }: PageProps) {
                   <div
                     key={row.label}
                     className={[
-                      "grid grid-cols-[2.2fr_repeat(5,1.1fr)] border-b border-slate-200",
-                      rowIndex % 2 === 0 ? "bg-white" : "bg-slate-50/70",
+                      "grid grid-cols-[2.35fr_repeat(6,1.02fr)] border-b border-slate-200",
+                      rowIndex % 2 === 0 ? "bg-white" : "bg-slate-50/40",
                     ].join(" ")}
                   >
-                    <div className="px-6 py-5 text-lg font-medium leading-7 text-slate-800">
+                    <div className="flex min-h-[58px] items-center px-7 py-3 text-base font-medium leading-6 text-slate-700">
                       {row.label}
                     </div>
 
                     {row.values.map((value, index) => (
                       <div
                         key={`${row.label}-${index}`}
-                        className="flex items-center justify-center border-l border-slate-200 px-4 py-5"
+                        className="flex min-h-[58px] items-center justify-center border-l border-slate-200 px-3 py-3"
                       >
                         {getCompetitorCell(value)}
                       </div>
@@ -1348,11 +2986,36 @@ export default async function SadiPage({ params }: PageProps) {
             </div>
           </div>
 
-          <div className="mt-5 rounded-[20px] border border-[#CBDCEB] bg-white px-5 py-4 shadow-sm">
-            <p className="text-sm leading-7 text-slate-600 sm:text-base">
-              {copy.competitors.note}
-            </p>
+          <div className="mt-5 flex flex-wrap items-center gap-x-7 gap-y-3 px-2">
+            <div className="flex items-center gap-2">
+              {getCompetitorCell("good")}
+              <span className="text-sm text-slate-600">
+                {copy.competitors.legend.good}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              {getCompetitorCell("mid")}
+              <span className="text-sm text-slate-600">
+                {copy.competitors.legend.mid}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              {getCompetitorCell("bad")}
+              <span className="text-sm text-slate-600">
+                {copy.competitors.legend.bad}
+              </span>
+            </div>
           </div>
+
+          {copy.competitors.note ? (
+            <div className="mt-5 rounded-[20px] border border-[#CBDCEB] bg-white px-5 py-4 shadow-sm">
+              <p className="text-sm leading-7 text-slate-600 sm:text-base">
+                {copy.competitors.note}
+              </p>
+            </div>
+          ) : null}
         </Container>
       </section>
 
@@ -1363,6 +3026,7 @@ export default async function SadiPage({ params }: PageProps) {
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
               {copy.revenue.title}
             </h2>
+
             <p className="mt-3 text-base leading-8 text-slate-600 sm:text-lg">
               {copy.revenue.subtitle}
             </p>

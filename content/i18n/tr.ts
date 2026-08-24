@@ -149,7 +149,7 @@ const tr = {
     product: {
       badge: "Ürün",
       name: "sadi",
-      title: "Süreç Olgunluk ve Dijital Olgunluk Platformu",
+      title: "AI Destekli Süreç Olgunluk ve Dijital Dönüşüm Hazırlık Platformu",
       description:
         "Sadi, işletmelerin departman bazlı süreçlerini ölçerek, riskleri ve darboğazları görünür kılar, iş süreçlerinin yönetimini ve iyileştirilmesini sağlar.",
       primaryButton: "Ürün Detayını İncele",

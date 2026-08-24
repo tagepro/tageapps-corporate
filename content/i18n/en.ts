@@ -153,7 +153,7 @@ const en = {
     product: {
       badge: "Product",
       name: "sadi",
-      title: "Process Maturity and Digital Maturity Platform",
+      title: "AI-Powered Process Maturity and Digital Transformation Readiness Platform",
       description:
         "Sadi measures department-based processes in businesses, makes risks and bottlenecks visible, and supports the management and improvement of business processes.",
       primaryButton: "Explore Product Details",
