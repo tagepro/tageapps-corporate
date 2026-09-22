@@ -64,9 +64,9 @@ const tr = {
     badge: "Hizmetlerimiz",
     title: "ERP Danışmanlığı ve ERP Hazırlık Hizmetleri",
     description1:
-      "ERP danışmanlığı, ERP sistemi yatırımının yalnızca yazılım seçimi olmadığını; süreç, organizasyon, sorumluluk ve hazırlık seviyesinin birlikte ele alınması gerektiğini kabul eden yaklaşımdır.",
+      "ERP danışmanlığı, ERP sistemi yatırımının yalnızca yazılım seçimi olmadığını, süreç, organizasyon, sorumluluk ve hazırlık seviyesinin birlikte ele alınması gerektiğini kabul eden yaklaşımdır.",
     description2:
-      "Tage Yazılım olarak ERP danışmanlığı, ERP danışmanı desteği, ERP çözümleri değerlendirmesi, ERP programı hazırlığı, kurumsal kaynak planlaması yaklaşımı, SAP ERP ve IFS ERP bakışı ile şirketlerin ERP öncesi süreç hazırlığını daha güçlü zemine oturtuyoruz.",
+      "Tage Yazılım olarak ERP danışmanlığı, ERP danışmanı desteği, ERP çözümleri değerlendirmesi, ERP programı hazırlığı, kurumsal kaynak planlaması yaklaşımı ile şirketlerin ERP öncesi süreç hazırlığını daha güçlü zemine oturtuyoruz.",
     primaryButton: "Görüşme / Demo Talep Et",
     secondaryButton: "Sadi’yi İncele",
     summaryTitle: "Bu hizmetin odağı",
@@ -76,7 +76,6 @@ const tr = {
     summaryItems: [
       "ERP hazırlık görünürlüğü",
       "Süreç standardizasyonu",
-      "SAP ERP / IFS ERP bakışı",
       "ERP geçişi için daha net zemin",
     ],
   },
@@ -291,9 +290,9 @@ const en = {
     badge: "Our Services",
     title: "ERP Consulting and ERP Readiness Services",
     description1:
-      "ERP consulting is an approach that accepts ERP investment is not only software selection; process, organization, responsibilities, and readiness level must be handled together.",
+      "ERP consulting is an approach that recognizes that an ERP system investment is not merely a software selection; processes, organization, responsibilities, and readiness levels must be considered together.",
     description2:
-      "At Tage Yazılım, we strengthen companies’ pre-ERP process readiness through ERP consulting, ERP consultant support, ERP solution evaluation, ERP software readiness, enterprise resource planning perspective, and SAP ERP / IFS ERP experience.",
+      "At Tage Yazılım, we strengthen companies’ pre-ERP process readiness through ERP consulting, ERP consultant support, ERP solution evaluation, ERP software readiness, and an enterprise resource planning perspective.",
     primaryButton: "Request Meeting / Demo",
     secondaryButton: "Explore Sadi",
     summaryTitle: "Focus of this service",
@@ -303,7 +302,6 @@ const en = {
     summaryItems: [
       "ERP readiness visibility",
       "Process standardization",
-      "SAP ERP / IFS ERP perspective",
       "A clearer foundation for ERP transition",
     ],
   },
