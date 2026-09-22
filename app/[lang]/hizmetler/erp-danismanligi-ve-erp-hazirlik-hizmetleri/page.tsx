@@ -85,7 +85,7 @@ const tr = {
     description1:
       "ERP sistemi yatırımları genellikle yazılım seçimi üzerinden konuşulur. Oysa asıl başarı, ERP öncesinde süreçlerin, rollerin, veri ihtiyaçlarının ve organizasyon hazırlığının ne kadar net olduğuna bağlıdır.",
     description2:
-      "ERP danışmanlığı tarafında en sık gördüğümüz konu; şirketin ERP programı beklentisinin yüksek, ancak süreç netliğinin ve hazırlık seviyesinin düşük olmasıdır. Bu yüzden ERP hazırlık hizmeti kritik hale gelir.",
+      "ERP danışmanlığı tarafında en sık gördüğümüz konu, şirketin ERP programı beklentisinin yüksek, ancak süreç netliğinin ve hazırlık seviyesinin düşük olmasıdır. Bu yüzden ERP hazırlık hizmeti kritik hale gelir.",
   },
 
   painPoints: [
@@ -99,20 +99,20 @@ const tr = {
       icon: "clipboard",
       title: "Departmanlar arası işleyişin tanımsız olması",
       description:
-        "Üretim, satınalma, depo, lojistik, finans ve insan kaynakları arasındaki geçişler netleşmediğinde ERP sistemi üzerinde sağlıklı kurgu kurmak zorlaşır.",
+        "Üretim, satınalma, depo, lojistik, finans ve insan kaynakları vb. birimler arasındaki geçişler netleşmediğinde ERP sistemi üzerinde sağlıklı kurgu kurmak zorlaşır.",
     },
     {
       icon: "database",
       title: "ERP yatırımı için hazırlık seviyesinin görünmemesi",
       description:
-        "Kurumsal kaynak planlaması yatırımı yapılır; ancak hangi süreç hazır, hangi alan riskli, hangi veri ve organizasyon eksikliği var soruları açık kalır.",
+        "Kurumsal kaynak planlaması yatırımı yapılır, ancak hangi süreç hazır, hangi alan riskli, hangi veri ve organizasyon eksikliği var soruları açık kalır.",
     },
   ],
 
   scope: {
     title: "ERP danışmanlığı kapsamında hangi yapıları ele alıyoruz?",
     description:
-      "Bu hizmette amaç; yalnızca ERP uzmanı veya ERP danışmanı desteği vermek değil, şirketin kurumsal kaynak planlaması yatırımına gerçekten hazır olup olmadığını netleştirmektir.",
+      "Bu hizmette amaç, yalnızca ERP uzmanı veya ERP danışmanı desteği vermek değil, şirketin kurumsal kaynak planlaması yatırımına gerçekten hazır olup olmadığını netleştirmektir.",
   },
 
   solutionBlocks: [
@@ -155,16 +155,15 @@ const tr = {
   ],
 
   expertise: {
-    title: "SAP ERP ve IFS ERP bilgi birikimi",
+    title: "IT / ERP bilgi birikimi",
     description1:
       "ERP çözümleri tarafında her kurumun ihtiyacı aynı değildir. Bu nedenle ERP danışmanlığı yaklaşımında yalnızca teorik süreç bakışı değil, gerçek ERP sahası bilgisi de önemlidir.",
     description2:
-      "SAP ERP ve IFS ERP bilgi birikimi sayesinde, işletmenin ihtiyaçlarını daha gerçekçi değerlendirmek; süreç, veri ve organizasyon tarafını daha sağlam temelde hazırlamak mümkündür.",
+      "IT / ERP bilgi birikimi sayesinde, işletmenin ihtiyaçlarını daha gerçekçi değerlendirmek, süreç, veri ve organizasyon tarafını daha sağlam temelde hazırlamak mümkündür.",
     cardTitle: "Bu hizmetin güçlü yanları",
     items: [
-      "25 yılı aşkın süreç ve ERP deneyimi",
-      "SAP ERP ve IFS ERP bilgi birikimi",
-      "Üretim, finans, lojistik ve insan kaynakları süreçlerine hakimiyet",
+      "25 yılı aşkın IT ve ERP deneyimi",
+      "Özellikle üretim, finans, lojistik, satınalma ve insan kaynakları vb. süreçlerine hakimiyet",
       "ERP öncesi hazırlık + süreç netleştirme + yönetim görünürlüğü yaklaşımı",
       "Danışmanlık ile yazılım düşüncesini birleştiren kurumsal bakış",
     ],
@@ -173,7 +172,7 @@ const tr = {
   erpFit: {
     title: "ERP yazılımları karşılaştırma ve ihtiyaç uyumu",
     description1:
-      "ERP yazılımları karşılaştırma süreci sadece fiyat veya marka üzerinden ilerlememelidir. ERP sistemi seçimi; süreç yapısı, şirket büyüklüğü, organizasyon kültürü ve kullanım hedefleri ile uyumlu olmalıdır.",
+      "ERP yazılımları karşılaştırma süreci sadece fiyat veya marka üzerinden ilerlememelidir. ERP sistemi seçimi, süreç yapısı, şirket büyüklüğü, organizasyon kültürü ve kullanım hedefleri ile uyumlu olmalıdır.",
     description2:
       "Bu nedenle ERP programı değerlendirmesinde şirketin gerçekten neye ihtiyaç duyduğunu netleştirir, sonra sistem konuşuruz.",
   },
@@ -189,11 +188,10 @@ const tr = {
   useCases: {
     title: "Kimler için uygundur?",
     description:
-      "Bu hizmet; ERP’ye geçmek isteyen, mevcut ERP kurulumundan yeterli verim alamayan ya da ERP uzmanı / ERP danışmanı desteği arayan kurumlar için uygundur.",
+      "Bu hizmet, ERP’ye geçmek isteyen, mevcut ERP kurulumundan yeterli verim alamayan ya da ERP uzmanı / ERP danışmanı desteği arayan kurumlar için uygundur.",
     items: [
       "ERP’ye geçmeyi planlayan ancak süreçlerini önce netleştirmek isteyen şirketler",
       "Mevcut ERP sistemi olan ama verim alamayan kurumlar",
-      "SAP ERP veya IFS ERP tarafında değerlendirme yapmak isteyen işletmeler",
       "ERP danışmanı veya ERP uzmanı desteği arayan firmalar",
       "Kurumsal kaynak planlaması yatırımını daha sağlam zemine oturtmak isteyen yönetimler",
       "ERP projesinden önce süreç standardizasyonu kurmak isteyen yapılar",
@@ -202,8 +200,7 @@ const tr = {
 
   faq: {
     title: "Sık sorulan sorular",
-    description:
-      "Bu bölüm, hem kullanıcıların hızlı cevap almasına hem de sayfanın answer engine ve AI aramaları için daha net okunmasına yardımcı olur.",
+    description: "",
     items: [
       {
         question: "ERP danışmanlığı nedir?",
@@ -311,7 +308,7 @@ const en = {
     description1:
       "ERP system investments are usually discussed in terms of software selection. But actual success depends on how clearly processes, roles, data needs, and organizational readiness are defined before ERP.",
     description2:
-      "What we most often see in ERP consulting is that companies have high expectations from the ERP software, but low clarity in processes and low preparation level. That is why ERP readiness services become critical.",
+      "What we most often see in ERP consulting is that companies have high expectations for their ERP program, while process clarity and readiness levels remain low. That is why ERP readiness services become critical.",
   },
 
   painPoints: [
@@ -325,7 +322,7 @@ const en = {
       icon: "clipboard",
       title: "Undefined interdepartmental operation",
       description:
-        "When transitions between production, procurement, warehouse, logistics, finance, and HR are unclear, it becomes difficult to build a healthy structure on the ERP system.",
+        "When transitions between production, procurement, warehouse, logistics, finance, human resources, and other functions are unclear, it becomes difficult to build a sound structure within the ERP system.",
     },
     {
       icon: "database",
@@ -381,16 +378,15 @@ const en = {
   ],
 
   expertise: {
-    title: "SAP ERP and IFS ERP know-how",
+    title: "IT / ERP know-how",
     description1:
       "Every organization does not need the same ERP solution. Therefore, in the ERP consulting approach, not only a theoretical process perspective but also real ERP field knowledge is important.",
     description2:
-      "Thanks to SAP ERP and IFS ERP know-how, it becomes possible to evaluate the organization’s needs more realistically and prepare the process, data, and organizational side on a stronger basis.",
+      "IT / ERP know-how makes it possible to evaluate the organization’s needs more realistically and prepare processes, data, and organizational structures on a stronger foundation.",
     cardTitle: "Core strengths of this service",
     items: [
-      "More than 25 years of process and ERP experience",
-      "SAP ERP and IFS ERP know-how",
-      "Strong command of production, finance, logistics, and HR processes",
+      "More than 25 years of IT and ERP experience",
+      "Strong command of production, finance, logistics, procurement, human resources, and related processes",
       "Pre-ERP readiness + process clarification + management visibility approach",
       "A corporate perspective that combines consulting and software thinking",
     ],
@@ -399,7 +395,7 @@ const en = {
   erpFit: {
     title: "ERP software comparison and needs alignment",
     description1:
-      "ERP software comparison should not progress only through price or brand. ERP system selection must align with process structure, company size, organizational culture, and usage goals.",
+      "ERP software comparison should not be based only on price or brand. ERP system selection should align with process structure, company size, organizational culture, and usage goals.",
     description2:
       "For this reason, in ERP software evaluation we first clarify what the organization truly needs, and then discuss the system.",
   },
@@ -415,11 +411,10 @@ const en = {
   useCases: {
     title: "Who is it suitable for?",
     description:
-      "This service is suitable for organizations planning to move to ERP, not getting enough value from an existing ERP setup, or seeking ERP expert / ERP consultant support.",
+      "This service is suitable for organizations planning to move to ERP, not getting enough value from an existing ERP implementation, or seeking ERP expert / ERP consultant support.",
     items: [
       "Companies planning ERP but wanting to clarify their processes first",
       "Organizations with an existing ERP system but not getting enough efficiency",
-      "Businesses wanting evaluation on SAP ERP or IFS ERP",
       "Firms looking for ERP consultant or ERP expert support",
       "Management teams wanting to place enterprise resource planning investment on a stronger foundation",
       "Structures wanting to establish process standardization before the ERP project",
@@ -428,8 +423,7 @@ const en = {
 
   faq: {
     title: "Frequently asked questions",
-    description:
-      "This section helps users get quick answers and also makes the page more clearly readable for answer engines and AI search.",
+    description: "",
     items: [
       {
         question: "What is ERP consulting?",
