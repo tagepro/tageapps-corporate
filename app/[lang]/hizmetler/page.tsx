@@ -31,46 +31,41 @@ const tr = {
   },
 
   pillars: {
-    badge: "Hizmet Alanlarımız",
-    title: "İş ihtiyacından teknoloji çözümüne",
+    badge: "Tüm Hizmetler",
+    title: "Kurumsal teknoloji ve dönüşüm hizmetlerimiz",
     description:
-      "Yazılım geliştirme, yapay zekâ ve danışmanlık yetkinliklerimizi kurumların gerçek iş ihtiyaçları etrafında bir araya getiriyoruz.",
+      "Yazılım geliştirme, yapay zekâ, dijital dönüşüm, süreç yönetimi ve ERP alanlarındaki hizmetlerimizi kurumların gerçek iş ihtiyaçları etrafında sunuyoruz.",
+    detailButton: "Detayları İncele",
     items: [
       {
         title: "Kurumsal Yazılım Geliştirme",
+        href: "/hizmetler/kurumsal-yazilim-gelistirme",
         description:
-          "İş ihtiyaçlarına özel web, mobil ve kurumsal uygulamalar geliştiriyoruz.",
-        capabilities: [
-          "Kurumsal Web Uygulamaları",
-          "Mobil Uygulamalar",
-          "Kuruma Özel Yazılım",
-          "Portal ve İş Uygulamaları",
-          "Sistem ve ERP Entegrasyonları",
-        ],
+          "İş ihtiyaçlarına özel web, mobil, portal ve kurumsal uygulamalar geliştiriyoruz.",
       },
       {
-        title: "Yapay Zekâ & Dijital Dönüşüm",
+        title: "Kurumsal Yapay Zekâ Çözümleri",
+        href: "/hizmetler/kurumsal-yapay-zeka-cozumleri",
         description:
-          "Yapay zekânın değer üretebileceği alanları belirliyor, kuruma özel AI destekli çözümler geliştiriyor ve dijital dönüşümü destekliyoruz.",
-        capabilities: [
-          "Kurumsal Yapay Zekâ Çözümleri",
-          "AI Destekli İş Uygulamaları",
-          "AI Kullanım Senaryoları",
-          "Dijital Olgunluk",
-          "Dijital Dönüşüm Analizi",
-        ],
+          "Yapay zekâyı kurumun verisi, bilgisi ve gerçek iş süreçleriyle buluşturan çözümler geliştiriyoruz.",
       },
       {
-        title: "Süreç Olgunluğu & ERP",
+        title: "Dijital Olgunluk ve Dijital Dönüşüm Analizi",
+        href: "/hizmetler/dijital-olgunluk-ve-dijital-donusum-analizi",
         description:
-          "Süreçlerin olgunluk seviyesini değerlendiriyor, gelişim alanlarını belirliyor ve kurumları ERP yatırımlarına hazırlıyoruz.",
-        capabilities: [
-          "Süreç Olgunluğu",
-          "Süreç Yönetimi",
-          "Süreç Analizi ve Modelleme",
-          "Süreç İyileştirme",
-          "ERP Hazırlık",
-        ],
+          "Dijital hazırlığı değerlendiriyor, gelişim alanlarını ve dönüşüm önceliklerini görünür hale getiriyoruz.",
+      },
+      {
+        title: "Süreç Olgunluğu ve Süreç Yönetimi",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
+        description:
+          "Süreçleri görünür, ölçülebilir, standart ve dijital olarak yönetilebilir hale getiriyoruz.",
+      },
+      {
+        title: "ERP Danışmanlığı ve ERP Hazırlık",
+        href: "/hizmetler/erp-danismanligi-ve-erp-hazirlik-hizmetleri",
+        description:
+          "ERP yatırımı öncesinde süreçleri ve organizasyonu değerlendirerek kurumu ERP dönüşümüne hazırlıyoruz.",
       },
     ],
   },
@@ -203,46 +198,41 @@ const en = {
   },
 
   pillars: {
-    badge: "Our Service Areas",
-    title: "From business need to technology solution",
+    badge: "All Services",
+    title: "Our enterprise technology and transformation services",
     description:
-      "We bring together software development, artificial intelligence, and consulting capabilities around real enterprise needs.",
+      "We deliver software development, artificial intelligence, digital transformation, process management, and ERP services around real enterprise needs.",
+    detailButton: "View Details",
     items: [
       {
         title: "Enterprise Software Development",
+        href: "/hizmetler/kurumsal-yazilim-gelistirme",
         description:
-          "We develop web, mobile, and enterprise applications tailored to business needs.",
-        capabilities: [
-          "Enterprise Web Applications",
-          "Mobile Applications",
-          "Custom Software",
-          "Portals and Business Applications",
-          "System and ERP Integrations",
-        ],
+          "We develop web, mobile, portal, and enterprise applications tailored to business needs.",
       },
       {
-        title: "AI & Digital Transformation",
+        title: "Enterprise AI Solutions",
+        href: "/hizmetler/kurumsal-yapay-zeka-cozumleri",
         description:
-          "We identify where AI can create value, develop AI-enabled solutions, and support organizations in their digital transformation.",
-        capabilities: [
-          "Enterprise AI Solutions",
-          "AI-Enabled Business Applications",
-          "AI Use Cases",
-          "Digital Maturity",
-          "Digital Transformation Analysis",
-        ],
+          "We develop AI-enabled solutions around enterprise data, knowledge, and real business processes.",
       },
       {
-        title: "Process Maturity & ERP",
+        title: "Digital Maturity and Digital Transformation Analysis",
+        href: "/hizmetler/dijital-olgunluk-ve-dijital-donusum-analizi",
         description:
-          "We assess process maturity, identify improvement areas, and prepare organizations for ERP investments.",
-        capabilities: [
-          "Process Maturity",
-          "Process Management",
-          "Process Analysis and Modeling",
-          "Process Improvement",
-          "ERP Readiness",
-        ],
+          "We assess digital readiness and make improvement areas and transformation priorities visible.",
+      },
+      {
+        title: "Process Maturity and Process Management",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
+        description:
+          "We make processes visible, measurable, standardized, and digitally manageable.",
+      },
+      {
+        title: "ERP Consulting and ERP Readiness",
+        href: "/hizmetler/erp-danismanligi-ve-erp-hazirlik-hizmetleri",
+        description:
+          "We assess processes and the organization before ERP investments and prepare enterprises for ERP transformation.",
       },
     ],
   },
@@ -374,7 +364,7 @@ export default async function ServicesPage({ params }: PageProps) {
   const copy = lang === "en" ? en : tr;
   const withLang = (path: string) => `/${lang}${path}`;
 
-  const pillarIcons = [BriefcaseBusiness, Bot, Gauge];
+  const pillarIcons = [BriefcaseBusiness, Bot, Gauge, Workflow, Database];
   const approachIcons = [Sparkles, GitBranch, Database, Blocks, Workflow, BarChart3];
   const expertiseIcons = [Workflow, GitBranch, Route, Gauge, BriefcaseBusiness];
 
@@ -467,9 +457,10 @@ export default async function ServicesPage({ params }: PageProps) {
               const Icon = pillarIcons[index];
 
               return (
-                <div
+                <Link
                   key={item.title}
-                  className="flex h-full flex-col rounded-[26px] border border-slate-200 bg-white p-7 shadow-sm"
+                  href={withLang(item.href)}
+                  className="group flex h-full flex-col rounded-[26px] border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-[#CBDCEB] hover:shadow-md"
                 >
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[#CBDCEB] bg-[#F7FAFD]">
                     <Icon size={22} strokeWidth={2} color="#608BC1" />
@@ -479,27 +470,19 @@ export default async function ServicesPage({ params }: PageProps) {
                     {item.title}
                   </h3>
 
-                  <p className="mt-3 text-base leading-7 text-slate-600">
+                  <p className="mt-3 flex-1 text-base leading-7 text-slate-600">
                     {item.description}
                   </p>
 
-                  <div className="mt-6 space-y-3">
-                    {item.capabilities.map((capability) => (
-                      <div
-                        key={capability}
-                        className="flex items-start gap-3 text-sm font-medium text-slate-700"
-                      >
-                        <CheckCircle2
-                          className="mt-0.5 shrink-0"
-                          size={17}
-                          strokeWidth={2}
-                          color="#608BC1"
-                        />
-                        <span>{capability}</span>
-                      </div>
-                    ))}
+                  <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#133E87]">
+                    {copy.pillars.detailButton}
+                    <ArrowRight
+                      size={16}
+                      strokeWidth={2.25}
+                      className="transition-transform group-hover:translate-x-1"
+                    />
                   </div>
-                </div>
+                </Link>
               );
             })}
           </div>
