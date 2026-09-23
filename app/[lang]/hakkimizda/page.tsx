@@ -26,22 +26,22 @@ const tr = {
   meta: {
     title: "Hakkımızda | Tage Yazılım",
     description:
-      "Tage Yazılım; süreç yönetimi, ERP danışmanlığı, ERP hazırlık, dijital olgunluk ve kurumsal yazılım alanlarında çalışan teknoloji ve danışmanlık şirketidir.",
+      "Tage Yazılım; kurumsal yazılım geliştirme, yapay zekâ, dijital dönüşüm, süreç yönetimi ve ERP alanlarında teknoloji ve danışmanlık çözümleri geliştiren kurumsal teknoloji şirketidir.",
     ogDescription:
-      "Süreç yönetimi, ERP hazırlık, dijital olgunluk ve kurumsal yazılım odaklı yaklaşımımızı keşfedin.",
+      "Kurumsal yazılım, yapay zekâ, dijital dönüşüm, süreç yönetimi ve ERP deneyimini bir araya getiren Tage Yazılım’ı keşfedin.",
     twitterDescription:
-      "Tage Yazılım; süreç, ERP ve kurumsal yazılım odağında çalışan teknoloji ve danışmanlık şirketidir.",
+      "Tage Yazılım; iş süreçleri ile teknolojiyi bir araya getiren kurumsal teknoloji şirketidir.",
     keywords: [
       "tage yazılım",
       "hakkımızda",
-      "süreç yönetimi danışmanlığı",
+      "kurumsal yazılım geliştirme",
+      "yapay zekâ çözümleri",
+      "dijital dönüşüm",
+      "süreç yönetimi",
+      "süreç olgunluğu",
       "erp danışmanlığı",
       "erp hazırlık",
-      "kurumsal yazılım",
-      "dijital olgunluk",
-      "sap erp",
-      "ifs erp",
-      "süreç analizi",
+      "kurumsal teknoloji",
       "sadi",
     ],
   },
@@ -53,156 +53,155 @@ const tr = {
 
   hero: {
     badge: "Hakkımızda",
-    title: "Süreç, ERP ve kurumsal yazılım odağında çalışan teknoloji şirketi",
+    title: "İş süreçleri ile teknolojiyi bir araya getiren kurumsal teknoloji şirketi",
     description1:
-      "Tage Yazılım; süreç yönetimi, ERP danışmanlığı, ERP hazırlık, dijital olgunluk ve kurumsal yazılım alanlarında çalışan teknoloji ve danışmanlık şirketidir.",
+      "Tage Yazılım; kurumsal yazılım geliştirme, yapay zekâ, dijital dönüşüm, süreç yönetimi ve ERP alanlarında kurumların iş ihtiyaçlarına yönelik teknoloji ve danışmanlık çözümleri geliştirir.",
     description2:
-      "Amacımız yalnızca teknoloji sunmak değil; işletmelerin üretimden finansa, lojistikten insan kaynaklarına kadar uzanan süreçlerini daha verimli, daha şeffaf ve daha yönetilebilir hale getirmektir.",
+      "Teknolojiyi iş sürecinden bağımsız ele almıyoruz. İş ihtiyacını, kullanıcıları, süreçleri, veriyi ve mevcut sistemleri birlikte değerlendirerek uygulanabilir ve sürdürülebilir çözümler geliştiriyoruz.",
     primaryButton: "Hizmetlerimizi İncele",
     secondaryButton: "Sadi’yi İncele",
     summaryTitle: "Kısa özet",
-    summaryHeading: "Süreçten yazılıma uzanan yaklaşım",
+    summaryHeading: "İş ihtiyacından teknoloji çözümüne",
     summaryText:
-      "Süreçleri anlamadan yazılımın yeterli olmayacağını, yazılım ile desteklenmeyen danışmanlığın da kalıcı etki üretmekte zorlanacağını biliyoruz. Bu yüzden iki alanı birlikte ele alıyoruz.",
+      "Kurumsal deneyimimizi yazılım geliştirme ve yapay zekâ yetkinlikleriyle bir araya getirerek teknoloji ile iş süreçleri arasında güçlü bir bağ kuruyoruz.",
     summaryItems: [
-      "Süreç yönetimi ve süreç analizi",
-      "ERP danışmanlığı ve ERP hazırlık",
-      "Dijital olgunluk ve dönüşüm hazırlığı",
-      "Sadi ile ürünleşmiş yapı",
+      "Kurumsal Yazılım Geliştirme",
+      "Yapay Zekâ & Dijital Dönüşüm",
+      "Süreç Olgunluğu & Süreç Yönetimi",
+      "ERP Danışmanlığı & ERP Hazırlık",
     ],
   },
 
   whyFounded: {
     title: "Tage Yazılım neden kuruldu?",
     description1:
-      "Şirketlerde en sık gördüğümüz konu şuydu: süreçler konuşuluyor ama netleşmiyor, yazılım yatırımları yapılıyor ama kurumsal yapı tam hazır olmuyor, iyileştirme çalışmaları yapılıyor ama sürdürülebilir hale gelmiyor.",
+      "Şirketlerde teknoloji yatırımlarının çoğu zaman gerçek iş ihtiyacından kopuk ele alınabildiğini gördük. Süreçler yeterince netleşmeden yazılım yatırımları yapılabiliyor, veri ve sistemler birbirinden kopuk kalabiliyor, yeni teknolojiler ise gerçek kullanım alanlarına dönüşmekte zorlanabiliyor.",
     description2:
-      "Tage Yazılım, bu boşluğu kapatmak için kuruldu. Süreçleri daha net, yönetimi daha görünür ve yazılımı daha anlamlı hale getiren yaklaşımı bir araya getirmek istedik.",
+      "Tage Yazılım, iş ihtiyacı ile teknoloji arasındaki bu boşluğu kapatmak için kuruldu. Kurumsal yazılım, yapay zekâ, süreç yönetimi ve ERP deneyimini aynı bakış açısında bir araya getiriyoruz.",
     founderTitle: "Kurucu yaklaşımımız",
     founderDescription1:
-      "25 yılı aşkın süredir iş süreçleri ve ERP alanında çalışmış birikimle, işletmelerin süreçlerini sadece belgeleyen değil; anlayan, sadeleştiren, ölçen ve yönetime taşıyan bir yaklaşım geliştiriyoruz.",
+      "25 yılı aşkın IT, ERP ve iş süreçleri deneyimini; kurumsal yazılım, yapay zekâ ve dijital dönüşüm yetkinlikleriyle bir araya getiriyoruz.",
     founderDescription2:
-      "SAP ERP ve IFS ERP deneyimi, süreç yönetimi bakışı ve yazılım üretme yaklaşımı bu yapının temelini oluşturuyor.",
+      "İş ihtiyacını, süreçleri, veriyi, kullanıcıları ve mevcut sistemleri birlikte değerlendirerek uygulanabilir ve sürdürülebilir çözümler geliştirmeyi hedefliyoruz.",
   },
 
   approach: {
-    title: "Yazılım + danışmanlık + eğitim yaklaşımı",
+    title: "Teknoloji ve iş bilgisini aynı yapıda birleştiriyoruz",
     description:
-      "Bizim yaklaşımımız tek boyutlu değil. Sadece danışmanlık vermek ya da sadece yazılım geliştirmek yerine, kurumların gerçekten ihtiyaç duyduğu üç alanı birlikte ele alıyoruz.",
+      "Tage Yazılım’ın yaklaşımı üç temel yetkinliğin birlikte çalışmasına dayanır. Teknolojiyi gerçek iş ihtiyacından ve kurumsal yapıdan bağımsız ele almıyoruz.",
     items: [
       {
         icon: "cpu",
-        title: "Yazılım",
+        title: "Kurumsal Yazılım",
         description:
-          "Kurumsal süreçlerin görünür, ölçülebilir ve sürdürülebilir hale gelmesini destekleyen ürün ve yazılım çözümleri geliştiririz.",
+          "İş ihtiyaçlarına özel web, mobil, portal, iş uygulamaları ve sistem entegrasyonları geliştiriyoruz.",
       },
       {
         icon: "briefcase",
-        title: "Danışmanlık",
+        title: "Yapay Zekâ & Dijital Dönüşüm",
         description:
-          "Süreç yönetimi, süreç analizi, ERP hazırlık, dijital dönüşüm ve yönetim görünürlüğü alanlarında kurumsal destek sunarız.",
+          "Yapay zekâyı gerçek kullanım alanlarına taşıyan çözümler geliştiriyor ve kurumların dijital dönüşüm çalışmalarını destekliyoruz.",
       },
       {
         icon: "graduation",
-        title: "Eğitim",
+        title: "Süreç & ERP",
         description:
-          "Şirket içi ekiplerin yeni yapıyı anlayabilmesi, sahiplenebilmesi ve sürdürebilmesi için bilgi aktarımı ve uygulama desteği veririz.",
+          "Süreç olgunluğu, süreç yönetimi, ERP hazırlık ve ERP danışmanlığı çalışmalarını kurumsal ihtiyaçlarla birlikte ele alıyoruz.",
       },
     ],
   },
 
   expertise: {
-    title: "Uzmanlık alanlarımız",
+    title: "Tage’yi farklılaştıran nedir?",
     description:
-      "Tage Yazılım’ın gücü, yalnızca bir yazılım şirketi olmasından değil; süreç, ERP ve yönetim bakışını aynı yerde birleştirmesinden gelir.",
+      "Teknoloji üretme yetkinliğini kurumsal iş süreçleri, ERP ve operasyon deneyimiyle aynı yapıda birleştiriyoruz.",
     items: [
       {
         icon: "workflow",
-        title: "Süreç yönetimi odağı",
+        title: "İş sürecini anlayan teknoloji yaklaşımı",
         description:
-          "İşletmelerin süreçlerini daha görünür, daha net ve daha yönetilebilir hale getirmeyi hedefleriz.",
+          "Yazılım veya yapay zekâ çözümüne başlamadan önce gerçek iş ihtiyacını, kullanıcıları ve çalışma biçimini anlamaya odaklanıyoruz.",
       },
       {
         icon: "layers",
-        title: "ERP hazırlık ve ERP danışmanlığı",
+        title: "Kurumsal sistem deneyimi",
         description:
-          "ERP öncesi süreç netliği, rol ve sorumluluk yapısı, departman geçişleri ve organizasyon hazırlığı üzerinde çalışırız.",
+          "25 yılı aşkın IT, ERP ve iş süreçleri deneyimini yeni teknoloji çözümlerine taşıyoruz.",
       },
       {
         icon: "building",
-        title: "Kurumsal yapı ve yönetim görünürlüğü",
+        title: "Uygulanabilir teknoloji çözümleri",
         description:
-          "Karar almayı kolaylaştıran, öncelikleri netleştiren ve yönetim bakışını güçlendiren yapılar kurarız.",
+          "Yazılım, yapay zekâ, veri, entegrasyon ve süreç ihtiyaçlarını birbirinden bağımsız değil, aynı kurumsal yapı içinde değerlendiriyoruz.",
       },
     ],
   },
 
   trust: {
-    title: "Neden güveniliriz?",
+    title: "Deneyimimizi teknoloji üretme yetkinliğiyle birleştiriyoruz",
     description1:
-      "Çünkü yalnızca teori anlatmıyoruz. Şirketlerin gerçek işleyişini, ERP öncesi hazırlık ihtiyacını, süreç dağınıklığını ve yönetim görünürlüğü ihtiyacını sahadan biliyoruz.",
+      "Kurumsal teknolojinin yalnızca yazılım geliştirmekten ibaret olmadığını biliyoruz. Çözümün çalışacağı iş sürecini, kullanıcıları, veriyi ve mevcut sistemleri birlikte değerlendiriyoruz.",
     description2:
-      "Bu yüzden önerdiğimiz yapı hem kurumsal hem uygulanabilir hem de gerektiğinde yazılım ile desteklenebilir bir yapıdır.",
-    cardTitle: "Güven oluşturan temel unsurlar",
+      "Bu yaklaşım, danışmanlık deneyimi ile yazılım ve yapay zekâ yetkinliklerini aynı zeminde buluşturmamızı sağlıyor.",
+    cardTitle: "Deneyim ve yetkinliklerimiz",
     items: [
-      "25 yılı aşkın süreç ve ERP deneyimi",
-      "SAP ERP ve IFS ERP bilgi birikimi",
-      "Üretim, finans, lojistik ve insan kaynakları süreçlerine hakimiyet",
-      "Süreç yönetimi ile ERP hazırlığını birlikte ele alan yaklaşım",
-      "Danışmanlık ile yazılım düşüncesini aynı zeminde birleştiren yapı",
-      "Sadi ile ürünleşmiş ve sürdürülebilir çözüm yaklaşımı",
+      "25 yılı aşkın IT, ERP ve iş süreçleri deneyimi",
+      "Üretim, finans, lojistik ve insan kaynakları süreç bilgisi",
+      "Kurumsal yazılım geliştirme yetkinliği",
+      "Yapay zekâyı gerçek iş ihtiyaçlarına uygulayan yaklaşım",
+      "Süreç, veri, sistem ve entegrasyonu birlikte değerlendiren bakış",
+      "Sadi ile ürün geliştirme ve SaaS deneyimi",
     ],
   },
 
   sadi: {
     title: "Sadi bu yapının neresinde durur?",
     description1:
-      "Sadi, Tage Yazılım’ın süreç ve dijital olgunluk odağının ürünleşmiş halidir. Danışmanlıkla kurulan görünürlük ve netlik, Sadi ile daha ölçülebilir ve sürdürülebilir hale gelir.",
+      "Sadi, Tage Yazılım’ın süreç olgunluğu ve dijital dönüşüm alanındaki deneyiminin ürünleşmiş halidir.",
     description2:
-      "Bu nedenle Sadi yalnızca bir yazılım ürünü değil; aynı zamanda bizim süreç, ERP hazırlık ve dijital dönüşüm yaklaşımımızın somut uzantısıdır.",
-    cardBadge: "Ürün bağlantısı",
-    cardTitle: "Sadi ile yaklaşımımızı ürünleştiriyoruz",
+      "Süreç görünürlüğü, olgunluk değerlendirmesi, risk önceliği, iyileştirme ve yeniden ölçüm yaklaşımını kurumsal bir yazılım ürünü altında bir araya getirir.",
+    cardBadge: "Ürün",
+    cardTitle: "Süreç ve dönüşüm deneyimimizi Sadi ile ürünleştiriyoruz",
     cardDescription:
-      "Süreç görünürlüğü, olgunluk değerlendirmesi, risk önceliği, aksiyon takibi ve yeniden ölçüm yaklaşımı Sadi ile daha somut hale gelir.",
+      "Sadi, kurumların süreçlerini görünür hale getirmesine, olgunluk seviyelerini değerlendirmesine ve gelişim alanlarını sistematik olarak yönetmesine yardımcı olur.",
     primaryButton: "Sadi ürün sayfasına git",
     secondaryButton: "İletişime Geç",
   },
 
   cta: {
     title:
-      "Süreçlerinizi, ERP hazırlığınızı ve kurumsal yapınızı birlikte güçlendirelim",
+      "Teknoloji ve dönüşüm ihtiyacınızı birlikte değerlendirelim",
     description:
-      "Tage Yazılım’ın yaklaşımını daha yakından tanımak, hizmetlerimizi görmek veya Sadi ürününü incelemek için ilgili sayfalara geçebilirsiniz.",
+      "Kurumsal yazılım, yapay zekâ, dijital dönüşüm, süreç yönetimi veya ERP alanındaki ihtiyacınızı birlikte değerlendirelim.",
     primaryButton: "Hizmetlerimizi İncele",
     secondaryButton: "İletişime Geçin",
   },
 
   schema: {
     orgDescription:
-      "Tage Yazılım; süreç yönetimi, ERP danışmanlığı, ERP hazırlık, dijital olgunluk ve kurumsal yazılım alanlarında çalışan teknoloji ve danışmanlık şirketidir.",
+      "Tage Yazılım; kurumsal yazılım geliştirme, yapay zekâ, dijital dönüşüm, süreç yönetimi ve ERP alanlarında teknoloji ve danışmanlık çözümleri geliştiren kurumsal teknoloji şirketidir.",
   },
 } as const;
-
 const en = {
   meta: {
     title: "About | Tage Yazılım",
     description:
-      "Tage Yazılım is a technology and consulting company working in process management, ERP consulting, ERP readiness, digital maturity, and enterprise software.",
+      "Tage Yazılım is an enterprise technology company delivering software development, artificial intelligence, digital transformation, process management, and ERP solutions.",
     ogDescription:
-      "Discover our approach focused on process management, ERP readiness, digital maturity, and enterprise software.",
+      "Discover Tage Yazılım, bringing together enterprise software, artificial intelligence, digital transformation, process management, and ERP experience.",
     twitterDescription:
-      "Tage Yazılım is a technology and consulting company focused on process, ERP, and enterprise software.",
+      "Tage Yazılım is an enterprise technology company bringing business processes and technology together.",
     keywords: [
       "tage yazilim",
       "about",
-      "process management consulting",
+      "enterprise software development",
+      "artificial intelligence solutions",
+      "digital transformation",
+      "process management",
+      "process maturity",
       "erp consulting",
       "erp readiness",
-      "enterprise software",
-      "digital maturity",
-      "sap erp",
-      "ifs erp",
-      "process analysis",
+      "enterprise technology",
       "sadi",
     ],
   },
@@ -214,137 +213,135 @@ const en = {
 
   hero: {
     badge: "About",
-    title:
-      "A technology company focused on process, ERP, and enterprise software",
+    title: "An enterprise technology company bringing business processes and technology together",
     description1:
-      "Tage Yazılım is a technology and consulting company working in process management, ERP consulting, ERP readiness, digital maturity, and enterprise software.",
+      "Tage Yazılım develops technology and consulting solutions for enterprise needs across software development, artificial intelligence, digital transformation, process management, and ERP.",
     description2:
-      "Our goal is not only to provide technology, but to make business processes extending from production to finance, logistics, and human resources more efficient, transparent, and manageable.",
+      "We do not treat technology independently from business processes. We evaluate business needs, users, processes, data, and existing systems together to develop practical and sustainable solutions.",
     primaryButton: "Explore Our Services",
     secondaryButton: "Explore Sadi",
     summaryTitle: "Quick summary",
-    summaryHeading: "An approach extending from process to software",
+    summaryHeading: "From business need to technology solution",
     summaryText:
-      "We know that software alone is not enough without understanding processes, and consulting unsupported by software struggles to create lasting impact. That is why we address both together.",
+      "We combine enterprise experience with software development and artificial intelligence capabilities to build a strong connection between technology and business processes.",
     summaryItems: [
-      "Process management and process analysis",
-      "ERP consulting and ERP readiness",
-      "Digital maturity and transformation readiness",
-      "A productized structure with Sadi",
+      "Enterprise Software Development",
+      "AI & Digital Transformation",
+      "Process Maturity & Process Management",
+      "ERP Consulting & ERP Readiness",
     ],
   },
 
   whyFounded: {
     title: "Why was Tage Yazılım founded?",
     description1:
-      "What we most often saw in companies was this: processes were being discussed but not clarified, software investments were being made but the corporate structure was not fully ready, and improvement efforts were being carried out but not made sustainable.",
+      "We saw that technology investments can often be addressed separately from real business needs. Software investments may begin before processes are sufficiently clear, data and systems may remain disconnected, and new technologies may struggle to become practical use cases.",
     description2:
-      "Tage Yazılım was founded to close this gap. We wanted to bring together an approach that makes processes clearer, management more visible, and software more meaningful.",
+      "Tage Yazılım was founded to close this gap between business needs and technology. We bring enterprise software, artificial intelligence, process management, and ERP experience together within the same perspective.",
     founderTitle: "Our founding perspective",
     founderDescription1:
-      "With more than 25 years of experience in business processes and ERP, we build an approach that does not merely document processes, but understands, simplifies, measures, and carries them to management.",
+      "We combine more than 25 years of IT, ERP, and business process experience with enterprise software, artificial intelligence, and digital transformation capabilities.",
     founderDescription2:
-      "SAP ERP and IFS ERP experience, a process management perspective, and a software-building mindset form the foundation of this structure.",
+      "We aim to develop practical and sustainable solutions by evaluating business needs, processes, data, users, and existing systems together.",
   },
 
   approach: {
-    title: "Software + consulting + training approach",
+    title: "We bring technology and business knowledge together",
     description:
-      "Our approach is not one-dimensional. Instead of only providing consulting or only developing software, we address the three areas that organizations truly need together.",
+      "Tage Yazılım’s approach is built on three core capabilities working together. We do not treat technology independently from real business needs and the enterprise environment.",
     items: [
       {
         icon: "cpu",
-        title: "Software",
+        title: "Enterprise Software",
         description:
-          "We develop products and software solutions that support enterprise processes in becoming visible, measurable, and sustainable.",
+          "We develop web, mobile, portal, business applications, and system integrations tailored to enterprise needs.",
       },
       {
         icon: "briefcase",
-        title: "Consulting",
+        title: "AI & Digital Transformation",
         description:
-          "We provide enterprise support in process management, process analysis, ERP readiness, digital transformation, and management visibility.",
+          "We develop solutions that bring artificial intelligence into real use cases and support organizations in their digital transformation.",
       },
       {
         icon: "graduation",
-        title: "Training",
+        title: "Process & ERP",
         description:
-          "We provide knowledge transfer and practical support so internal teams can understand, adopt, and sustain the new structure.",
+          "We address process maturity, process management, ERP readiness, and ERP consulting together with enterprise needs.",
       },
     ],
   },
 
   expertise: {
-    title: "Our areas of expertise",
+    title: "What makes Tage different?",
     description:
-      "The strength of Tage Yazılım comes not only from being a software company, but from bringing process, ERP, and management perspective together in one place.",
+      "We combine technology-building capabilities with enterprise business process, ERP, and operational experience.",
     items: [
       {
         icon: "workflow",
-        title: "Process management focus",
+        title: "Technology grounded in business processes",
         description:
-          "We aim to make business processes more visible, clearer, and more manageable.",
+          "Before starting a software or AI solution, we focus on understanding the real business need, users, and ways of working.",
       },
       {
         icon: "layers",
-        title: "ERP readiness and ERP consulting",
+        title: "Enterprise systems experience",
         description:
-          "We work on pre-ERP process clarity, role and responsibility structures, interdepartmental transitions, and organizational readiness.",
+          "We bring more than 25 years of IT, ERP, and business process experience into new technology solutions.",
       },
       {
         icon: "building",
-        title: "Corporate structure and management visibility",
+        title: "Practical technology solutions",
         description:
-          "We build structures that make decision-making easier, clarify priorities, and strengthen the management perspective.",
+          "We evaluate software, artificial intelligence, data, integration, and process needs together within the same enterprise environment.",
       },
     ],
   },
 
   trust: {
-    title: "Why are we trustworthy?",
+    title: "We combine experience with technology-building capabilities",
     description1:
-      "Because we do not only talk theory. We know from the field the real way companies operate, their pre-ERP readiness needs, process fragmentation, and the need for management visibility.",
+      "We know that enterprise technology is about more than developing software. We evaluate the business process, users, data, and existing systems in which a solution will operate.",
     description2:
-      "That is why the structure we recommend is corporate, practical, and, when needed, supportable by software.",
-    cardTitle: "Core elements that build trust",
+      "This approach enables us to bring consulting experience together with software and artificial intelligence capabilities.",
+    cardTitle: "Our experience and capabilities",
     items: [
-      "More than 25 years of process and ERP experience",
-      "SAP ERP and IFS ERP know-how",
-      "Strong understanding of production, finance, logistics, and HR processes",
-      "An approach that addresses process management together with ERP readiness",
-      "A structure combining consulting and software thinking on the same ground",
-      "A productized and sustainable solution approach with Sadi",
+      "More than 25 years of IT, ERP, and business process experience",
+      "Business process knowledge across production, finance, logistics, and human resources",
+      "Enterprise software development capabilities",
+      "An approach that applies artificial intelligence to real business needs",
+      "A perspective that evaluates processes, data, systems, and integrations together",
+      "Product development and SaaS experience with Sadi",
     ],
   },
 
   sadi: {
     title: "Where does Sadi stand in this structure?",
     description1:
-      "Sadi is the productized form of Tage Yazılım’s focus on process and digital maturity. The visibility and clarity built through consulting become more measurable and sustainable with Sadi.",
+      "Sadi is the productized form of Tage Yazılım’s experience in process maturity and digital transformation.",
     description2:
-      "For this reason, Sadi is not only a software product; it is also the concrete extension of our process, ERP readiness, and digital transformation approach.",
-    cardBadge: "Product connection",
-    cardTitle: "We productize our approach with Sadi",
+      "It brings process visibility, maturity assessment, risk prioritization, improvement, and re-measurement together within an enterprise software product.",
+    cardBadge: "Product",
+    cardTitle: "We productize our process and transformation experience with Sadi",
     cardDescription:
-      "Process visibility, maturity assessment, risk prioritization, action tracking, and re-measurement become more concrete with Sadi.",
+      "Sadi helps organizations make their processes visible, assess maturity levels, and systematically manage improvement areas.",
     primaryButton: "Go to Sadi product page",
     secondaryButton: "Contact Us",
   },
 
   cta: {
     title:
-      "Let’s strengthen your processes, ERP readiness, and corporate structure together",
+      "Let’s evaluate your technology and transformation needs together",
     description:
-      "You can visit the relevant pages to get to know Tage Yazılım’s approach more closely, explore our services, or review the Sadi product.",
+      "Let’s evaluate your needs across enterprise software, artificial intelligence, digital transformation, process management, or ERP.",
     primaryButton: "Explore Our Services",
     secondaryButton: "Contact Us",
   },
 
   schema: {
     orgDescription:
-      "Tage Yazılım is a technology and consulting company working in process management, ERP consulting, ERP readiness, digital maturity, and enterprise software.",
+      "Tage Yazılım is an enterprise technology company delivering software development, artificial intelligence, digital transformation, process management, and ERP solutions.",
   },
 } as const;
-
 function getIcon(name: string) {
   if (name === "cpu") return Cpu;
   if (name === "briefcase") return BriefcaseBusiness;
