@@ -259,12 +259,7 @@ export default async function HomePage({ params }: PageProps) {
                     <ArrowRight size={16} strokeWidth={2.25} />
                   </Link>
 
-                  <Link
-                    href={withLang("/sadi")}
-                    className="inline-flex items-center justify-center rounded-xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#133E87] hover:text-[#133E87]"
-                  >
-                    {home.problems.secondaryButton}
-                  </Link>
+
                 </div>
               </div>
 
@@ -453,10 +448,10 @@ export default async function HomePage({ params }: PageProps) {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {home.services.items.map(
               (
-                service: { title: string; text: string; path: string },
+                service: { title: string; text: string; path: string; areas: string },
                 index: number
               ) => {
                 const Icon = serviceIconMap[index];
@@ -478,19 +473,12 @@ export default async function HomePage({ params }: PageProps) {
                         <p className="mt-3 text-base leading-7 text-slate-600">
                           {service.text}
                         </p>
+                        <p className="mt-4 text-sm font-medium leading-6 text-[#133E87]">
+                          {service.areas}
+                        </p>
                       </div>
                     </div>
-
-                    <div className="mt-6">
-                      <Link
-                        href={withLang(service.path)}
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-[#133E87] transition hover:text-[#0f3270]"
-                      >
-                        {home.services.detailButton}
-                        <ArrowRight size={16} strokeWidth={2.25} />
-                      </Link>
-                    </div>
-                  </div>
+</div>
                 );
               }
             )}

@@ -156,11 +156,11 @@ const tr = {
       },
       {
         title: "Süreç Yönetimi Danışmanlığı",
-        href: "/hizmetler/surec-yonetimi-danismanligi",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "Süreç Analizi ve Süreç Modelleme",
-        href: "/hizmetler/surec-analizi-ve-surec-modelleme",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "Sadi",
@@ -345,11 +345,11 @@ const en = {
       },
       {
         title: "Process Management Consulting",
-        href: "/hizmetler/surec-yonetimi-danismanligi",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "Process Analysis and Process Modeling",
-        href: "/hizmetler/surec-analizi-ve-surec-modelleme",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "Sadi",

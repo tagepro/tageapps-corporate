@@ -20,29 +20,29 @@ const tr = {
     contactNow: "İletişime Geç",
 
     servicesMenu: {
-      processManagementConsulting: {
-        title: "Süreç Yönetimi Danışmanlığı",
-        description: "Süreçleri görünür ve yönetilebilir hale getirir.",
+      softwareDevelopment: {
+        title: "Yazılım Geliştirme",
+        enterpriseSoftwareDevelopment: {
+          title: "Kurumsal Yazılım Geliştirme",
+        },
       },
-      processAnalysisModeling: {
-        title: "Süreç Analizi ve Süreç Modelleme",
-        description: "Mevcut işleyişi analiz eder ve modeller.",
+      aiDigitalTransformation: {
+        title: "Yapay Zekâ & Dijital Dönüşüm",
+        enterpriseAiSolutions: {
+          title: "Kurumsal Yapay Zekâ Çözümleri",
+        },
+        digitalMaturityTransformation: {
+          title: "Dijital Olgunluk ve Dijital Dönüşüm Analizi",
+        },
       },
-      processImprovementWorkflow: {
-        title: "Süreç İyileştirme ve İş Akışı Yönetimi",
-        description: "Akışları sadeleştirir, verimliliği artırır.",
-      },
-      digitalMaturityTransformation: {
-        title: "Dijital Olgunluk ve Dijital Dönüşüm Analizi",
-        description: "Olgunluk, risk ve yol haritasını netleştirir.",
-      },
-      processSoftwareEnterpriseSolutions: {
-        title: "Süreç Yönetimi Yazılımı ve Kurumsal Yazılım Çözümleri",
-        description: "Süreçleri dijital ortamda izlenebilir hale getirir.",
-      },
-      erpConsultingReadiness: {
-        title: "ERP Danışmanlığı ve ERP Hazırlık Hizmetleri",
-        description: "ERP öncesi hazırlığı ve süreç netliğini güçlendirir.",
+      processMaturityErp: {
+        title: "Süreç & ERP",
+        processMaturityManagement: {
+          title: "Süreç Olgunluğu ve Süreç Yönetimi",
+        },
+        erpConsultingReadiness: {
+          title: "ERP Danışmanlığı ve ERP Hazırlık",
+        },
       },
     },
   },
@@ -76,72 +76,72 @@ const tr = {
 
   home: {
     hero: {
-      badge: "Yazılım • Danışmanlık • Eğitim",
-      title: "Süreç yönetimi, dijital olgunluk ve kurumsal yazılım odaklı çözümler",
+      badge: "Yazılım • Yapay Zekâ • Dijital Dönüşüm",
+      title: "Kurumsal yazılım, yapay zekâ ve dijital dönüşüm çözümleri",
       description:
-        "Tage Yazılım; süreç yönetimi, süreç analizi, süreç iyileştirme, dijital olgunluk ve kurumsal yazılım alanlarında işletmelere danışmanlık, yazılım ve eğitim çözümleri sunar.",
+        "Tage Yazılım, işletmelerin süreçlerini dijitalleştiren, veriyi daha etkin kullanmalarını sağlayan ve operasyonel kararlarını güçlendiren kurumsal yazılım, yapay zekâ ve dijital dönüşüm çözümleri geliştirir.",
       primaryButton: "İletişime Geç",
       secondaryButton: "Sadi’yi İncele",
 
       featureCards: {
         consulting: {
-          label: "Danışmanlık",
-          text: "Süreçleri görünür ve yönetilebilir hale getirir",
+          label: "Kurumsal Yazılım",
+          text: "İş süreçlerine ve kurumsal ihtiyaçlara uygun yazılım çözümleri",
         },
         software: {
-          label: "Yazılım",
-          text: "Sadi ile ölçülebilir ve sürdürülebilir yapı kurar",
+          label: "Yapay Zekâ & Dijital Dönüşüm",
+          text: "Yapay zekâ, otomasyon ve veri odaklı dönüşüm çözümleri",
         },
         focus: {
-          label: "Odak Alanları",
+          label: "Uzmanlık Alanları",
           items: [
-            "Süreç Yönetimi",
-            "Süreç Analizi",
-            "Süreç İyileştirme",
-            "Dijital Olgunluk",
             "Kurumsal Yazılım",
+            "Yapay Zekâ",
+            "Dijital Dönüşüm",
+            "Süreç Olgunluğu",
+            "ERP",
           ],
         },
         bridge: {
-          title: "Süreçten yazılıma uzanan yapı",
-          text: "Danışmanlık, analiz, iyileştirme ve yazılım yaklaşımını tek çatı altında birleştiren kurumsal çözüm modeli.",
+          title: "Teknolojiden iş sonucuna uzanan yapı",
+          text: "Yazılım geliştirme, yapay zekâ, süreç ve ERP deneyimini bir araya getirerek kurumların dijital dönüşüm ihtiyaçlarına bütüncül çözümler sunuyoruz.",
         },
       },
     },
 
     problems: {
-      badge: "İşletmelerin yaşadığı yaygın sorunlar",
-      title: "Bugün işletmelerin ve kurumların yaşadığı temel problemler",
+      badge: "Yaklaşımımız",
+      title: "Teknolojiden önce iş ihtiyacını anlıyoruz",
       description1:
-        "Süreç yönetimi, analiz, iyileştirme ve dijitalleşme çalışmalarında birçok kurum benzer yapısal sorunlarla karşı karşıya kalır.",
+        "Kurumsal yazılım ve yapay zekâ projelerinde başarı yalnızca kullanılan teknolojiye bağlı değildir. İş ihtiyacının, süreçlerin, verinin, kullanıcıların ve mevcut sistemlerin birlikte değerlendirilmesi gerekir.",
       description2:
-        "Bu sorunlar büyümeyi, verimliliği, karar alma hızını ve yönetim görünürlüğünü zorlaştırır. Tage Yazılım, bu alanları görünür hale getirerek daha net ve uygulanabilir çözümler oluşturur.",
+        "Tage Yazılım, ihtiyacı anlamaktan uygulamaya ve ölçüme kadar ilerleyen bütüncül bir yaklaşım benimser.",
       primaryButton: "Hizmetlerimizi İncele",
-      secondaryButton: "Sadi Ürünü’nü İncele",
+      secondaryButton: "Sadi’yi İncele",
       cards: [
         {
-          title: "Süreçler kişilere bağlı ilerliyor",
-          text: "İşleyiş tanımlı ve kurumsal yapı yerine kişisel bilgi ve alışkanlıklarla devam ediyor.",
+          title: "İş İhtiyacını Anlama",
+          text: "Hedefleri, kullanıcı ihtiyaçlarını ve çözülmesi gereken iş problemini netleştiriyoruz.",
         },
         {
-          title: "Departmanlar arasında iş akışı net değil",
-          text: "Görev geçişleri, sorumluluk alanları ve süreç sahipliği yeterince görünür değil.",
+          title: "Süreçleri Değerlendirme",
+          text: "Mevcut işleyişi, sorumlulukları, darboğazları ve süreç olgunluğunu değerlendiriyoruz.",
         },
         {
-          title: "Süreç performansı ölçülemiyor",
-          text: "Yönetim için karar destek sağlayacak net skor, görünürlük ve izleme yapısı oluşmuyor.",
+          title: "Veriyi Hazırlama",
+          text: "Verinin yapısını, kalitesini, erişilebilirliğini ve çözüm için kullanılabilirliğini inceliyoruz.",
         },
         {
-          title: "İyileştirme alanları görünür değil",
-          text: "Darboğazlar, tekrar eden işler ve öncelikli geliştirme alanları sistematik biçimde görünmüyor.",
+          title: "Doğru Teknolojiyi Belirleme",
+          text: "Yazılım, yapay zekâ, entegrasyon ve otomasyon seçeneklerini gerçek ihtiyaca göre belirliyoruz.",
         },
         {
-          title: "Dijital dönüşüm yatırımları dağınık ilerliyor",
-          text: "Hangi alandan başlanacağı ve hangi sürecin öncelikli olduğu netleşmiyor.",
+          title: "Çözümü Uygulama",
+          text: "Belirlenen ihtiyaca uygun kurumsal yazılım ve teknoloji çözümlerini hayata geçiriyoruz.",
         },
         {
-          title: "Süreçler yazılım ile sürdürülebilir hale gelmiyor",
-          text: "Danışmanlık çıktıları ölçülebilir, izlenebilir ve kalıcı bir yapıya taşınamıyor.",
+          title: "Sonuçları Ölçme",
+          text: "Çözümün süreç, verimlilik ve yönetim görünürlüğü üzerindeki etkisini izlenebilir hale getiriyoruz.",
         },
       ],
     },
@@ -192,41 +192,29 @@ const tr = {
 
     services: {
       badge: "Hizmetler",
-      title: "Tage Yazılım’ın hizmet alanları",
+      title: "Teknoloji ve dönüşüm ihtiyaçlarına bütüncül çözümler",
       description:
-        "Tage Yazılım; süreç yönetimi, analiz, iyileştirme, dijital olgunluk ve kurumsal yazılım alanlarında işletmelere danışmanlık, yazılım ve eğitim çözümleri sunar.",
+        "Kurumsal yazılım geliştirme, yapay zekâ, dijital dönüşüm, süreç olgunluğu ve ERP deneyimimizi kurumların gerçek iş ihtiyaçları etrafında bir araya getiriyoruz.",
       detailButton: "Detayı İncele",
       allButton: "Tüm Hizmetleri Görüntüle",
       items: [
         {
-          title: "Süreç Yönetimi Danışmanlığı",
-          path: "/hizmetler/surec-yonetimi-danismanligi",
-          text: "Kurumsal süreçlerin görünür, ölçülebilir ve yönetilebilir hale gelmesini sağlayan danışmanlık yaklaşımı.",
+          title: "Kurumsal Yazılım Geliştirme",
+          path: "/hizmetler",
+          text: "İş ihtiyaçlarına özel web, mobil ve kurumsal uygulamalar geliştiriyoruz.",
+          areas: "Web Uygulamaları · Mobil Uygulamalar · Özel Yazılım · Portal & Entegrasyon",
         },
         {
-          title: "Süreç Analizi ve Süreç Modelleme",
-          path: "/hizmetler/surec-analizi-ve-surec-modelleme",
-          text: "Mevcut işleyişi görünür hale getiren, ana süreç-alt süreç yapısını netleştiren ve süreçleri daha okunabilir yapıya kavuşturan analiz yaklaşımı.",
+          title: "Yapay Zekâ & Dijital Dönüşüm",
+          path: "/hizmetler",
+          text: "Yapay zekânın değer üretebileceği alanları belirliyor, kuruma özel AI destekli çözümler geliştiriyor ve dijital dönüşümü destekliyoruz.",
+          areas: "Kurumsal AI · AI Destekli Uygulamalar · AI Kullanım Senaryoları · Dijital Olgunluk",
         },
         {
-          title: "Süreç İyileştirme ve İş Akışı Yönetimi",
-          path: "/hizmetler/surec-iyilestirme-ve-is-akisi-yonetimi",
-          text: "Süreçleri sadeleştiren, tekrarlı adımları azaltan, onay akışlarını kısaltan ve daha etkin süreç yönetimi kurmaya odaklanan iyileştirme hizmeti.",
-        },
-        {
-          title: "Dijital Olgunluk ve Dijital Dönüşüm Analizi",
-          path: "/hizmetler/dijital-olgunluk-ve-dijital-donusum-analizi",
-          text: "Mevcut dijital ve süreç olgunluk seviyesini değerlendirerek gelişim alanlarını, riskleri ve dönüşüm önceliklerini netleştiren analiz yaklaşımı.",
-        },
-        {
-          title: "Süreç Yönetimi Yazılımı ve Kurumsal Yazılım Çözümleri",
-          path: "/hizmetler/surec-yonetimi-yazilimi-ve-kurumsal-yazilim-cozumleri",
-          text: "Süreçlerin dijital ortamda izlenebilir, puanlanabilir, aksiyonları takip edilebilir ve raporlanabilir hale gelmesini sağlayan yazılım çözümleri.",
-        },
-        {
-          title: "ERP Danışmanlığı ve ERP Hazırlık Hizmetleri",
-          path: "/hizmetler/erp-danismanligi-ve-erp-hazirlik-hizmetleri",
-          text: "ERP yatırımı öncesinde süreçlerin netleştirilmesi, organizasyonun hazırlanması ve ERP geçişine uygun yapının oluşturulması için danışmanlık yaklaşımı.",
+          title: "Süreç Olgunluğu & ERP",
+          path: "/hizmetler",
+          text: "Süreçlerin olgunluk seviyesini değerlendiriyor, gelişim alanlarını belirliyor ve kurumları ERP yatırımlarına hazırlıyoruz.",
+          areas: "Süreç Olgunluğu · Süreç Yönetimi · Süreç İyileştirme · ERP Hazırlık",
         },
       ],
     },

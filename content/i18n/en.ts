@@ -21,31 +21,29 @@ const en = {
     contactNow: "Contact Us",
 
     servicesMenu: {
-      processManagementConsulting: {
-        title: "Process Management Consulting",
-        description: "Makes processes visible and manageable.",
+      softwareDevelopment: {
+        title: "Software Development",
+        enterpriseSoftwareDevelopment: {
+          title: "Enterprise Software Development",
+        },
       },
-      processAnalysisModeling: {
-        title: "Process Analysis and Process Modeling",
-        description: "Analyzes and models the current way of working.",
+      aiDigitalTransformation: {
+        title: "AI & Digital Transformation",
+        enterpriseAiSolutions: {
+          title: "Enterprise AI Solutions",
+        },
+        digitalMaturityTransformation: {
+          title: "Digital Maturity and Digital Transformation Analysis",
+        },
       },
-      processImprovementWorkflow: {
-        title: "Process Improvement and Workflow Management",
-        description: "Simplifies workflows and increases efficiency.",
-      },
-      digitalMaturityTransformation: {
-        title: "Digital Maturity and Digital Transformation Analysis",
-        description: "Clarifies maturity, risk, and transformation roadmap.",
-      },
-      processSoftwareEnterpriseSolutions: {
-        title: "Process Management Software and Enterprise Software Solutions",
-        description:
-          "Makes processes traceable and manageable in a digital environment.",
-      },
-      erpConsultingReadiness: {
-        title: "ERP Consulting and ERP Readiness Services",
-        description:
-          "Strengthens pre-ERP preparation and process clarity.",
+      processMaturityErp: {
+        title: "Process & ERP",
+        processMaturityManagement: {
+          title: "Process Maturity and Process Management",
+        },
+        erpConsultingReadiness: {
+          title: "ERP Consulting and ERP Readiness",
+        },
       },
     },
   },
@@ -79,73 +77,73 @@ const en = {
 
   home: {
     hero: {
-      badge: "Software • Consulting • Training",
+      badge: "Software • Artificial Intelligence • Digital Transformation",
       title:
-        "Solutions focused on process management, digital maturity, and enterprise software",
+        "Enterprise Software, AI & Digital Transformation Solutions",
       description:
-        "Tage Yazılım provides consulting, software, and training solutions in process management, process analysis, process improvement, digital maturity, and enterprise software.",
+        "Tage Yazılım develops enterprise software, artificial intelligence, and digital transformation solutions that help organizations digitalize their processes, use data more effectively, and strengthen operational decision-making.",
       primaryButton: "Contact Us",
       secondaryButton: "Explore Sadi",
 
       featureCards: {
         consulting: {
-          label: "Consulting",
-          text: "Makes processes visible and manageable",
+          label: "Enterprise Software",
+          text: "Software solutions designed around business processes and enterprise needs",
         },
         software: {
-          label: "Software",
-          text: "Builds a measurable and sustainable structure with Sadi",
+          label: "AI & Digital Transformation",
+          text: "AI, automation, and data-driven transformation solutions",
         },
         focus: {
-          label: "Focus Areas",
+          label: "Areas of Expertise",
           items: [
-            "Process Management",
-            "Process Analysis",
-            "Process Improvement",
-            "Digital Maturity",
             "Enterprise Software",
+            "Artificial Intelligence",
+            "Digital Transformation",
+            "Process Maturity",
+            "ERP",
           ],
         },
         bridge: {
-          title: "A structure extending from process to software",
-          text: "An enterprise solution model that brings consulting, analysis, improvement, and software together under one roof.",
+          title: "From technology to business outcomes",
+          text: "We combine software development, artificial intelligence, process expertise, and ERP experience to address organizations' digital transformation needs with an integrated approach.",
         },
       },
     },
 
     problems: {
-      badge: "Common challenges businesses face",
-      title: "The core problems businesses and institutions face today",
+      badge: "Our Approach",
+      title: "We understand the business need before the technology",
       description1:
-        "Many organizations encounter similar structural issues in process management, analysis, improvement, and digitalization efforts.",
+        "Success in enterprise software and AI projects depends on more than technology alone. Business needs, processes, data, users, and existing systems need to be evaluated together.",
       description2:
-        "These issues make growth, efficiency, decision speed, and management visibility more difficult. Tage Yazılım makes these areas visible and turns them into clearer and more actionable solutions.",
+        "Tage Yazılım follows an integrated approach that moves from understanding the need to implementation and measurable outcomes.",
       primaryButton: "Explore Our Services",
-      secondaryButton: "Explore the Sadi Product",
+      secondaryButton: "Explore Sadi",
       cards: [
         {
-          title: "Processes depend on individuals",
-          text: "Operations continue through personal knowledge and habits instead of a defined institutional structure.",
+          title: "Understand the Business Need",
+          text: "We clarify business objectives, user needs, and the problem that needs to be solved.",
         },
         {
-          title: "Interdepartmental workflow is unclear",
-          text: "Task handovers, responsibilities, and process ownership are not sufficiently visible.",
+          title: "Assess the Processes",
+          text: "We evaluate current operations, responsibilities, bottlenecks, and process maturity.",
         },
         {
-          title: "Process performance cannot be measured",
-          text: "A clear scoring, visibility, and monitoring structure that supports management decisions does not emerge.",
+          title: "Prepare the Data",
+          text: "We examine data structure, quality, accessibility, and readiness for the intended solution.",
         },
         {
-          title: "Improvement areas are not visible",
-          text: "Bottlenecks, repetitive work, and priority improvement areas do not become systematically visible.",
+          title: "Select the Right Technology",
+          text: "We determine software, AI, integration, and automation options based on the actual business need.",
         },
         {
-          title: "Digital transformation investments progress in a scattered way",
-          text: "It is not clear where to start and which process should be prioritized.",
+          title: "Implement the Solution",
+          text: "We deliver enterprise software and technology solutions designed around the identified need.",
         },
         {
-          title: "Processes do not become sustainable through software",
-          text: "Consulting outputs cannot be carried into a measurable, trackable, and lasting structure.",
+          title: "Measure the Outcomes",
+          text: "We make the solution's impact on processes, efficiency, and management visibility measurable.",
         },
       ],
     },
@@ -196,41 +194,29 @@ const en = {
 
     services: {
       badge: "Services",
-      title: "Tage Yazılım’s service areas",
+      title: "Integrated solutions for technology and transformation needs",
       description:
-        "Tage Yazılım provides consulting, software, and training solutions in process management, analysis, improvement, digital maturity, and enterprise software.",
+        "We bring together enterprise software development, artificial intelligence, digital transformation, process maturity, and ERP expertise around real business needs.",
       detailButton: "Explore Details",
       allButton: "View All Services",
       items: [
         {
-          title: "Process Management Consulting",
-          path: "/hizmetler/surec-yonetimi-danismanligi",
-          text: "A consulting approach that helps enterprise processes become visible, measurable, and manageable.",
+          title: "Enterprise Software Development",
+          path: "/hizmetler",
+          text: "We develop web, mobile, and enterprise applications tailored to business needs.",
+          areas: "Web Applications · Mobile Applications · Custom Software · Portals & Integration",
         },
         {
-          title: "Process Analysis and Process Modeling",
-          path: "/hizmetler/surec-analizi-ve-surec-modelleme",
-          text: "An analysis approach that makes the current operation visible, clarifies the main process-subprocess structure, and makes processes easier to understand.",
+          title: "AI & Digital Transformation",
+          path: "/hizmetler",
+          text: "We identify where AI can create value, develop AI-enabled solutions, and support organizations in their digital transformation.",
+          areas: "Enterprise AI · AI-Enabled Applications · AI Use Cases · Digital Maturity",
         },
         {
-          title: "Process Improvement and Workflow Management",
-          path: "/hizmetler/surec-iyilestirme-ve-is-akisi-yonetimi",
-          text: "An improvement service focused on simplifying processes, reducing repetitive steps, shortening approval flows, and establishing more effective process management.",
-        },
-        {
-          title: "Digital Maturity and Digital Transformation Analysis",
-          path: "/hizmetler/dijital-olgunluk-ve-dijital-donusum-analizi",
-          text: "An analysis approach that evaluates current digital and process maturity, clarifies improvement areas, risks, and transformation priorities.",
-        },
-        {
-          title: "Process Management Software and Enterprise Software Solutions",
-          path: "/hizmetler/surec-yonetimi-yazilimi-ve-kurumsal-yazilim-cozumleri",
-          text: "Software solutions that make processes traceable, scoreable, actionable, and reportable in a digital environment.",
-        },
-        {
-          title: "ERP Consulting and ERP Readiness Services",
-          path: "/hizmetler/erp-danismanligi-ve-erp-hazirlik-hizmetleri",
-          text: "A consulting approach for clarifying processes before ERP investment, preparing the organization, and establishing a structure suitable for ERP transition.",
+          title: "Process Maturity & ERP",
+          path: "/hizmetler",
+          text: "We assess process maturity, identify improvement areas, and prepare organizations for ERP investments.",
+          areas: "Process Maturity · Process Management · Process Improvement · ERP Readiness",
         },
       ],
     },

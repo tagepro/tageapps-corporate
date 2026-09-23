@@ -29,29 +29,29 @@ type HeaderLabels = {
   contactNow: string;
 
   servicesMenu: {
-    processManagementConsulting: {
+    softwareDevelopment: {
       title: string;
-      description: string;
+      enterpriseSoftwareDevelopment: {
+        title: string;
+      };
     };
-    processAnalysisModeling: {
+    aiDigitalTransformation: {
       title: string;
-      description: string;
+      enterpriseAiSolutions: {
+        title: string;
+      };
+      digitalMaturityTransformation: {
+        title: string;
+      };
     };
-    processImprovementWorkflow: {
+    processMaturityErp: {
       title: string;
-      description: string;
-    };
-    digitalMaturityTransformation: {
-      title: string;
-      description: string;
-    };
-    processSoftwareEnterpriseSolutions: {
-      title: string;
-      description: string;
-    };
-    erpConsultingReadiness: {
-      title: string;
-      description: string;
+      processMaturityManagement: {
+        title: string;
+      };
+      erpConsultingReadiness: {
+        title: string;
+      };
     };
   };
 };
@@ -77,38 +77,65 @@ export default function MobileMenu({ lang, labels }: MobileMenuProps) {
     },
   ];
 
+  const allServicesHref = withLang(lang, "/hizmetler");
+
+  const serviceGroups = [
+    {
+      title: labels.servicesMenu.softwareDevelopment.title,
+      items: [
+        {
+          label:
+            labels.servicesMenu.softwareDevelopment
+              .enterpriseSoftwareDevelopment.title,
+          href: withLang(lang, "/hizmetler/kurumsal-yazilim-gelistirme"),
+        },
+      ],
+    },
+    {
+      title: labels.servicesMenu.aiDigitalTransformation.title,
+      items: [
+        {
+          label:
+            labels.servicesMenu.aiDigitalTransformation
+              .enterpriseAiSolutions.title,
+          href: withLang(lang, "/hizmetler/kurumsal-yapay-zeka-cozumleri"),
+        },
+        {
+          label:
+            labels.servicesMenu.aiDigitalTransformation
+              .digitalMaturityTransformation.title,
+          href: withLang(
+            lang,
+            "/hizmetler/dijital-olgunluk-ve-dijital-donusum-analizi"
+          ),
+        },
+      ],
+    },
+    {
+      title: labels.servicesMenu.processMaturityErp.title,
+      items: [
+        {
+          label:
+            labels.servicesMenu.processMaturityErp
+              .processMaturityManagement.title,
+          href: withLang(lang, "/hizmetler/surec-olgunlugu-ve-surec-yonetimi"),
+        },
+        {
+          label:
+            labels.servicesMenu.processMaturityErp
+              .erpConsultingReadiness.title,
+          href: withLang(
+            lang,
+            "/hizmetler/erp-danismanligi-ve-erp-hazirlik-hizmetleri"
+          ),
+        },
+      ],
+    },
+  ];
+
   const serviceItems = [
-    { label: labels.allServices, href: withLang(lang, "/hizmetler") },
-    {
-      label: labels.servicesMenu.processManagementConsulting.title,
-      href: withLang(lang, "/hizmetler/surec-yonetimi-danismanligi"),
-    },
-    {
-      label: labels.servicesMenu.processAnalysisModeling.title,
-      href: withLang(lang, "/hizmetler/surec-analizi-ve-surec-modelleme"),
-    },
-    {
-      label: labels.servicesMenu.processImprovementWorkflow.title,
-      href: withLang(lang, "/hizmetler/surec-iyilestirme-ve-is-akisi-yonetimi"),
-    },
-    {
-      label: labels.servicesMenu.digitalMaturityTransformation.title,
-      href: withLang(
-        lang,
-        "/hizmetler/dijital-olgunluk-ve-dijital-donusum-analizi"
-      ),
-    },
-    {
-      label: labels.servicesMenu.processSoftwareEnterpriseSolutions.title,
-      href: withLang(
-        lang,
-        "/hizmetler/surec-yonetimi-yazilimi-ve-kurumsal-yazilim-cozumleri"
-      ),
-    },
-    {
-      label: labels.servicesMenu.erpConsultingReadiness.title,
-      href: withLang(lang, "/hizmetler/erp-danismanligi-ve-erp-hazirlik-hizmetleri"),
-    },
+    { label: labels.allServices, href: allServicesHref },
+    ...serviceGroups.flatMap((group) => group.items),
   ];
 
   const homeHref = withLang(lang);
@@ -257,24 +284,53 @@ export default function MobileMenu({ lang, labels }: MobileMenuProps) {
                   {servicesOpen && (
                     <div className="border-t border-slate-200 px-2 py-2">
                       <div className="flex flex-col gap-1">
-                        {serviceItems.map((item) => {
-                          const isActive = isRouteActive(pathname, item.href);
-
-                          return (
-                            <Link
-                              key={item.href}
-                              href={item.href}
-                              onClick={() => setOpen(false)}
-                              className={`rounded-xl px-3 py-3 text-sm font-medium leading-6 transition ${
-                                isActive
-                                  ? "bg-[#EFF5FB] text-[#133E87]"
-                                  : "text-slate-700 hover:bg-slate-50"
-                              }`}
+                        <div className="mb-1 flex justify-end px-3">
+                          <Link
+                            href={allServicesHref}
+                            onClick={() => setOpen(false)}
+                            className="group inline-flex items-center gap-1.5 py-1 text-[13px] font-semibold text-[#133E87] transition hover:text-[#608BC1]"
+                          >
+                            {labels.allServices}
+                            <span
+                              aria-hidden="true"
+                              className="transition-transform group-hover:translate-x-0.5"
                             >
-                              {item.label}
-                            </Link>
-                          );
-                        })}
+                              →
+                            </span>
+                          </Link>
+                        </div>
+
+                        {serviceGroups.map((group) => (
+                          <div key={group.title} className="pt-4 first:pt-2">
+                            <p className="px-3 pb-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#608BC1]">
+                              {group.title}
+                            </p>
+
+                            <div className="flex flex-col gap-1">
+                              {group.items.map((item) => {
+                                const isActive = isRouteActive(
+                                  pathname,
+                                  item.href
+                                );
+
+                                return (
+                                  <Link
+                                    key={item.href}
+                                    href={item.href}
+                                    onClick={() => setOpen(false)}
+                                    className={`rounded-xl border border-transparent px-3 py-2.5 text-sm font-medium leading-6 transition ${
+                                      isActive
+                                        ? "bg-[#EFF5FB] text-[#133E87]"
+                                        : "text-slate-700 hover:bg-slate-50"
+                                    }`}
+                                  >
+                                    {item.label}
+                                  </Link>
+                                );
+                              })}
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   )}

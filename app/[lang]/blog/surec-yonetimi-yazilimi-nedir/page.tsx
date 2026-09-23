@@ -153,11 +153,11 @@ const tr = {
     items: [
       {
         title: "Süreç Yönetimi Yazılımı ve Kurumsal Yazılım Çözümleri",
-        href: "/hizmetler/surec-yonetimi-yazilimi-ve-kurumsal-yazilim-cozumleri",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "Süreç Yönetimi Danışmanlığı",
-        href: "/hizmetler/surec-yonetimi-danismanligi",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "Sadi",
@@ -343,11 +343,11 @@ const en = {
     items: [
       {
         title: "Process Management Software and Enterprise Software Solutions",
-        href: "/hizmetler/surec-yonetimi-yazilimi-ve-kurumsal-yazilim-cozumleri",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "Process Management Consulting",
-        href: "/hizmetler/surec-yonetimi-danismanligi",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "Sadi",
@@ -715,7 +715,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                     </Link>
 
                     <Link
-                      href={withLang("/hizmetler/surec-yonetimi-yazilimi-ve-kurumsal-yazilim-cozumleri")}
+                      href={withLang("/hizmetler/surec-olgunlugu-ve-surec-yonetimi")}
                       className="inline-flex items-center justify-center gap-2 rounded-full border border-[#CBDCEB] bg-white px-5 py-3 text-sm font-semibold text-[#133E87] transition hover:bg-[#F8FAFC]"
                     >
                       {copy.cta.secondaryButton}

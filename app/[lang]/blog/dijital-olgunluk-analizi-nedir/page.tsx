@@ -164,7 +164,7 @@ const tr = {
       },
       {
         title: "Süreç Analizi ve Süreç Modelleme",
-        href: "/hizmetler/surec-analizi-ve-surec-modelleme",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "Sadi",
@@ -357,7 +357,7 @@ const en = {
       },
       {
         title: "Process Analysis and Process Modeling",
-        href: "/hizmetler/surec-analizi-ve-surec-modelleme",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "Sadi",

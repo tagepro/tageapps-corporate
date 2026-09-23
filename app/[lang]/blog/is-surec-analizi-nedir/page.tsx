@@ -158,11 +158,11 @@ const tr = {
     items: [
       {
         title: "Süreç Analizi ve Süreç Modelleme",
-        href: "/hizmetler/surec-analizi-ve-surec-modelleme",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "Süreç İyileştirme ve İş Akışı Yönetimi",
-        href: "/hizmetler/surec-iyilestirme-ve-is-akisi-yonetimi",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "ERP Danışmanlığı ve ERP Hazırlık Hizmetleri",
@@ -353,11 +353,11 @@ const en = {
     items: [
       {
         title: "Process Analysis and Process Modeling",
-        href: "/hizmetler/surec-analizi-ve-surec-modelleme",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "Process Improvement and Workflow Management",
-        href: "/hizmetler/surec-iyilestirme-ve-is-akisi-yonetimi",
+        href: "/hizmetler/surec-olgunlugu-ve-surec-yonetimi",
       },
       {
         title: "ERP Consulting and ERP Readiness Services",
@@ -725,7 +725,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                     </Link>
 
                     <Link
-                      href={withLang("/hizmetler/surec-analizi-ve-surec-modelleme")}
+                      href={withLang("/hizmetler/surec-olgunlugu-ve-surec-yonetimi")}
                       className="inline-flex items-center justify-center gap-2 rounded-full border border-[#CBDCEB] bg-white px-5 py-3 text-sm font-semibold text-[#133E87] transition hover:bg-[#F8FAFC]"
                     >
                       {copy.cta.secondaryButton}
