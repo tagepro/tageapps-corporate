@@ -11,19 +11,21 @@ type PageProps = {
 };
 
 const SITE_URL = "https://www.tageapps.com";
-const FIRST_POST_SLUG = "is-surec-analizi-nedir";
-const SECOND_POST_SLUG = "dijital-olgunluk-analizi-nedir";
-const THIRD_POST_SLUG = "erpye-gecmeden-once-sirketinizi-nasil-hazirlarsiniz";
-const FOURTH_POST_SLUG = "surec-iyilestirme-nedir";
-const FIFTH_POST_SLUG = "surec-yonetimi-yazilimi-nedir";
-const SIXTH_POST_SLUG = "surec-olgunlugu-nedir";
+const SOFTWARE_POST_SLUG = "kurumsal-yazilim-nedir";
+const AI_POST_SLUG = "kurumsal-yapay-zeka-nedir";
+const PROCESS_ANALYSIS_POST_SLUG = "is-surec-analizi-nedir";
+const DIGITAL_MATURITY_POST_SLUG = "dijital-olgunluk-analizi-nedir";
+const ERP_POST_SLUG = "erpye-gecmeden-once-sirketinizi-nasil-hazirlarsiniz";
+const PROCESS_IMPROVEMENT_POST_SLUG = "surec-iyilestirme-nedir";
+const PROCESS_SOFTWARE_POST_SLUG = "surec-yonetimi-yazilimi-nedir";
+const PROCESS_MATURITY_POST_SLUG = "surec-olgunlugu-nedir";
 
 const tr = {
   meta: {
     title:
-      "Blog | Süreç Analizi, Dijital Dönüşüm ve ERP İçerikleri | Tage Yazılım",
+      "Blog | Kurumsal Yazılım, Yapay Zekâ, Dijital Dönüşüm ve ERP | Tage Yazılım",
     description:
-      "Tage Yazılım blogunda süreç analizi, dijital olgunluk, ERP hazırlık, süreç iyileştirme, süreç yönetimi yazılımı, süreç olgunluğu ve Sadi odaklı kurumsal içerikleri inceleyin.",
+      "Tage Yazılım blogunda kurumsal yazılım, yapay zekâ, dijital dönüşüm, süreç yönetimi ve ERP alanlarında rehberler, analizler ve uygulamaya yönelik içerikleri inceleyin.",
   },
 
   breadcrumb: {
@@ -33,72 +35,94 @@ const tr = {
 
   hero: {
     badge: "Blog",
-    title: "Süreç, Dijital Dönüşüm ve ERP Üzerine İçerikler",
+    title: "Kurumsal Teknoloji, Yapay Zekâ ve Dijital Dönüşüm İçerikleri",
     description:
-      "Tage Yazılım blogunda süreç analizi, dijital olgunluk, ERP hazırlık, süreç iyileştirme, süreç yönetimi yazılımı, süreç olgunluğu ve Sadi ile ilgili kurumsal içerikleri bulabilirsiniz.",
+      "Kurumsal yazılım, yapay zekâ, dijital dönüşüm, süreç yönetimi ve ERP alanlarında rehberler, analizler ve uygulamaya yönelik içerikler.",
   },
 
   postsTitle: "Öne çıkan yazılar",
 
   posts: [
     {
-      label: "İlk yazı",
-      category: "Süreç Analizi",
-      readTime: "8 dk okuma",
-      title: "İş Süreç Analizi Nedir? Şirketlerde Süreç Analizi Nasıl Yapılır?",
+      label: "Yeni yazı",
+      category: "Kurumsal Yazılım",
+      readTime: "10 dk okuma",
+      title:
+        "Kurumsal Yazılım Nedir? Şirketler Neden Özel Yazılıma İhtiyaç Duyar?",
       excerpt:
-        "İş süreç analizi nedir, neden yapılır, darboğazlar nasıl bulunur ve süreç analizi ERP ile dijital dönüşüm hazırlığında neden kritik rol oynar?",
-      href: `/blog/${FIRST_POST_SLUG}`,
+        "Kurumsal yazılım nedir, hazır yazılımdan farkı nedir ve şirketler ne zaman özel yazılıma ihtiyaç duyar? Web, mobil, portal ve ERP entegrasyonu yaklaşımını öğrenin.",
+      href: `/blog/${SOFTWARE_POST_SLUG}`,
       button: "Yazıyı Oku",
     },
     {
       label: "Yeni yazı",
+      category: "Yapay Zekâ",
+      readTime: "10 dk okuma",
+      title:
+        "Kurumsal Yapay Zekâ Nedir? Şirketler Yapay Zekâyı Nasıl Kullanabilir?",
+      excerpt:
+        "Kurumsal yapay zekâ nedir, şirketlerde hangi alanlarda kullanılabilir ve AI projesine nasıl başlanır? Veri, doküman, süreç ve entegrasyon yaklaşımını öğrenin.",
+      href: `/blog/${AI_POST_SLUG}`,
+      button: "Yazıyı Oku",
+    },
+    {
+      label: "Rehber",
       category: "Dijital Olgunluk",
       readTime: "9 dk okuma",
       title: "Dijital Olgunluk Analizi Nedir? Şirketler Nereden Başlamalı?",
       excerpt:
         "Dijital olgunluk nasıl ölçülür, süreç olgunluk neden önemlidir ve dönüşüm yatırımlarından önce nereden başlanmalıdır?",
-      href: `/blog/${SECOND_POST_SLUG}`,
+      href: `/blog/${DIGITAL_MATURITY_POST_SLUG}`,
       button: "Yazıyı Oku",
     },
     {
-      label: "Yeni yazı",
+      label: "Rehber",
       category: "ERP Hazırlık",
       readTime: "10 dk okuma",
       title: "ERP’ye Geçmeden Önce Şirketinizi Nasıl Hazırlarsınız?",
       excerpt:
         "ERP’ye geçmeden önce süreçler, roller, veri yapısı ve organizasyon hazırlığı neden netleştirilmelidir? Temel hazırlık adımlarını öğrenin.",
-      href: `/blog/${THIRD_POST_SLUG}`,
+      href: `/blog/${ERP_POST_SLUG}`,
       button: "Yazıyı Oku",
     },
     {
-      label: "Yeni yazı",
+      label: "Rehber",
+      category: "Süreç Analizi",
+      readTime: "8 dk okuma",
+      title: "İş Süreç Analizi Nedir? Şirketlerde Süreç Analizi Nasıl Yapılır?",
+      excerpt:
+        "İş süreç analizi nedir, neden yapılır, darboğazlar nasıl bulunur ve süreç analizi ERP ile dijital dönüşüm hazırlığında neden kritik rol oynar?",
+      href: `/blog/${PROCESS_ANALYSIS_POST_SLUG}`,
+      button: "Yazıyı Oku",
+    },
+    {
+      label: "Rehber",
       category: "Süreç İyileştirme",
       readTime: "9 dk okuma",
       title: "Süreç İyileştirme Nedir? Şirketlerde Nereden Başlanır?",
       excerpt:
         "Süreç iyileştirme nedir, neden yapılır ve şirketlerde hangi alanlardan başlanmalıdır? Darboğaz azaltma, iş akışı geliştirme ve verimlilik artışı yaklaşımını öğrenin.",
-      href: `/blog/${FOURTH_POST_SLUG}`,
+      href: `/blog/${PROCESS_IMPROVEMENT_POST_SLUG}`,
       button: "Yazıyı Oku",
     },
     {
-      label: "Yeni yazı",
+      label: "Rehber",
       category: "Süreç Yönetimi Yazılımı",
       readTime: "9 dk okuma",
       title: "Süreç Yönetimi Yazılımı Nedir? Şirketlere Ne Kazandırır?",
       excerpt:
         "Süreç yönetimi yazılımı nedir, ne işe yarar ve şirketlere ne kazandırır? Süreç takibi, puanlama, aksiyon yönetimi ve raporlama yaklaşımını öğrenin.",
-      href: `/blog/${FIFTH_POST_SLUG}`,
+      href: `/blog/${PROCESS_SOFTWARE_POST_SLUG}`,
       button: "Yazıyı Oku",
     },
     {
-      label: "Yeni yazı",
+      label: "Rehber",
       category: "Süreç Olgunluğu",
       readTime: "9 dk okuma",
       title: "Süreç Olgunluğu Nedir? Şirketler Süreç Seviyesini Nasıl Ölçer?",
       excerpt:
         "Süreç olgunluğu nedir, neden önemlidir ve şirketler süreç seviyesini nasıl ölçer? Puanlama, izlenebilirlik ve gelişim yaklaşımını öğrenin.",
-      href: `/blog/${SIXTH_POST_SLUG}`,
+      href: `/blog/${PROCESS_MATURITY_POST_SLUG}`,
       button: "Yazıyı Oku",
     },
   ],
@@ -106,7 +130,7 @@ const tr = {
   cta: {
     title: "İçerikten uygulamaya geçelim",
     description:
-      "Süreç analizi, dijital olgunluk veya ERP hazırlık konularında şirketiniz için en doğru yaklaşımı birlikte değerlendirelim.",
+      "Kurumsal yazılım, yapay zekâ, dijital dönüşüm, süreç yönetimi veya ERP ihtiyacınızı birlikte değerlendirelim.",
     primaryButton: "İletişime Geçin",
     secondaryButton: "Hizmetlerimizi İnceleyin",
   },
@@ -115,9 +139,9 @@ const tr = {
 const en = {
   meta: {
     title:
-      "Blog | Process Analysis, Digital Transformation and ERP Insights | Tage Yazılım",
+      "Blog | Enterprise Software, AI, Digital Transformation & ERP | Tage Yazılım",
     description:
-      "Explore Tage Yazılım blog content on process analysis, digital maturity, ERP readiness, process improvement, process management software, process maturity, and Sadi.",
+      "Explore Tage Yazılım guides, analyses, and practical insights on enterprise software, artificial intelligence, digital transformation, process management, and ERP.",
   },
 
   breadcrumb: {
@@ -127,72 +151,94 @@ const en = {
 
   hero: {
     badge: "Blog",
-    title: "Insights on Process, Digital Transformation, and ERP",
+    title: "Enterprise Technology, AI & Digital Transformation Insights",
     description:
-      "On the Tage Yazılım blog, you can find corporate content about process analysis, digital maturity, ERP readiness, process improvement, process management software, process maturity, and Sadi.",
+      "Guides, analyses, and practical insights on enterprise software, artificial intelligence, digital transformation, process management, and ERP.",
   },
 
   postsTitle: "Featured articles",
 
   posts: [
     {
-      label: "First article",
-      category: "Process Analysis",
-      readTime: "8 min read",
-      title: "What Is Business Process Analysis? How Is It Done in Companies?",
+      label: "New article",
+      category: "Enterprise Software",
+      readTime: "10 min read",
+      title:
+        "What Is Enterprise Software? Why Do Companies Need Custom Software?",
       excerpt:
-        "What is business process analysis, why is it done, how are bottlenecks identified, and why is process analysis critical for ERP and digital transformation readiness?",
-      href: `/blog/${FIRST_POST_SLUG}`,
+        "What is enterprise software, how does it differ from off-the-shelf software, and when do companies need custom solutions? Learn about web, mobile, portals, and ERP integration.",
+      href: `/blog/${SOFTWARE_POST_SLUG}`,
       button: "Read Article",
     },
     {
       label: "New article",
+      category: "Artificial Intelligence",
+      readTime: "10 min read",
+      title:
+        "What Is Enterprise AI? How Can Companies Use Artificial Intelligence?",
+      excerpt:
+        "What is enterprise AI, where can companies use it, and how should an AI project begin? Learn about data, documents, processes, and integration.",
+      href: `/blog/${AI_POST_SLUG}`,
+      button: "Read Article",
+    },
+    {
+      label: "Guide",
       category: "Digital Maturity",
       readTime: "9 min read",
       title: "What Is Digital Maturity Analysis? Where Should Companies Start?",
       excerpt:
         "How is digital maturity measured, why does process maturity matter, and where should companies start before transformation investments?",
-      href: `/blog/${SECOND_POST_SLUG}`,
+      href: `/blog/${DIGITAL_MATURITY_POST_SLUG}`,
       button: "Read Article",
     },
     {
-      label: "New article",
+      label: "Guide",
       category: "ERP Readiness",
       readTime: "10 min read",
       title: "How Should You Prepare Your Company Before Moving to ERP?",
       excerpt:
         "Why should processes, roles, data structure, and organizational readiness be clarified before ERP? Learn the core preparation steps.",
-      href: `/blog/${THIRD_POST_SLUG}`,
+      href: `/blog/${ERP_POST_SLUG}`,
       button: "Read Article",
     },
     {
-      label: "New article",
+      label: "Guide",
+      category: "Process Analysis",
+      readTime: "8 min read",
+      title: "What Is Business Process Analysis? How Is It Done in Companies?",
+      excerpt:
+        "What is business process analysis, why is it done, how are bottlenecks identified, and why is process analysis critical for ERP and digital transformation readiness?",
+      href: `/blog/${PROCESS_ANALYSIS_POST_SLUG}`,
+      button: "Read Article",
+    },
+    {
+      label: "Guide",
       category: "Process Improvement",
       readTime: "9 min read",
       title: "What Is Process Improvement? Where Should Companies Start?",
       excerpt:
         "What is process improvement, why is it done, and where should companies start? Learn the approach to workflow improvement, bottleneck reduction, and efficiency gain.",
-      href: `/blog/${FOURTH_POST_SLUG}`,
+      href: `/blog/${PROCESS_IMPROVEMENT_POST_SLUG}`,
       button: "Read Article",
     },
     {
-      label: "New article",
+      label: "Guide",
       category: "Process Management Software",
       readTime: "9 min read",
       title: "What Is Process Management Software? What Does It Add to Companies?",
       excerpt:
         "What is process management software, what does it do, and what value does it add to companies? Learn the approach to process visibility, scoring, action tracking, and reporting.",
-      href: `/blog/${FIFTH_POST_SLUG}`,
+      href: `/blog/${PROCESS_SOFTWARE_POST_SLUG}`,
       button: "Read Article",
     },
     {
-      label: "New article",
+      label: "Guide",
       category: "Process Maturity",
       readTime: "9 min read",
       title: "What Is Process Maturity? How Do Companies Measure Process Level?",
       excerpt:
         "What is process maturity, why does it matter, and how do companies measure process level? Learn the approach to scoring, traceability, and improvement.",
-      href: `/blog/${SIXTH_POST_SLUG}`,
+      href: `/blog/${PROCESS_MATURITY_POST_SLUG}`,
       button: "Read Article",
     },
   ],
@@ -200,7 +246,7 @@ const en = {
   cta: {
     title: "Let’s move from content to action",
     description:
-      "Let’s evaluate the right approach for your company in process analysis, digital maturity, or ERP readiness.",
+      "Let’s evaluate your enterprise software, AI, digital transformation, process management, or ERP needs together.",
     primaryButton: "Contact Us",
     secondaryButton: "Explore Our Services",
   },
@@ -344,9 +390,7 @@ export default async function BlogIndexPage({ params }: PageProps) {
                 {copy.hero.title}
               </h1>
 
-              <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-700">
-                {copy.hero.description}
-              </p>
+
             </div>
           </Container>
         </section>
